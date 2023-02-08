@@ -65,6 +65,7 @@
 ||amazon.com^$domain=~amazon.com
 ||vimeo.com^$domain=~vimeo.com
 ||yahoo.com^$domain=~yahoo.com
+||pinterest.com^$domain=~pinterest.com
 
 ! Google
 
