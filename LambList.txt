@@ -1,0 +1,189 @@
+#-----------------------------------------------------
+# _                    _     _                    
+#| |    __ _ _ __ ___ | |__ | |    ___  ___  __ _ 
+#| |   / _` | '_ ` _ \| '_ \| |   / _ \/ _ \/ _` |
+#| |__| (_| | | | | | | |_) | |__|  __/  __/ (_| |
+#|_____\__,_|_| |_| |_|_.__/|_____\___|\___|\__, |
+#                                           |___/ 
+# My uBlock config file.
+# ----------------------------------------------------
+# Non hashtag rules
+# ----------------------------------------------------
+
+! url-param-remover
+
+*$removeparam=utm_source
+*$removeparam=utm_medium
+*$removeparam=utm_campaign
+*$removeparam=utm_content
+*$removeparam=/^(utm_source|utm_medium|utm_term)=/
+
+# ----------------------------------------------------
+# White list
+# ----------------------------------------------------
+
+!@@*$stylesheet
+!@@*$image
+
+! Media
+
+!@@||fastly.net^
+!@@||accounts.google.com^
+
+! YouTube history
+
+@@||s.youtube.com^
+@@||s.youtube.com/*
+@@||youtube.com/api/stats/*
+@@||youtube.com/api/stats/watchtime*
+
+! YouTube frames
+
+@@||youtube.com/embed/*
+@@||youtube.com/youtubei/*
+
+# ----------------------------------------------------
+# Black list
+# ----------------------------------------------------
+
+! Universal blocks
+
+!*$subdocument,domain=~youtube.com|~vimeo.com
+*$ping
+
+! Social media block
+
+||reddit.com^$domain=~reddit.com
+||google.ru^
+||google.com^$domain=~google.com|~youtube.com|~docs.google.com|~accounts.google.com
+||twitter.com^$domain=~twitter.com
+||facebook.com^$domain=~facebook.com
+||facebook.net^$domain=~facebook.com
+||fbcdn.net^$domain=~facebook.com
+||tiktok.com^$domain=~tiktok.com
+||instagram.com^$domain=~instagram.com
+||amazon.com^$domain=~amazon.com
+||vimeo.com^$domain=~vimeo.com
+||yahoo.com^$domain=~yahoo.com
+
+! Google
+
+||google-analytics.com^
+||doubleclick.net^
+||accounts.google.com/gsi/*$xhr,script,3p
+||jnn-pa.googleapis.com^
+!||firebase-settings.crashlytics.com^
+||metric.gstatic.com^
+!||imasdk.googleapis.com^
+||adservice.google.com^
+
+! Stats
+
+||s3.amazonaws.com^
+||amazon-adsystem.com^
+||sessions.bugsnag.com^
+||app-measurement.com^
+||static.narrativ.com^
+||static.scroll.com^
+||stats.wp.com^
+||pixel.wp.com^
+||intake-analytics.wikimedia.org^
+||static-storage.net^
+||uxfeedback.ru^
+||cookielaw.org^
+||fastclick.com^
+||branch.io^
+||scorecardresearch.com^
+||scroll.com^
+||segment.com^
+||vercel-insights.com^
+||videoplayerhub.com^
+||spot.im^
+||stagepopkek.com^
+||trackonomics.net^
+||adthrive.com^
+
+#----------------------------------------------------
+# Hashtag filters
+#----------------------------------------------------
+
+! introvertdear
+
+introvertdear.com###AdThrive_Content_1_phone
+introvertdear.com###AdThrive_Content_2_phone
+introvertdear.com###AdThrive_Content_3_phone
+introvertdear.com###AdThrive_Content_4_phone
+introvertdear.com###AdThrive_Content_5_phone
+introvertdear.com###AdThrive_Content_6_phone
+introvertdear.com###AdThrive_Content_7_phone
+introvertdear.com###AdThrive_Content_8_phone
+introvertdear.com###AdThrive_Content_9_phone
+introvertdear.com###AdThrive_Content_10_phone
+introvertdear.com###AdThrive_Content_11_phone
+introvertdear.com###AdThrive_Content_12_phone
+introvertdear.com###AdThrive_Content_13_phone
+introvertdear.com###AdThrive_Content_14_phone
+introvertdear.com###AdThrive_Content_15_phone
+introvertdear.com###AdThrive_Content_16_phone
+introvertdear.com###AdThrive_Content_17_phone
+introvertdear.com###AdThrive_Below_Post_1_phone
+
+introvertdear.com###AdThrive_Header_1_desktop
+introvertdear.com###AdThrive_Content_1_desktop
+introvertdear.com###AdThrive_Content_2_desktop
+introvertdear.com###AdThrive_Content_3_desktop
+introvertdear.com###AdThrive_Content_4_desktop
+introvertdear.com###AdThrive_Content_5_desktop
+introvertdear.com###AdThrive_Content_6_desktop
+introvertdear.com###AdThrive_Content_7_desktop
+introvertdear.com###AdThrive_Content_8_desktop
+introvertdear.com###AdThrive_Content_9_desktop
+introvertdear.com###AdThrive_Content_10_desktop
+introvertdear.com###AdThrive_Content_11_desktop
+introvertdear.com###AdThrive_Content_12_desktop
+introvertdear.com###AdThrive_Content_13_desktop
+introvertdear.com###AdThrive_Content_14_desktop
+introvertdear.com###AdThrive_Content_15_desktop
+introvertdear.com###AdThrive_Content_16_desktop
+introvertdear.com###AdThrive_Content_17_desktop
+introvertdear.com###AdThrive_Below_Post_1_desktop
+
+introvertdear.com##.slick-inline-search-panel
+introvertdear.com##.has-background.has-text-color.has-theme-palette-1-color.top-bar-callout.has-text-align-center
+
+! Reddit mobile
+
+reddit.com##.XPromoBlockingModalRpl__overlay.m-animated
+reddit.com##.XPromoBlockingModalRpl__content.m-animated
+reddit.com##.XPromoPopupRpl__overlay.m-animated
+reddit.com##.XPromoPopupRpl__content.m-animated
+
+reddit.com##xpromo-app-selector
+reddit.com##body.scroll-is-blocked:style(overflow: visible!important; position: static!important;)
+reddit.com##+js(aeld, touchmove)
+www.reddit.com##.text-action-secondary.border-action-secondary.border-1.min-w-full.button-plain.button-small.button
+
+! Reddit
+
+reddit.com##.XPromoPopupRpl
+reddit.com##xpromo-new-app-selector
+reddit.com##.bottom-bar, .XPromoBottomBar
+reddit.com##.useApp,.TopNav__promoButton
+reddit.com##body:style(pointer-events:auto!important;)
+
+reddit.com##.XPromoPopup
+reddit.com##body.scroll-disabled:style(overflow: visible!important; position: static!important;)
+reddit.com##.XPromoInFeed
+amp.reddit.com##.AppSelectorModal__body
+amp.reddit.com##.upsell_banner
+
+reddit.com##._3MknXZVbkWU8JL9XGlzASi
+
+! The Verge
+
+theverge.com##.flex.relative.flex-col.px-10.mb-60.w-full.max-w-container-lg.md\:mx-auto.md\:max-w-\[560px\].lg\:flex-row.lg\:pr-0.lg\:mx-auto.lg\:max-w-container-lg.home-hero > .mx-auto.block.md\:hidden
+youtube.com##.flex.relative.flex-col.px-10.mb-60.w-full.max-w-container-lg.md\:mx-auto.md\:max-w-\[560px\].lg\:flex-row.lg\:pr-0.lg\:mx-auto.lg\:max-w-container-lg.home-hero > .mx-auto.block.md\:hidden
+
+! Androidpolice
+
+www.androidpolice.com##.ad-current
