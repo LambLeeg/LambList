@@ -110,45 +110,7 @@
 
 ! introvertdear
 
-introvertdear.com###AdThrive_Content_1_phone
-introvertdear.com###AdThrive_Content_2_phone
-introvertdear.com###AdThrive_Content_3_phone
-introvertdear.com###AdThrive_Content_4_phone
-introvertdear.com###AdThrive_Content_5_phone
-introvertdear.com###AdThrive_Content_6_phone
-introvertdear.com###AdThrive_Content_7_phone
-introvertdear.com###AdThrive_Content_8_phone
-introvertdear.com###AdThrive_Content_9_phone
-introvertdear.com###AdThrive_Content_10_phone
-introvertdear.com###AdThrive_Content_11_phone
-introvertdear.com###AdThrive_Content_12_phone
-introvertdear.com###AdThrive_Content_13_phone
-introvertdear.com###AdThrive_Content_14_phone
-introvertdear.com###AdThrive_Content_15_phone
-introvertdear.com###AdThrive_Content_16_phone
-introvertdear.com###AdThrive_Content_17_phone
-introvertdear.com###AdThrive_Below_Post_1_phone
-
-introvertdear.com###AdThrive_Header_1_desktop
-introvertdear.com###AdThrive_Content_1_desktop
-introvertdear.com###AdThrive_Content_2_desktop
-introvertdear.com###AdThrive_Content_3_desktop
-introvertdear.com###AdThrive_Content_4_desktop
-introvertdear.com###AdThrive_Content_5_desktop
-introvertdear.com###AdThrive_Content_6_desktop
-introvertdear.com###AdThrive_Content_7_desktop
-introvertdear.com###AdThrive_Content_8_desktop
-introvertdear.com###AdThrive_Content_9_desktop
-introvertdear.com###AdThrive_Content_10_desktop
-introvertdear.com###AdThrive_Content_11_desktop
-introvertdear.com###AdThrive_Content_12_desktop
-introvertdear.com###AdThrive_Content_13_desktop
-introvertdear.com###AdThrive_Content_14_desktop
-introvertdear.com###AdThrive_Content_15_desktop
-introvertdear.com###AdThrive_Content_16_desktop
-introvertdear.com###AdThrive_Content_17_desktop
-introvertdear.com###AdThrive_Below_Post_1_desktop
-
+introvertdear.com##[id^=AdThrive_]
 introvertdear.com##.slick-inline-search-panel
 introvertdear.com##.has-background.has-text-color.has-theme-palette-1-color.top-bar-callout.has-text-align-center
 
