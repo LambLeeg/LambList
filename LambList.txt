@@ -127,10 +127,12 @@ introvertdear.com##.has-background.has-text-color.has-theme-palette-1-color.top-
 
 ! Reddit mobile
 
-reddit.com##.XPromoBlockingModalRpl__overlay.m-animated
-reddit.com##.XPromoBlockingModalRpl__content.m-animated
-reddit.com##.XPromoPopupRpl__overlay.m-animated
-reddit.com##.XPromoPopupRpl__content.m-animated
+reddit.com##[id^=XPromo]
+
+!reddit.com##.XPromoBlockingModalRpl__overlay.m-animated
+!reddit.com##.XPromoBlockingModalRpl__content.m-animated
+!reddit.com##.XPromoPopupRpl__overlay.m-animated
+!reddit.com##.XPromoPopupRpl__content.m-animated
 
 reddit.com##xpromo-app-selector
 reddit.com##body.scroll-is-blocked:style(overflow: visible!important; position: static!important;)
