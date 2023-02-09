@@ -170,7 +170,9 @@ yandex.ru##.card_without-card-decoration
 
 yandex.ru##[id^=z1gz_]
 yandex.ru##.qJSkU
-yandex.ru##[id^=qJ]
+yandex.ru##.qJyIMMzTGBJkZjNjd
+yandex.ru##.qJSkU
+yandex.ru##.air-wymibr
 
 yandex.ru##.z1Afn
 yandex.ru##.qJyIMMzTGBJkZn9XM2xg
