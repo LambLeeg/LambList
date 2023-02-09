@@ -83,7 +83,7 @@
 
 ! Yandex
 
-||yastatic.net^
+||yastatic.net^$domain=~yandex.ru
 ||mc.yandex.ru^
 ||an.yandex.ru^
 ||clck.yandex.ru^
