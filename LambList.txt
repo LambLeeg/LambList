@@ -35,16 +35,11 @@
 @@||s.youtube.com^
 @@||s.youtube.com/*
 @@||youtube.com/api/stats/*
-@@||youtube.com/api/stats/watchtime*
 
 ! YouTube frames
 
 @@||youtube.com/embed/*
 @@||youtube.com/youtubei/*
-
-! Yandex Weather
-
-@@||yandex-pogoda.static-storage.net
 
 # ----------------------------------------------------
 # Black list
