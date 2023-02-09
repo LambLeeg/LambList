@@ -41,14 +41,22 @@
 @@||youtube.com/embed/*
 @@||youtube.com/youtubei/*
 
+! Yandex Weather
+
+@@||yandex-pogoda.static-storage.net
+
 # ----------------------------------------------------
 # Black list
 # ----------------------------------------------------
 
 ! Universal blocks
 
-!*$subdocument,domain=~youtube.com|~vimeo.com
+*$webrtc
 *$ping
+
+*ads^$script,image,object
+*ad^$script,image,object
+*advert^$script,image,object
 
 ! Social media block
 
@@ -149,3 +157,9 @@ youtube.com##.flex.relative.flex-col.px-10.mb-60.w-full.max-w-container-lg.md\:m
 ! Androidpolice
 
 www.androidpolice.com##.ad-current
+
+! Yandex Weather
+
+yandex.ru##.card_without-card-decoration
+yandex.ru##[id^=z1gz_]
+yandex.ru##.z1Afn
