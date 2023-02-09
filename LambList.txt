@@ -129,38 +129,31 @@ introvertdear.com##.has-background.has-text-color.has-theme-palette-1-color.top-
 
 reddit.com##[id^=XPromo]
 
-!reddit.com##.XPromoBlockingModalRpl__overlay.m-animated
-!reddit.com##.XPromoBlockingModalRpl__content.m-animated
-!reddit.com##.XPromoPopupRpl__overlay.m-animated
-!reddit.com##.XPromoPopupRpl__content.m-animated
-
-reddit.com##xpromo-app-selector
 reddit.com##body.scroll-is-blocked:style(overflow: visible!important; position: static!important;)
 reddit.com##+js(aeld, touchmove)
 www.reddit.com##.text-action-secondary.border-action-secondary.border-1.min-w-full.button-plain.button-small.button
 
 ! Reddit
 
-reddit.com##.XPromoPopupRpl
-reddit.com##xpromo-new-app-selector
-reddit.com##.bottom-bar, .XPromoBottomBar
+reddit.com##[id^=xpromo]
+
+reddit.com##.bottom-bar
+reddit.com##.item-center
 reddit.com##.useApp,.TopNav__promoButton
 reddit.com##body:style(pointer-events:auto!important;)
 
-reddit.com##.XPromoPopup
 reddit.com##body.scroll-disabled:style(overflow: visible!important; position: static!important;)
-reddit.com##.XPromoInFeed
 amp.reddit.com##.AppSelectorModal__body
 amp.reddit.com##.upsell_banner
 
 reddit.com##._3MknXZVbkWU8JL9XGlzASi
 
-reddit.com##.item-center
-
 ! The Verge
 
-theverge.com##.flex.relative.flex-col.px-10.mb-60.w-full.max-w-container-lg.md\:mx-auto.md\:max-w-\[560px\].lg\:flex-row.lg\:pr-0.lg\:mx-auto.lg\:max-w-container-lg.home-hero > .mx-auto.block.md\:hidden
-youtube.com##.flex.relative.flex-col.px-10.mb-60.w-full.max-w-container-lg.md\:mx-auto.md\:max-w-\[560px\].lg\:flex-row.lg\:pr-0.lg\:mx-auto.lg\:max-w-container-lg.home-hero > .mx-auto.block.md\:hidden
+theverge.com##[id^=flex.relative]
+
+!theverge.com##.flex.relative.flex-col.px-10.mb-60.w-full.max-w-container-lg.md\:mx-auto.md\:max-w-\[560px\].lg\:flex-row.lg\:pr-0.lg\:mx-auto.lg\:max-w-container-lg.home-hero > .mx-auto.block.md\:hidden
+!youtube.com##.flex.relative.flex-col.px-10.mb-60.w-full.max-w-container-lg.md\:mx-auto.md\:max-w-\[560px\].lg\:flex-row.lg\:pr-0.lg\:mx-auto.lg\:max-w-container-lg.home-hero > .mx-auto.block.md\:hidden
 
 ! Androidpolice
 
