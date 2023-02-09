@@ -169,9 +169,7 @@ www.androidpolice.com##.ad-current
 yandex.ru##.card_without-card-decoration
 
 yandex.ru##[id^=z1gz_]
-yandex.ru##.qJSkU
-yandex.ru##.qJyIMMzTGBJkZjNjd
-yandex.ru##.qJSkU
+yandex.ru##[class^=qJ]
 yandex.ru##.air-wymibr
 
 yandex.ru##.z1Afn
