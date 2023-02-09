@@ -22,18 +22,9 @@
 # White list
 # ----------------------------------------------------
 
-!@@*$stylesheet
-!@@*$image
-
-! Media
-
-!@@||fastly.net^
-!@@||accounts.google.com^
-
 ! YouTube history
 
 @@||s.youtube.com^
-@@||s.youtube.com/*
 @@||youtube.com/api/stats/*
 
 ! YouTube frames
@@ -60,13 +51,11 @@
 
 ! Social media block
 
-||reddit.com^$domain=~reddit.com
 ||google.ru^
 ||google.com^$domain=~google.com|~youtube.com|~docs.google.com|~accounts.google.com
+
+||reddit.com^$domain=~reddit.com
 ||twitter.com^$domain=~twitter.com
-||facebook.com^$domain=~facebook.com
-||facebook.net^$domain=~facebook.com
-||fbcdn.net^$domain=~facebook.com
 ||tiktok.com^$domain=~tiktok.com
 ||instagram.com^$domain=~instagram.com
 ||amazon.com^$domain=~amazon.com
@@ -74,16 +63,31 @@
 ||yahoo.com^$domain=~yahoo.com
 ||pinterest.com^$domain=~pinterest.com
 
+||vk.com^$domain=~vk.com|~vk.ru
+||vk.ru^$domain=~vk.com|~vk.ru
+
+||facebook.com^$domain=~facebook.com
+||facebook.net^$domain=~facebook.com
+||fbcdn.net^$domain=~facebook.com
+
 ! Google
 
 ||google-analytics.com^
 ||doubleclick.net^
 ||accounts.google.com/gsi/*$xhr,script,3p
 ||jnn-pa.googleapis.com^
-!||firebase-settings.crashlytics.com^
+||firebase-settings.crashlytics.com^
 ||metric.gstatic.com^
-!||imasdk.googleapis.com^
+||imasdk.googleapis.com^
 ||adservice.google.com^
+
+! Yandex
+
+||yastatic.net^
+||mc.yandex.ru^
+||an.yandex.ru^
+||clck.yandex.ru^
+*metrika*
 
 ! Stats
 
@@ -92,7 +96,6 @@
 ||sessions.bugsnag.com^
 ||app-measurement.com^
 ||static.narrativ.com^
-||static.scroll.com^
 ||stats.wp.com^
 ||pixel.wp.com^
 ||intake-analytics.wikimedia.org^
@@ -110,9 +113,10 @@
 ||stagepopkek.com^
 ||trackonomics.net^
 ||adthrive.com^
+||adfox.ru^
 
 #----------------------------------------------------
-# Hashtag filters
+# Hashtag filters | CSS | HTML
 #----------------------------------------------------
 
 ! introvertdear
