@@ -149,6 +149,8 @@ amp.reddit.com##.upsell_banner
 
 reddit.com##._3MknXZVbkWU8JL9XGlzASi
 
+reddit.com##.item-center
+
 ! The Verge
 
 theverge.com##.flex.relative.flex-col.px-10.mb-60.w-full.max-w-container-lg.md\:mx-auto.md\:max-w-\[560px\].lg\:flex-row.lg\:pr-0.lg\:mx-auto.lg\:max-w-container-lg.home-hero > .mx-auto.block.md\:hidden
