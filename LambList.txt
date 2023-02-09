@@ -44,7 +44,7 @@
 
 ! Yandex Weather
 
-||yandex-pogoda.static-storage.net^$domain=~yandex.ru
+@@||yandex-pogoda.static-storage.net
 
 # ----------------------------------------------------
 # Black list
