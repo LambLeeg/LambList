@@ -42,6 +42,10 @@
 @@||youtube.com/embed/*
 @@||youtube.com/youtubei/*
 
+! Yandex Weather
+
+||yandex-pogoda.static-storage.net^$domain=~yandex.ru
+
 # ----------------------------------------------------
 # Black list
 # ----------------------------------------------------
