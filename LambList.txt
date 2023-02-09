@@ -169,3 +169,7 @@ www.androidpolice.com##.ad-current
 yandex.ru##.card_without-card-decoration
 yandex.ru##[id^=z1gz_]
 yandex.ru##.z1Afn
+
+! Yaandex Weather Mobile
+
+yandex.ru##.notranslate
