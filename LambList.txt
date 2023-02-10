@@ -211,15 +211,13 @@ yandex.ru##[id^=xiam]
 yandex.ru##[id^=xonok]
 yandex.ru##[id^=ccywkli]
 
-!yandex.ru##[class^=pic]
+yandex.ru##[class^=pic]
 yandex.ru##[class^=lbvbcf]
-!yandex.ru##[class^=ik]
+yandex.ru##[class^=ik]
 yandex.ru##[class^=qJ]
+yandex.ru##[class^=z1]
 
 yandex.ru##.air-wymibr
-
-yandex.ru##.z1Afn
-yandex.ru##.qJyIMMzTGBJkZn9XM2xg
 
 yandex.ru##[data-name^=adaptiveImageContainer]
 yandex.ru##[data-name^=adWrapper]
