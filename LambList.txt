@@ -129,7 +129,7 @@ $ping
 
 ||mc.yandex.ru^
 ||an.yandex.ru^
-||clck.yandex.ru^
+!||clck.yandex.ru^
 
 ! Stats
 
