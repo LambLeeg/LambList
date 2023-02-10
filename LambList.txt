@@ -1,5 +1,5 @@
 ! Title: 🌚 LambLeeg's list
-! Version: 0.8-alpha
+! Version: 0.9-alpha
 ! Expires: 1 week
 ! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
 ! Homepage: https://github.com/LambLeeg/LambList
@@ -163,6 +163,12 @@ $ping
 ||trackonomics.net^
 ||adthrive.com^
 ||adfox.ru^
+
+! Under review
+
+||polyfill.io^
+||segment.com^
+||recurly.com^
 
 ! ----------------------------------------------------
 ! Cosmetic Rules | CSS | HTML
