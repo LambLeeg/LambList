@@ -110,7 +110,7 @@ $ping
 ||yahoo.com^$domain=~yahoo.com
 ||pinterest.com^$domain=~pinterest.com
 ||vk.*^$domain=~vk.com|~vk.ru
-||mail.*^$domain=~mail.ru|~mail.com
+||mail.ru^$domain=~mail.ru|~mail.com
 ||facebook.*^$domain=~facebook.com
 ||fbcdn.net^$domain=~facebook.com
 
