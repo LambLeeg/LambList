@@ -1,5 +1,5 @@
 ! Title: 🌚 LambLeeg's list
-! Version: 0.9.3-alpha
+! Version: 0.9.4-alpha
 ! Expires: 1 week
 ! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
 ! Homepage: https://github.com/LambLeeg/LambList
@@ -101,8 +101,6 @@ $ping
 ! Social media jail to cease their access
 
 ||google.*^$domain=~google.com|~youtube.com|~docs.google.com|~accounts.google.com
-||yandex.*^$domain=~ya.ru|~yandex.ru|~yandex.net|~yandex.com|~disk.yandex.ru|~mail.yandex.ru|~passport.yandex.ru
-
 ||reddit.com^$domain=~reddit.com
 ||twitter.com^$domain=~twitter.com
 ||tiktok.com^$domain=~tiktok.com
