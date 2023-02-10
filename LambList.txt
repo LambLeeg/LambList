@@ -1,7 +1,8 @@
 ! Title: 🌚 LambLeeg's list
-! Version: 0.4alpha
+! Version: 0.5alpha
 ! Expires: 1 week
 ! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
+! Warning: I use some other lists like "ClearURLs for uBo (unofficial)"
 ! Homepage: https://github.com/LambLeeg/LambList
 ! License: https://github.com/LambLeeg/LambList/blob/main/LICENSE
 ! -----------------------------------------------------
@@ -13,7 +14,7 @@
 !                                            |___/ 
 !  My uBlock config file.
 !  ----------------------------------------------------
-!  Non hashtag rules
+!  Rules
 !  ----------------------------------------------------
 
 ! url-param-remover
@@ -24,8 +25,12 @@
 *$removeparam=utm_content
 *$removeparam=/^(utm_source|utm_medium|utm_term)=/
 
+! 
+
+
+
 ! ----------------------------------------------------
-! White list
+! White list Rules
 ! ----------------------------------------------------
 
 ! YouTube history
