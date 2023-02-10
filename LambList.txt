@@ -1,8 +1,9 @@
 ! Title: 🌚 LambLeeg's list
-! Version: 0.3
+! Version: 0.4alpha
 ! Expires: 1 week
 ! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
 ! Homepage: https://github.com/LambLeeg/LambList
+! License: https://github.com/LambLeeg/LambList/blob/main/LICENSE
 ! -----------------------------------------------------
 !  _                    _     _                    
 ! | |    __ _ _ __ ___ | |__ | |    ___  ___  __ _ 
@@ -155,7 +156,7 @@ reddit.com##._3MknXZVbkWU8JL9XGlzASi
 
 ! The Verge
 
-theverge.com##[id^=flex.relative]
+theverge.com##[id^=flex]
 
 ! Androidpolice
 
