@@ -1,5 +1,5 @@
 ! Title: 🌚 LambLeeg's list
-! Version: 0.9.7-alpha
+! Version: 0.1-beta
 ! Expires: 1 week
 ! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
 ! Homepage: https://github.com/LambLeeg/LambList
@@ -212,7 +212,6 @@ yandex.ru##[id^=xonok]
 yandex.ru##[id^=ccywkli]
 
 yandex.ru##[class^=pic]
-yandex.ru##[class^=lbvbcf]
 yandex.ru##[class^=ik]
 yandex.ru##[class^=qJ]
 yandex.ru##[class^=z1]
@@ -221,7 +220,3 @@ yandex.ru##.air-wymibr
 
 yandex.ru##[data-name^=adaptiveImageContainer]
 yandex.ru##[data-name^=adWrapper]
-
-! Yandex Weather Mobile
-
-yandex.ru##.notranslate
