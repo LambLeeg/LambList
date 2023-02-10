@@ -1,5 +1,5 @@
 ! Title: 🌚 LambLeeg's list
-! Version: 0.9.6-alpha
+! Version: 0.9.7-alpha
 ! Expires: 1 week
 ! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
 ! Homepage: https://github.com/LambLeeg/LambList
@@ -130,8 +130,6 @@ $ping
 ||mc.yandex.ru^
 ||an.yandex.ru^
 ||clck.yandex.ru^
-*metrika*
-||yandex.ru/weather/_cry/*^
 
 ! Stats
 
@@ -212,8 +210,12 @@ yandex.ru##[id^=z1gz_]
 yandex.ru##[id^=xiam]
 yandex.ru##[id^=xonok]
 yandex.ru##[id^=ccywkli]
+
+yandex.ru##[class^=pic]
+yandex.ru##[class^=lbvbcf]
 yandex.ru##[class^=ik]
 yandex.ru##[class^=qJ]
+
 yandex.ru##.air-wymibr
 
 yandex.ru##.z1Afn
