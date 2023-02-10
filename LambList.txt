@@ -211,9 +211,9 @@ yandex.ru##[id^=xiam]
 yandex.ru##[id^=xonok]
 yandex.ru##[id^=ccywkli]
 
-yandex.ru##[class^=pic]
+!yandex.ru##[class^=pic]
 yandex.ru##[class^=lbvbcf]
-yandex.ru##[class^=ik]
+!yandex.ru##[class^=ik]
 yandex.ru##[class^=qJ]
 
 yandex.ru##.air-wymibr
