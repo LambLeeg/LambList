@@ -1,5 +1,5 @@
 ! Title: 🌚 LambLeeg's list
-! Version: 0.7-alpha
+! Version: 0.8-alpha
 ! Expires: 1 week
 ! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
 ! Homepage: https://github.com/LambLeeg/LambList
@@ -18,11 +18,11 @@
 
 ! url-param-remover
 
-*$removeparam=utm_source
-*$removeparam=utm_medium
-*$removeparam=utm_campaign
-*$removeparam=utm_content
-*$removeparam=/^(utm_source|utm_medium|utm_term)=/
+$removeparam=utm_source
+$removeparam=utm_medium
+$removeparam=utm_campaign
+$removeparam=utm_content
+$removeparam=/^(utm_source|utm_medium|utm_term)=/
 
 $removeparam=/^utm(_[a-z_]*)?=/
 $removeparam=/^ga_[a-z_]+=/
