@@ -1,5 +1,5 @@
 ! Title: 🌚 LambLeeg's list
-! Version: 0.9-alpha
+! Version: 0.9.1-alpha
 ! Expires: 1 week
 ! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
 ! Homepage: https://github.com/LambLeeg/LambList
@@ -102,7 +102,6 @@ $ping
 
 ||google.ru^
 ||google.com^$domain=~google.com|~youtube.com|~docs.google.com|~accounts.google.com
-
 ||reddit.com^$domain=~reddit.com
 ||twitter.com^$domain=~twitter.com
 ||tiktok.com^$domain=~tiktok.com
@@ -111,12 +110,8 @@ $ping
 ||vimeo.com^$domain=~vimeo.com
 ||yahoo.com^$domain=~yahoo.com
 ||pinterest.com^$domain=~pinterest.com
-
-||vk.com^$domain=~vk.com|~vk.ru
-||vk.ru^$domain=~vk.com|~vk.ru
-
-||facebook.com^$domain=~facebook.com
-||facebook.net^$domain=~facebook.com
+||vk.*^$domain=~vk.com|~vk.ru
+||facebook.*^$domain=~facebook.com
 ||fbcdn.net^$domain=~facebook.com
 
 ! Google
@@ -169,6 +164,7 @@ $ping
 ||polyfill.io^
 ||segment.com^
 ||recurly.com^
+||datadome.co^
 
 ! ----------------------------------------------------
 ! Cosmetic Rules | CSS | HTML
