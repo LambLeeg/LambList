@@ -127,7 +127,6 @@ $ping
 
 ! Yandex
 
-!||yastatic.net^$domain=~yandex.ru
 ||mc.yandex.ru^
 ||an.yandex.ru^
 ||clck.yandex.ru^
@@ -158,9 +157,6 @@ $ping
 ||trackonomics.net^
 ||adthrive.com^
 ||adfox.ru^
-
-! Under review
-
 ||polyfill.io^
 ||segment.com^
 ||recurly.com^
