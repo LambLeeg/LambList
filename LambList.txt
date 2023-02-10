@@ -1,5 +1,5 @@
 ! Title: 🌚 LambLeeg's list
-! Version: 0.1-beta
+! Version: 0.1.1-beta
 ! Expires: 1 week
 ! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
 ! Homepage: https://github.com/LambLeeg/LambList
@@ -129,7 +129,7 @@ $ping
 
 ||mc.yandex.ru^
 ||an.yandex.ru^
-!||clck.yandex.ru^
+||clck.yandex.ru^
 
 ! Stats
 
