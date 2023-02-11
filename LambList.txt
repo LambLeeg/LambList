@@ -1,6 +1,6 @@
 ! Title: 🌚 LambLeeg's list
 ! Version: 0.2.0-beta
-! Expires: 1 week
+! Expires: 3 days
 ! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
 ! Homepage: https://github.com/LambLeeg/LambList
 ! License: https://github.com/LambLeeg/LambList/blob/main/LICENSE
