@@ -1,5 +1,5 @@
 ! Title: 🌚 LambLeeg's list
-! Version: 0.1.2-beta
+! Version: 0.2.0-beta
 ! Expires: 1 week
 ! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
 ! Homepage: https://github.com/LambLeeg/LambList
@@ -13,10 +13,8 @@
 !                                            |___/ 
 !  My uBlock config file.
 !  ----------------------------------------------------
-!  Rules
+!  Url-param-remover
 !  ----------------------------------------------------
-
-! url-param-remover
 
 $removeparam=utm_source
 $removeparam=utm_medium
@@ -113,6 +111,24 @@ $ping
 ||mail.ru^$domain=~mail.ru|~mail.com
 ||facebook.*^$domain=~facebook.com
 ||fbcdn.net^$domain=~facebook.com
+
+! PrivacyTests.org list
+
+||munchkin.marketo.net^
+||dpm.demdex.net^
+||s.amazon-adsystem.com^
+||ib.adnxs.com^
+||bat.bing.com^
+||static.chartbeat.com^
+||dis.criteo.com^
+||google.com/pagead/1p-user-list^
+||googletagmanager.com^
+||dsum-sec.casalemedia.com^
+||js-agent.newrelic.com^
+||pixel.quantserve.com^
+||sb.scorecardresearch.com^
+||trc.taboola.com^
+||yandex.ru/ads^
 
 ! Google
 
