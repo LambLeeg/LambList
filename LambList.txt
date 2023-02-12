@@ -5,12 +5,6 @@
 ! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
 ! Homepage: https://github.com/LambLeeg/LambList
 ! License: https://github.com/LambLeeg/LambList/blob/main/LICENSE
-!#include https://easylist-downloads.adblockplus.org/cntblock.txt
-!#include https://abp.oisd.nl/
-!#include https://abp.oisd.nl/nsfwbig/
-!#include https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt
-!#include https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-!#include https://cdn.jsdelivr.net/gh/badmojr/1Hosts@master/Pro/adblock.txt
 ! -----------------------------------------------------
 !  _                    _     _                    
 ! | |    __ _ _ __ ___ | |__ | |    ___  ___  __ _ 
