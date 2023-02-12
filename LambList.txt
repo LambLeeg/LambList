@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 🌚 LambLeeg's list
-! Version: 0.2.1
+! Version: 0.3.0
 ! Expires: 3 days
 ! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
 ! Homepage: https://github.com/LambLeeg/LambList
@@ -151,36 +151,12 @@ $ping
 ||yandexadexchange.net^
 ||analytics.mobile.yandex.net^
 
-! Stats
-
-||s3.amazonaws.com^
-||amazon-adsystem.com^
-||bugsnag.com^
-||app-measurement.com^
-||static.narrativ.com^
-||stats.wp.com^
-||pixel.wp.com^
-||intake-analytics.wikimedia.org^
-||static-storage.net^
-||uxfeedback.ru^
-||cookielaw.org^
-||fastclick.com^
-||branch.io^
-||scorecardresearch.com^
-||scroll.com^
-||segment.com^
-||vercel-insights.com^
-||videoplayerhub.com^
-||spot.im^
-||stagepopkek.com^
-||trackonomics.net^
-||adthrive.com^
-||adfox.ru^
-||polyfill.io^
-||segment.com^
-||recurly.com^
-||datadome.co^
-||media.net^
+!#include https://easylist-downloads.adblockplus.org/cntblock.txt
+!#include https://abp.oisd.nl/
+!#include https://abp.oisd.nl/nsfwbig/
+!#include https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt
+!#include https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
+!#include https://cdn.jsdelivr.net/gh/badmojr/1Hosts@master/Pro/adblock.txt
 
 ! ----------------------------------------------------
 ! Cosmetic Rules | CSS | HTML
