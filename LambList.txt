@@ -157,6 +157,13 @@ $ping
 ||yandexadexchange.net^
 ||analytics.mobile.yandex.net^
 
+!#include https://easylist-downloads.adblockplus.org/cntblock.txt
+!#include https://abp.oisd.nl/
+!#include https://abp.oisd.nl/nsfwbig/
+!#include https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt
+!#include https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
+!#include https://cdn.jsdelivr.net/gh/badmojr/1Hosts@master/Pro/adblock.txt
+
 ! ----------------------------------------------------
 ! Cosmetic Rules | CSS | HTML
 ! ----------------------------------------------------
