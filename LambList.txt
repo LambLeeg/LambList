@@ -1,5 +1,5 @@
 ! Title: 🌚 LambLeeg's list
-! Version: 0.1.1
+! Version: 0.2.0
 ! Expires: 3 days
 ! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
 ! Homepage: https://github.com/LambLeeg/LambList
@@ -146,12 +146,15 @@ $ping
 ||mc.yandex.ru^
 ||an.yandex.ru^
 ||clck.yandex.ru^
+||appmetrica.yandex.com^
+||yandexadexchange.net^
+||analytics.mobile.yandex.net^
 
 ! Stats
 
 ||s3.amazonaws.com^
 ||amazon-adsystem.com^
-||sessions.bugsnag.com^
+||bugsnag.com^
 ||app-measurement.com^
 ||static.narrativ.com^
 ||stats.wp.com^
@@ -176,6 +179,7 @@ $ping
 ||segment.com^
 ||recurly.com^
 ||datadome.co^
+||media.net^
 
 ! ----------------------------------------------------
 ! Cosmetic Rules | CSS | HTML
