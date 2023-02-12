@@ -1,5 +1,5 @@
 ! Title: 🌚 LambLeeg's list
-! Version: 0.2.0-beta
+! Version: 0.1.1
 ! Expires: 3 days
 ! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
 ! Homepage: https://github.com/LambLeeg/LambList
@@ -12,6 +12,24 @@
 ! |_____\__,_|_| |_| |_|_.__/|_____\___|\___|\__, |
 !                                            |___/ 
 !  My uBlock config file
+! ----------------------------------------------------
+! White list Rules
+! ----------------------------------------------------
+
+! YouTube history
+
+@@||s.youtube.com^
+@@||youtube.com/api/stats/*
+
+! YouTube frames
+
+@@||youtube.com/embed/*
+@@||youtube.com/youtubei/*
+
+! Yandex Weather
+
+@@||yandex-pogoda.static-storage.net
+
 !  ----------------------------------------------------
 !  Url-param-remover
 !  ----------------------------------------------------
@@ -68,24 +86,6 @@ $removeparam=vero_conv
 $removeparam=vero_id
 $removeparam=wickedid
 $removeparam=twclid
-
-! ----------------------------------------------------
-! White list Rules
-! ----------------------------------------------------
-
-! YouTube history
-
-@@||s.youtube.com^
-@@||youtube.com/api/stats/*
-
-! YouTube frames
-
-@@||youtube.com/embed/*
-@@||youtube.com/youtubei/*
-
-! Yandex Weather
-
-@@||yandex-pogoda.static-storage.net
 
 ! ----------------------------------------------------
 ! Black list Rules
