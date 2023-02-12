@@ -1,5 +1,6 @@
+[Adblock Plus 2.0]
 ! Title: 🌚 LambLeeg's list
-! Version: 0.2.0
+! Version: 0.2.1
 ! Expires: 3 days
 ! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
 ! Homepage: https://github.com/LambLeeg/LambList
