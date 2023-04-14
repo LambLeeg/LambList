@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 🌚 LambLeeg's list
-! Version: 0.3.0
+! Version: 0.4.0
 ! Expires: 3 days
 ! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
 ! Homepage: https://github.com/LambLeeg/LambList
@@ -41,185 +41,23 @@ $removeparam=utm_campaign
 $removeparam=utm_content
 $removeparam=/^(utm_source|utm_medium|utm_term)=/
 
-$removeparam=/^utm(_[a-z_]*)?=/
-$removeparam=/^ga_[a-z_]+=/
-$removeparam=yclid
-$removeparam=_openstat
-$removeparam=/^fb_action_(types|ids)=/
-$removeparam=/^fb_(source|ref)=/
-$removeparam=fbclid
-$removeparam=/^action_(object|type|ref)_map=/
-$removeparam=gs_l
-$removeparam=mkt_tok
-$removeparam=/^hmb_(campaign|medium|source)=/
-$removeparam=gclid
-$removeparam=/^otm_[a-z_]*=/
-$removeparam=cmpid
-$removeparam=os_ehash
-$removeparam=_ga
-$removeparam=_gl
-$removeparam=__twitter_impression
-$removeparam=/^wt_?z?mc=/
-$removeparam=wtrid
-$removeparam=/^[a-z]?mc=/
-$removeparam=dclid
-$removeparam=Echobox
-$removeparam=spm
-$removeparam=/^vn(_[a-z]*)+=/
-$removeparam=tracking_source
-$removeparam=ceneo_spo
-$removeparam=/^itm_(campaign|medium|source)=/
-$removeparam=__hsfp
-$removeparam=__hssc
-$removeparam=__hstc
-$removeparam=_hsenc
-$removeparam=__s
-$removeparam=hsCtaTracking
-$removeparam=/^mc_(eid|cid|tc)=/
-$removeparam=ml_subscriber
-$removeparam=ml_subscriber_hash
-$removeparam=msclkid
-$removeparam=oly_anon_id
-$removeparam=oly_enc_id
-$removeparam=rb_clickid
-$removeparam=s_cid
-$removeparam=vero_conv
-$removeparam=vero_id
-$removeparam=wickedid
-$removeparam=twclid
-
-! ----------------------------------------------------
-! Black list Rules
-! ----------------------------------------------------
-
-! Universal blocks
-
-$webrtc
-$ping
-
-! Social media jail to cease their access
-
-||google.*^$domain=~google.com|~youtube.com|~docs.google.com|~accounts.google.com
-||reddit.com^$domain=~reddit.com
-||twitter.com^$domain=~twitter.com
-||tiktok.com^$domain=~tiktok.com
-||instagram.com^$domain=~instagram.com
-||amazon.com^$domain=~amazon.com
-||vimeo.com^$domain=~vimeo.com
-||yahoo.com^$domain=~yahoo.com
-||pinterest.com^$domain=~pinterest.com
-||vk.*^$domain=~vk.com|~vk.ru
-||mail.ru^$domain=~mail.ru|~mail.com
-||facebook.*^$domain=~facebook.com
-||fbcdn.net^$domain=~facebook.com
-
-! PrivacyTests.org list
-
-||munchkin.marketo.net^
-||dpm.demdex.net^
-||s.amazon-adsystem.com^
-||ib.adnxs.com^
-||bat.bing.com^
-||static.chartbeat.com^
-||dis.criteo.com^
-||google.com/pagead/1p-user-list^
-||googletagmanager.com^
-||dsum-sec.casalemedia.com^
-||js-agent.newrelic.com^
-||pixel.quantserve.com^
-||sb.scorecardresearch.com^
-||trc.taboola.com^
-||yandex.ru/ads^
-
-! Google
-
-||google-analytics.com^
-||doubleclick.net^
 ||accounts.google.com/gsi/*$xhr,script,3p
-||jnn-pa.googleapis.com^
-||firebase-settings.crashlytics.com^
-||metric.gstatic.com^
-||imasdk.googleapis.com^
-||adservice.google.com^
-
-! Yandex
-
-||mc.yandex.ru^
-||an.yandex.ru^
-||clck.yandex.ru^
-||appmetrica.yandex.com^
-||yandexadexchange.net^
-||analytics.mobile.yandex.net^
-
-!#include https://easylist-downloads.adblockplus.org/cntblock.txt
-!#include https://abp.oisd.nl/
-!#include https://abp.oisd.nl/nsfwbig/
-!#include https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt
-!#include https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-!#include https://cdn.jsdelivr.net/gh/badmojr/1Hosts@master/Pro/adblock.txt
-
-! ----------------------------------------------------
-! Cosmetic Rules | CSS | HTML
-! ----------------------------------------------------
-
-! introvertdear
-
-introvertdear.com##[id^=AdThrive_]
-introvertdear.com##.slick-inline-search-panel
-introvertdear.com##.has-background.has-text-color.has-theme-palette-1-color.top-bar-callout.has-text-align-center
-
-! Reddit mobile
-
-reddit.com##[id^=XPromo]
-
-reddit.com##body.scroll-is-blocked:style(overflow: visible!important; position: static!important;)
-reddit.com##+js(aeld, touchmove)
-www.reddit.com##.text-action-secondary.border-action-secondary.border-1.min-w-full.button-plain.button-small.button
 
 ! Reddit
 
-reddit.com##[id^=xpromo]
-
-reddit.com##.bottom-bar
-reddit.com##.item-center
-reddit.com##.useApp,.TopNav__promoButton
+reddit.com##shreddit-async-loader
+reddit.com##body.scroll-is-blocked:style(overflow: visible!important; position: static!important;)
+reddit.com##+js(aeld, touchmove)
 reddit.com##body:style(pointer-events:auto!important;)
+reddit.com##[class^=XPromo]
+reddit.com##[class^=xpromo]
 
-reddit.com##body.scroll-disabled:style(overflow: visible!important; position: static!important;)
-amp.reddit.com##.AppSelectorModal__body
-amp.reddit.com##.upsell_banner
+reddit.com##.bottom-bar, .XPromoBottomBar
+reddit.com##.useApp,.TopNav__promoButton
+reddit.com##.AppSelectorModal__body
+reddit.com##.upsell_banner
 
-reddit.com##._3MknXZVbkWU8JL9XGlzASi
-
-! The Verge
-
-theverge.com##[id^=flex]
-
-! Androidpolice
-
-androidpolice.com##[id^=ad-]
-
-! Yandex Weather
-
-yandex.ru##.card_without-card-decoration
-
-yandex.ru##[id^=z1gz_]
-yandex.ru##[id^=xiam]
-yandex.ru##[id^=xonok]
-yandex.ru##[id^=ccywkli]
-
-yandex.ru##[class^=pic]
-yandex.ru##[class^=ik]
-yandex.ru##[class^=qJ]
-yandex.ru##[class^=z1]
-
-yandex.ru##.air-wymibr
-
-yandex.ru##[data-name^=adaptiveImageContainer]
-yandex.ru##[data-name^=adWrapper]
-
-! Yandex Weather mobile
-
-yandex.ru##[class*=Advert]
-
-yandex.ru##[id^=ADVERT]
+! Introvertdear
+introvertdear.com##[class^=has-text-align-center]
+introvertdear.com##[id^=AdThrive_]
+introvertdear.com##.slick-inline-search-panel
