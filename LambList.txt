@@ -1,63 +1,126 @@
-[Adblock Plus 2.0]
 ! Title: 🌚 LambLeeg's list
-! Version: 0.4.0
-! Expires: 3 days
 ! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
-! Homepage: https://github.com/LambLeeg/LambList
-! License: https://github.com/LambLeeg/LambList/blob/main/LICENSE
-! -----------------------------------------------------
-!  _                    _     _                    
-! | |    __ _ _ __ ___ | |__ | |    ___  ___  __ _ 
-! | |   / _` | '_ ` _ \| '_ \| |   / _ \/ _ \/ _` |
-! | |__| (_| | | | | | | |_) | |__|  __/  __/ (_| |
-! |_____\__,_|_| |_| |_|_.__/|_____\___|\___|\__, |
-!                                            |___/ 
-!  My uBlock config file
-! ----------------------------------------------------
-! White list Rules
-! ----------------------------------------------------
 
-! YouTube history
+#-----------------------------------------------------
+# _                    _     _                    
+#| |    __ _ _ __ ___ | |__ | |    ___  ___  __ _ 
+#| |   / _` | '_ ` _ \| '_ \| |   / _ \/ _ \/ _` |
+#| |__| (_| | | | | | | |_) | |__|  __/  __/ (_| |
+#|_____\__,_|_| |_| |_|_.__/|_____\___|\___|\__, |
+#                                           |___/ 
+# My uBlock config file.
+# ----------------------------------------------------
 
-@@||s.youtube.com^
-@@||youtube.com/api/stats/*
 
-! YouTube frames
+! Universal blocks
 
-@@||youtube.com/embed/*
-@@||youtube.com/youtubei/*
+||accounts.google.com/gsi/$3p
+*$ping
 
-! Yandex Weather
+! The mouse tracking and the touchscreen block via JavaScript
 
-@@||yandex-pogoda.static-storage.net
+##+js(aeld, mouseout)
+##+js(aeld, touchmove)
 
-!  ----------------------------------------------------
-!  Url-param-remover
-!  ----------------------------------------------------
-
-$removeparam=utm_source
-$removeparam=utm_medium
-$removeparam=utm_campaign
-$removeparam=utm_content
-$removeparam=/^(utm_source|utm_medium|utm_term)=/
-
-||accounts.google.com/gsi/*$xhr,script,3p
 
 ! Reddit
 
-reddit.com##shreddit-async-loader
-reddit.com##body.scroll-is-blocked:style(overflow: visible!important; position: static!important;)
-reddit.com##+js(aeld, touchmove)
-reddit.com##body:style(pointer-events:auto!important;)
-reddit.com##[class^=XPromo]
-reddit.com##[class^=xpromo]
+www.reddit.com##[href^="https://ads.reddit.com"]
+www.reddit.com##:matches-path(/login):remove()
 
-reddit.com##.bottom-bar, .XPromoBottomBar
-reddit.com##.useApp,.TopNav__promoButton
-reddit.com##.AppSelectorModal__body
-reddit.com##.upsell_banner
+
+! Reddit style
+
+www.reddit.com##html:style(background-color: #1a1a1b !important)
+www.reddit.com##body:style(background-color: #1a1a1b !important)
+www.reddit.com##.main:style(background-color: #1a1a1b !important)
+www.reddit.com##shreddit-post:style(background-color: #1a1a1b !important)
+www.reddit.com##shreddit-comment:style(background-color: #1a1a1b !important)
+www.reddit.com##.content:style(background-color: #1a1a1b !important)
+
+
+! Reddit Desktop
+
+www.reddit.com##a:matches-attr(role="button"):has-text("/Log In/i"):remove()
+www.reddit.com##button:matches-attr(role="button"):remove()
+www.reddit.com##[noun="login"]:remove()
+www.reddit.com##[source="xpromo"]:remove()
+
+www.reddit.com##div:matches-attr(id="AppRouter-main-content") > div:matches-attr(class="/_[0-9]+[A-z]/i"):matches-attr(data-redditstyle="true")
+www.reddit.com##[class$="ListingLayout-backgroundContainer"]:remove()
+
+www.reddit.com##span > shreddit-join-button:remove()
+www.reddit.com##shreddit-async-loader:remove()
+www.reddit.com##[id*="overflow-cover"]:remove()
+www.reddit.com##[id*="email-verification-tooltip-id"]:remove()
+
+www.reddit.com##[class^="left-sidebar-min"]:remove()
+www.reddit.com##[class*="sidebar-grid"] > [class*="right-sidebar"]:remove()
+
+
+! Reddit Old Desktop
+
+old.reddit.com##[class="infobar commentsignupbar"]
+old.reddit.com##[class="footer-parent"]
+old.reddit.com##[id="header-bottom-right"]
+old.reddit.com##[id="login_login-main"]
+
+
+! Reddit Mobile
+
+www.reddit.com##[class^=XPromo]:remove()
+www.reddit.com##[class^=xpromo]:remove()
+www.reddit.com##[bundlename="bottom_bar_xpromo"]
+
+www.reddit.com##reddit-header-overflow-menu
+www.reddit.com##.TopNav__ShredditParity:remove()
+www.reddit.com##[class*="h-header-large"]:remove()
+
 
 ! Introvertdear
-introvertdear.com##[class^=has-text-align-center]
-introvertdear.com##[id^=AdThrive_]
-introvertdear.com##.slick-inline-search-panel
+
+introvertdear.com##^[class^=has-text-align-center]
+introvertdear.com##^[class*="social-wrap"]
+
+introvertdear.com##[id^=AdThrive_]:remove()
+introvertdear.com##.slick-inline-search-panel:remove()
+
+
+! YT Shorts
+
+youtube.com##ytd-rich-section-renderer
+youtube.com##:matches-path(/shorts) body:remove()
+||youtube.com/shorts$doc,script
+
+youtube.com##ytd-search .ytd-thumbnail[href^="/shorts/"]:upward(ytd-video-renderer)
+youtube.com##ytd-watch-next-secondary-results-renderer .ytd-thumbnail[href^="/shorts/"]:upward(ytd-compact-video-renderer,ytd-shelf-renderer)
+youtube.com##ytd-browse #dismissible ytd-rich-grid-slim-media[is-short]:upward(ytd-rich-section-renderer)
+
+m.youtube.com##ytm-reel-shelf-renderer
+m.youtube.com##ytm-pivot-bar-renderer div.pivot-shorts:upward(ytm-pivot-bar-item-renderer)
+m.youtube.com##ytm-browse ytm-item-section-renderer ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-video-with-context-renderer)
+m.youtube.com##ytm-browse ytm-item-section-renderer ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-compact-video-renderer)
+m.youtube.com##ytm-search ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-compact-video-renderer)
+m.youtube.com##ytm-single-column-watch-next-results-renderer ytm-thumbnail-overlay-time-status-renderer span:has-text(/^(0:\d\d|1:0\d)$/):upward(ytm-video-with-context-renderer)
+
+
+! YouTube
+
+youtube.com##span.ytd-rich-shelf-renderer:has-text(/Breaking news/):upward(ytd-rich-section-renderer):remove()
+youtube.com##ytd-button-renderer:has([aria-label="Share"]):remove()
+youtube.com##ytd-button-renderer:has([aria-label="Thanks"]):remove()
+youtube.com##ytd-button-renderer:has([aria-label="Join this channel"]):remove()
+youtube.com##ytd-button-renderer:has([aria-label="Search with your voice"]):remove()
+
+youtube.com##ytd-button-renderer:has([aria-label="Поделиться"]):remove()
+youtube.com##ytd-button-renderer:has([aria-label="Создать клип"]):remove()
+
+
+! YouTube Premuim
+
+youtube.com,youtubekids.com,youtube-nocookie.com#@#+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds)
+youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds, playerConfig)
+
+youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, auxiliaryUi.messageRenderers.enforcementMessageViewModel)
+youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.auxiliaryUi.messageRenderers.enforcementMessageViewModel, undefined)
