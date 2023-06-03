@@ -99,6 +99,11 @@ www.reddit.com##[class*="h-header-large"]
 introvertdear.com##[class^=has-text-align-center]
 introvertdear.com##[class*="social-wrap"]
 
+introvertdear.com##button[aria-label="Add to favorites"]
+introvertdear.com##div[id="heartFabPanel"]
+introvertdear.com##div[id="container"][class="  showing-tongue"]
+||introvertdear.com^$script,third-party
+
 introvertdear.com##[id^=AdThrive_]
 introvertdear.com##.slick-inline-search-panel
 
