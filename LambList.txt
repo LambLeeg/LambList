@@ -1,4 +1,5 @@
 ! Title: 🌚 LambLeeg's list
+! Version: 20230603
 ! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
 
 #-----------------------------------------------------
@@ -16,6 +17,8 @@
 
 ||accounts.google.com/gsi/$3p
 *$ping
+*$popunder
+
 
 ! The mouse tracking and the touchscreen block via JavaScript
 
@@ -23,10 +26,27 @@
 ##+js(aeld, touchmove)
 
 
+! Privacy
+
+||facebook.*$domain=~facebook.com|~facebook.net
+||reddit.*$domain=~reddit.com
+||quora.*$domain=~quora.com
+||amazon.*$domain=~amazon.com
+||pinterest.*$domain=~pinterest.com|~pinterest.ru
+||microsoft.*$domain=~microsoft.com|~microsoft.ru
+||linkedin.*$domain=~linkedin.com
+||dzen.*$domain=~dzen.ru|~yandex.ru
+||twitter.*$domain=~twitter.com
+||tiktok.*$domain=~tiktok.com
+||google.*$domain=~google.com|~google.ru|~youtube.com
+||yandex.*$domain=~yandex.ru|~yandex.net|~meteum.ai|~dzen.ru
+||vk.*$domain=~vk.com|~vk.ru
+
+
 ! Reddit
 
 www.reddit.com##[href^="https://ads.reddit.com"]
-www.reddit.com##:matches-path(/login):remove()
+www.reddit.com##.prompt
 
 
 ! Reddit style
@@ -41,21 +61,18 @@ www.reddit.com##.content:style(background-color: #1a1a1b !important)
 
 ! Reddit Desktop
 
-www.reddit.com##a:matches-attr(role="button"):has-text("/Log In/i"):remove()
-www.reddit.com##button:matches-attr(role="button"):remove()
-www.reddit.com##[noun="login"]:remove()
-www.reddit.com##[source="xpromo"]:remove()
-
-www.reddit.com##div:matches-attr(id="AppRouter-main-content") > div:matches-attr(class="/_[0-9]+[A-z]/i"):matches-attr(data-redditstyle="true")
-www.reddit.com##[class$="ListingLayout-backgroundContainer"]:remove()
-
-www.reddit.com##span > shreddit-join-button:remove()
-www.reddit.com##shreddit-async-loader:remove()
-www.reddit.com##[id*="overflow-cover"]:remove()
-www.reddit.com##[id*="email-verification-tooltip-id"]:remove()
-
-www.reddit.com##[class^="left-sidebar-min"]:remove()
-www.reddit.com##[class*="sidebar-grid"] > [class*="right-sidebar"]:remove()
+www.reddit.com##a[role="button"][href="https://www.reddit.com/login/?dest=https%3A%2F%2Fwww.reddit.com%2Fr%2FAnxiety%2F"]
+www.reddit.com##button[role="button"]
+www.reddit.com##div[role="menu"]
+www.reddit.com##div[id="AppRouter-main-content"][aria-hidden="false"] > div[data-redditstyle="true"]
+www.reddit.com##div[id="AppRouter-main-content"] > div[class="/_[0-9]+[A-z]/i"][data-redditstyle="true"]
+www.reddit.com##[class$="ListingLayout-backgroundContainer"]
+www.reddit.com##shreddit-join-button
+www.reddit.com##shreddit-async-loader
+www.reddit.com##[id*="overflow-cover"]
+www.reddit.com##[id*="email-verification-tooltip-id"]
+www.reddit.com##[class^="left-sidebar-min"]
+www.reddit.com##[class*="right-sidebar"]
 
 
 ! Reddit Old Desktop
@@ -68,28 +85,28 @@ old.reddit.com##[id="login_login-main"]
 
 ! Reddit Mobile
 
-www.reddit.com##[class^=XPromo]:remove()
-www.reddit.com##[class^=xpromo]:remove()
+www.reddit.com##[class^=XPromo]
+www.reddit.com##[class^=xpromo]
 www.reddit.com##[bundlename="bottom_bar_xpromo"]
 
 www.reddit.com##reddit-header-overflow-menu
-www.reddit.com##.TopNav__ShredditParity:remove()
-www.reddit.com##[class*="h-header-large"]:remove()
+www.reddit.com##.TopNav__ShredditParity
+www.reddit.com##[class*="h-header-large"]
 
 
 ! Introvertdear
 
-introvertdear.com##^[class^=has-text-align-center]
-introvertdear.com##^[class*="social-wrap"]
+introvertdear.com##[class^=has-text-align-center]
+introvertdear.com##[class*="social-wrap"]
 
-introvertdear.com##[id^=AdThrive_]:remove()
-introvertdear.com##.slick-inline-search-panel:remove()
+introvertdear.com##[id^=AdThrive_]
+introvertdear.com##.slick-inline-search-panel
 
 
 ! YT Shorts
 
 youtube.com##ytd-rich-section-renderer
-youtube.com##:matches-path(/shorts) body:remove()
+youtube.com##:matches-path(/shorts) body
 ||youtube.com/shorts$doc,script
 
 youtube.com##ytd-search .ytd-thumbnail[href^="/shorts/"]:upward(ytd-video-renderer)
@@ -106,14 +123,14 @@ m.youtube.com##ytm-single-column-watch-next-results-renderer ytm-thumbnail-overl
 
 ! YouTube
 
-youtube.com##span.ytd-rich-shelf-renderer:has-text(/Breaking news/):upward(ytd-rich-section-renderer):remove()
-youtube.com##ytd-button-renderer:has([aria-label="Share"]):remove()
-youtube.com##ytd-button-renderer:has([aria-label="Thanks"]):remove()
-youtube.com##ytd-button-renderer:has([aria-label="Join this channel"]):remove()
-youtube.com##ytd-button-renderer:has([aria-label="Search with your voice"]):remove()
+youtube.com##span.ytd-rich-shelf-renderer:has-text(/Breaking news/):upward(ytd-rich-section-renderer)
+youtube.com##ytd-button-renderer:has([aria-label="Share"])
+youtube.com##ytd-button-renderer:has([aria-label="Thanks"])
+youtube.com##ytd-button-renderer:has([aria-label="Join this channel"])
+youtube.com##ytd-button-renderer:has([aria-label="Search with your voice"])
 
-youtube.com##ytd-button-renderer:has([aria-label="Поделиться"]):remove()
-youtube.com##ytd-button-renderer:has([aria-label="Создать клип"]):remove()
+youtube.com##ytd-button-renderer:has([aria-label="Поделиться"])
+youtube.com##ytd-button-renderer:has([aria-label="Создать клип"])
 
 
 ! YouTube Premuim
@@ -124,3 +141,8 @@ youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, playerResponse
 
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, auxiliaryUi.messageRenderers.enforcementMessageViewModel)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.auxiliaryUi.messageRenderers.enforcementMessageViewModel, undefined)
+
+
+! Wired
+
+wired.com##:xpath(/html/body/div[1]/div/div[5])
