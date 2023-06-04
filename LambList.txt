@@ -1,5 +1,5 @@
 ! Title: 🌚 LambLeeg's list
-! Version: 20230603
+! Version: 20230604
 ! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
 
 #-----------------------------------------------------
