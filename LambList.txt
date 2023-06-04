@@ -12,35 +12,28 @@
 # My uBlock config file.
 # ----------------------------------------------------
 
+! Privacy
 
-! Universal blocks
+##+js(aeld, mouseout)
+##+js(aeld, touchmove)
 
 ||accounts.google.com/gsi/$3p
 *$ping
 *$popunder
 
-
-! The mouse tracking and the touchscreen block via JavaScript
-
-##+js(aeld, mouseout)
-##+js(aeld, touchmove)
-
-
-! Privacy
-
-||facebook.*$domain=~facebook.com|~facebook.net
-||reddit.*$domain=~reddit.com
-||quora.*$domain=~quora.com
-||amazon.*$domain=~amazon.com
-||pinterest.*$domain=~pinterest.com|~pinterest.ru
-||microsoft.*$domain=~microsoft.com|~microsoft.ru
-||linkedin.*$domain=~linkedin.com
-||dzen.*$domain=~dzen.ru|~yandex.ru
-||twitter.*$domain=~twitter.com
-||tiktok.*$domain=~tiktok.com
-||google.*$domain=~google.com|~google.ru|~youtube.com
-||yandex.*$domain=~yandex.ru|~yandex.net|~meteum.ai|~dzen.ru
-||vk.*$domain=~vk.com|~vk.ru
+||facebook.*$domain=~facebook.com|~facebook.net,important
+||reddit.*$domain=~reddit.com,important
+||quora.*$domain=~quora.com,important
+||amazon.*$domain=~amazon.com,important
+||pinterest.*$domain=~pinterest.com|~pinterest.ru,important
+||microsoft.*$domain=~microsoft.com|~microsoft.ru,important
+||linkedin.*$domain=~linkedin.com,important
+||dzen.*$domain=~dzen.ru|~yandex.ru,important
+||twitter.*$domain=~twitter.com,important
+||tiktok.*$domain=~tiktok.com,important
+||google.*$domain=~google.com|~google.ru|~youtube.com,important
+||yandex.*$domain=~yandex.ru|~yandex.net|~meteum.ai|~dzen.ru,important
+||vk.*$domain=~vk.com|~vk.ru,important
 
 
 ! Reddit
@@ -61,7 +54,7 @@ www.reddit.com##.content:style(background-color: #1a1a1b !important)
 
 ! Reddit Desktop
 
-www.reddit.com##a[role="button"][href="https://www.reddit.com/login/?dest=https%3A%2F%2Fwww.reddit.com%2Fr%2FAnxiety%2F"]
+www.reddit.com##a[role="button"][href^="https://www.reddit.com/login/"]
 www.reddit.com##button[role="button"]
 www.reddit.com##div[role="menu"]
 www.reddit.com##div[id="AppRouter-main-content"][aria-hidden="false"] > div[data-redditstyle="true"]
@@ -99,10 +92,9 @@ www.reddit.com##[class*="h-header-large"]
 introvertdear.com##[class^=has-text-align-center]
 introvertdear.com##[class*="social-wrap"]
 
-introvertdear.com##button[aria-label="Add to favorites"]
-introvertdear.com##div[id="heartFabPanel"]
-introvertdear.com##div[id="container"][class="  showing-tongue"]
-||introvertdear.com^$script,third-party
+||slickstream.com^$domain=introvertdear.com
+introvertdear.com##slick-search-panel
+introvertdear.com##slick-heartbeat
 
 introvertdear.com##[id^=AdThrive_]
 introvertdear.com##.slick-inline-search-panel
