@@ -1,5 +1,5 @@
 ! Title: 🌚 LambLeeg's list
-! Version: 20230604
+! Version: 20230606
 ! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
 
 #-----------------------------------------------------
@@ -87,19 +87,6 @@ www.reddit.com##.TopNav__ShredditParity
 www.reddit.com##[class*="h-header-large"]
 
 
-! Introvertdear
-
-introvertdear.com##[class^=has-text-align-center]
-introvertdear.com##[class*="social-wrap"]
-
-||slickstream.com^$domain=introvertdear.com
-introvertdear.com##slick-search-panel
-introvertdear.com##slick-heartbeat
-
-introvertdear.com##[id^=AdThrive_]
-introvertdear.com##.slick-inline-search-panel
-
-
 ! YT Shorts
 
 youtube.com##ytd-rich-section-renderer
@@ -140,6 +127,25 @@ youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, auxiliaryUi.me
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.auxiliaryUi.messageRenderers.enforcementMessageViewModel, undefined)
 
 
+! Introvertdear
+
+introvertdear.com##[class^=has-text-align-center]
+introvertdear.com##[class*="social-wrap"]
+
+||slickstream.com^$domain=introvertdear.com
+introvertdear.com##slick-search-panel
+introvertdear.com##slick-heartbeat
+
+introvertdear.com##[id^=AdThrive_]
+introvertdear.com##.slick-inline-search-panel
+
+
 ! Wired
 
 wired.com##:xpath(/html/body/div[1]/div/div[5])
+
+
+! AndroidAuthority
+
+www.androidauthority.com##div[class="-__Eb"]
+www.androidauthority.com##div[class="-__hh"]
