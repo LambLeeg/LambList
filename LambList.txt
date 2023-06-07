@@ -12,22 +12,30 @@
 # My uBlock config file.
 # ----------------------------------------------------
 
+####################
+# STATIC FILTERING #
+####################
+
+
 ! Privacy
 
 ##+js(aeld, mouseout)
 ##+js(aeld, touchmove)
-
+||youtube.com/shorts$doc,script
 ||accounts.google.com/gsi/$3p
 *$ping
 *$popunder
 
 ||facebook.*$domain=~facebook.com|~facebook.net,important
+||fbcdn.net^$domain=~facebook.com|~facebook.net,important
+||fbsbx.com^$domain=~facebook.com|~facebook.net,important
 ||reddit.*$domain=~reddit.com,important
 ||quora.*$domain=~quora.com,important
 ||snapchat.*$domain=~snapchat.com,important
 ||amazon.*$domain=~amazon.com,important
 ||pinterest.*$domain=~pinterest.com|~pinterest.ru,important
 ||microsoft.*$domain=~microsoft.com|~microsoft.ru,important
+||bing.*^$domain=~bing.com|~bing.ru,important
 ||linkedin.*$domain=~linkedin.com,important
 ||dzen.*$domain=~dzen.ru|~yandex.ru,important
 ||twitter.*$domain=~twitter.com,important
@@ -37,6 +45,52 @@
 ||vk.*$domain=~vk.com|~vk.ru,important
 ||ok.ru$domain=~ok.ru,important
 
+
+! Tracking and data analysis
+
+||addthis.com^
+||adfox.ru^
+||adgoogle.net^
+||adsninja.ca^
+||adthrive.com^
+||ajax.googleapis.com^
+||amazon-adsystem.com^
+||close.io^
+||cookielaw.org^
+||datadome.co^
+||dotmetrics.net^
+||doubleclick.net^
+||collector.github.com^
+||google-analytics.com^
+||googleadservices.com^
+||googleanalytics.com^
+||googlehosted.com^
+||googleoptimize.com^
+||googlesyndication.com^
+||googletagmanager.com^
+||googletagservices.com^
+||mailtag.io^
+||moatads.com^
+||redditstatic.com^
+||segment.io^
+||sharethis.com^
+||pixel.wp.com^
+||stats.wp.com^
+||widgets.wp.com^
+||yadro.ru^
+
+
+! Annoyances
+
+||slickstream.com^
+||disqus.com^
+||disquscdn.com^
+||wisepops.com^
+
+
+######################
+# COSMETIC FILTERING #
+######################
 
 ! Reddit
 
@@ -93,7 +147,6 @@ www.reddit.com##[class*="h-header-large"]
 
 youtube.com##ytd-rich-section-renderer
 youtube.com##:matches-path(/shorts) body
-||youtube.com/shorts$doc,script
 
 youtube.com##ytd-search .ytd-thumbnail[href^="/shorts/"]:upward(ytd-video-renderer)
 youtube.com##ytd-watch-next-secondary-results-renderer .ytd-thumbnail[href^="/shorts/"]:upward(ytd-compact-video-renderer,ytd-shelf-renderer)
@@ -150,7 +203,6 @@ dzen.ru##div[class="article-recommender__feed-container"]
 introvertdear.com##[class^=has-text-align-center]
 introvertdear.com##[class*="social-wrap"]
 
-||slickstream.com^$domain=introvertdear.com
 introvertdear.com##slick-search-panel
 introvertdear.com##slick-heartbeat
 
