@@ -24,6 +24,7 @@
 ||facebook.*$domain=~facebook.com|~facebook.net,important
 ||reddit.*$domain=~reddit.com,important
 ||quora.*$domain=~quora.com,important
+||snapchat.*$domain=~snapchat.com,important
 ||amazon.*$domain=~amazon.com,important
 ||pinterest.*$domain=~pinterest.com|~pinterest.ru,important
 ||microsoft.*$domain=~microsoft.com|~microsoft.ru,important
