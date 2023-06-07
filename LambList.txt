@@ -34,6 +34,7 @@
 ||google.*$domain=~google.com|~google.ru|~youtube.com,important
 ||yandex.*$domain=~yandex.ru|~yandex.net|~meteum.ai|~dzen.ru,important
 ||vk.*$domain=~vk.com|~vk.ru,important
+||ok.ru$domain=~ok.ru,important
 
 
 ! Reddit
