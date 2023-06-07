@@ -1,5 +1,5 @@
 ! Title: 🌚 LambLeeg's list
-! Version: 20230606
+! Version: 20230607
 ! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
 
 #-----------------------------------------------------
@@ -137,7 +137,7 @@ dzen.ru##div[class="dzen-search-arrow-common"]
 dzen.ru##aside[id="article__right"][class="publication-columns-layout__right article__right"]
 dzen.ru##article[class="publication-columns-layout__middle article__middle"]:style(max-width: 100% !important)
 dzen.ru##div[class="publication-columns-layout__right article__right"]
-dzen.ru##div[class="publication-columns-layout__middle article__middle"]:style(max-width: 100% !important; display: flex !important; justify-content: center !important)
+dzen.ru##div[class="publication-columns-layout__middle article__middle"]:style(max-width: 100% !important; display: flex !important)
 
 dzen.ru##div[class="article-recommender article-recommender_is-white-dzen_undefined article-recommender_theme_white"]
 dzen.ru##div[class="article-recommender__feed-container"]
