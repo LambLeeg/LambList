@@ -71,7 +71,6 @@
 ||googletagservices.com^
 ||mailtag.io^
 ||moatads.com^
-||redditstatic.com^
 ||segment.io^
 ||sharethis.com^
 ||pixel.wp.com^
