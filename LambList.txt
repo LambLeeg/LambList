@@ -5,20 +5,20 @@
 ! Homepage: https://github.com/LambLeeg/LambList
 ! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
 
-#-----------------------------------------------------
-# _                    _     _                    
-#| |    __ _ _ __ ___ | |__ | |    ___  ___  __ _ 
-#| |   / _` | '_ ` _ \| '_ \| |   / _ \/ _ \/ _` |
-#| |__| (_| | | | | | | |_) | |__|  __/  __/ (_| |
-#|_____\__,_|_| |_| |_|_.__/|_____\___|\___|\__, |
-#                                           |___/ 
-# My uBlock config file, also works with Brave Shields
-# ----------------------------------------------------
+!-----------------------------------------------------
+!  _                    _     _                    
+! | |    __ _ _ __ ___ | |__ | |    ___  ___  __ _ 
+! | |   / _` | '_ ` _ \| '_ \| |   / _ \/ _ \/ _` |
+! | |__| (_| | | | | | | |_) | |__|  __/  __/ (_| |
+! |_____\__,_|_| |_| |_|_.__/|_____\___|\___|\__, |
+!                                            |___/ 
+! My uBlock config file, also works with Brave Shields
+! ----------------------------------------------------
 
 
-###############
-# QUICK FIXES #
-###############
+!!!!!!!!!!!!!!!
+! QUICK FIXES !
+!!!!!!!!!!!!!!!
 
 ! YouTube history
 
@@ -26,9 +26,9 @@
 @@||youtube.com/api/stats/watchtime*
 
 
-####################
-# STATIC FILTERING #
-####################
+!!!!!!!!!!!!!!!!!!!!
+! STATIC FILTERING !
+!!!!!!!!!!!!!!!!!!!!
 
 
 ! Global beacon blocking and pop-annoyance blocking
@@ -103,9 +103,9 @@
 ||wisepops.com^
 
 
-######################
-# COSMETIC FILTERING #
-######################
+!!!!!!!!!!!!!!!!!!!!!!
+! COSMETIC FILTERING !
+!!!!!!!!!!!!!!!!!!!!!!
 
 
 ! JS tracking and touchscreen blocking
