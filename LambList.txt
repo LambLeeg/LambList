@@ -2,6 +2,7 @@
 ! Title: 🌚 LambLeeg's list
 ! Version: 20230608
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
+! Homepage: https://github.com/LambLeeg/LambList
 ! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
 
 #-----------------------------------------------------
