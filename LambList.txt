@@ -1,5 +1,6 @@
+[Adblock Plus 2.0; uBlock Origin]
 ! Title: 🌚 LambLeeg's list
-! Version: 20230607
+! Version: 20230608
 ! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
 
 #-----------------------------------------------------
@@ -140,6 +141,14 @@ www.reddit.com##[bundlename="bottom_bar_xpromo"]
 www.reddit.com##reddit-header-overflow-menu
 www.reddit.com##.TopNav__ShredditParity
 www.reddit.com##[class*="h-header-large"]
+
+
+! YouTube Mobile
+
+m.youtube.com###app > ytm-pivot-bar-renderer > ytm-pivot-bar-item-renderer:nth-child(2)
+
+m.youtube.com##ytm-button-renderer[class="slim_video_action_bar_renderer_button icon-flag"]
+m.youtube.com##ytm-button-renderer[class="slim_video_action_bar_renderer_button icon-share_arrow"]
 
 
 ! YT Shorts
