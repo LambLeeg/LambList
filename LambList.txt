@@ -1,6 +1,7 @@
 [Adblock Plus 2.0; uBlock Origin]
 ! Title: 🌚 LambLeeg's list
 ! Version: 20230608
+! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
 
 #-----------------------------------------------------
@@ -13,19 +14,22 @@
 # My uBlock config file.
 # ----------------------------------------------------
 
+
 ####################
 # STATIC FILTERING #
 ####################
 
 
-! Privacy
+! Global beacon blocking and pop-annoyance blocking
 
-##+js(aeld, mouseout)
-##+js(aeld, touchmove)
-||youtube.com/shorts$doc,script
-||accounts.google.com/gsi/$3p
 *$ping
 *$popunder
+
+
+! Privacy
+
+||youtube.com/shorts$doc,script
+||accounts.google.com/gsi/$3p
 
 ||facebook.*$domain=~facebook.com|~facebook.net,important
 ||fbcdn.net^$domain=~facebook.com|~facebook.net,important
@@ -91,6 +95,13 @@
 ######################
 # COSMETIC FILTERING #
 ######################
+
+
+! JS tracking and touchscreen blocking
+
+##+js(aeld, mouseout)
+##+js(aeld, touchmove)
+
 
 ! Reddit
 
