@@ -20,6 +20,8 @@
 # QUICK FIXES #
 ###############
 
+! YouTube history
+
 @@||youtube.com/api/stats/qoe*
 @@||youtube.com/api/stats/watchtime*
 
