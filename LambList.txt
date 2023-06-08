@@ -3,9 +3,9 @@
 ! Version: 20230608
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
-! Description: It's a nice touch to have your own set of rules to ditch what you dislike.
+! Description: My personal list that contains all I need, and has not been found anywhere easily.
 
-!-----------------------------------------------------
+! ----------------------------------------------------
 !  _                    _     _                    
 ! | |    __ _ _ __ ___ | |__ | |    ___  ___  __ _ 
 ! | |   / _` | '_ ` _ \| '_ \| |   / _ \/ _ \/ _` |
@@ -39,8 +39,8 @@
 
 ! Privacy
 
-||youtube.com/shorts$doc,script
 ||accounts.google.com/gsi/$3p
+||youtube.com/shorts$doc,script
 
 ||facebook.*$domain=~facebook.com|~facebook.net,important
 ||fbcdn.net^$domain=~facebook.com|~facebook.net,important
