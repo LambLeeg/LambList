@@ -1,6 +1,6 @@
 [Adblock Plus 2.0; uBlock Origin]
 ! Title: 🌚 LambLeeg's list
-! Version: 20230608
+! Version: 20230609
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! Description: My personal list that contains all I need, and has not been found anywhere easily.
@@ -118,16 +118,6 @@
 
 www.reddit.com##[href^="https://ads.reddit.com"]
 www.reddit.com##.prompt
-
-
-! Reddit style
-
-www.reddit.com##html:style(background-color: #1a1a1b !important)
-www.reddit.com##body:style(background-color: #1a1a1b !important)
-www.reddit.com##.main:style(background-color: #1a1a1b !important)
-www.reddit.com##shreddit-post:style(background-color: #1a1a1b !important)
-www.reddit.com##shreddit-comment:style(background-color: #1a1a1b !important)
-www.reddit.com##.content:style(background-color: #1a1a1b !important)
 
 
 ! Reddit Desktop
