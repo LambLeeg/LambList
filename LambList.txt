@@ -41,24 +41,24 @@
 ||accounts.google.com/gsi/$3p
 ||youtube.com/shorts$doc,script
 
-||facebook.*$domain=~facebook.com|~facebook.net,important
+||facebook.*^$domain=~facebook.com|~facebook.net,important
 ||fbcdn.net^$domain=~facebook.com|~facebook.net,important
 ||fbsbx.com^$domain=~facebook.com|~facebook.net,important
-||reddit.*$domain=~reddit.com,important
-||quora.*$domain=~quora.com,important
-||snapchat.*$domain=~snapchat.com,important
-||amazon.*$domain=~amazon.com,important
-||pinterest.*$domain=~pinterest.com|~pinterest.ru,important
-||microsoft.*$domain=~microsoft.com|~microsoft.ru,important
+||reddit.*^$domain=~reddit.com,important
+||quora.*^$domain=~quora.com,important
+||snapchat.*^$domain=~snapchat.com,important
+||amazon.*^$domain=~amazon.com,important
+||pinterest.*^$domain=~pinterest.com|~pinterest.ru,important
+||microsoft.*^$domain=~microsoft.com|~microsoft.ru,important
 ||bing.*^$domain=~bing.com|~bing.ru,important
-||linkedin.*$domain=~linkedin.com,important
-||dzen.*$domain=~dzen.ru|~yandex.ru,important
-||twitter.*$domain=~twitter.com,important
-||tiktok.*$domain=~tiktok.com,important
-||google.*$domain=~google.com|~google.ru|~youtube.com,important
-||yandex.*$domain=~yandex.ru|~yandex.net|~meteum.ai|~dzen.ru,important
-||vk.*$domain=~vk.com|~vk.ru,important
-||ok.ru$domain=~ok.ru,important
+||linkedin.*^$domain=~linkedin.com,important
+||dzen.*^$domain=~dzen.ru|~yandex.ru,important
+||twitter.*^$domain=~twitter.com,important
+||tiktok.*^$domain=~tiktok.com,important
+||google.*^$domain=~google.com|~google.ru|~youtube.com,important
+||yandex.*^$domain=~yandex.ru|~yandex.net|~meteum.ai|~dzen.ru,important
+||vk.*^$domain=~vk.com|~vk.ru,important
+||ok.ru^$domain=~ok.ru,important
 
 
 ! Tracking and data analysis
