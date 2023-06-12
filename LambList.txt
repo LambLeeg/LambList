@@ -1,6 +1,6 @@
 [Adblock Plus 2.0; uBlock Origin]
 ! Title: 🌚 LambLeeg's list
-! Version: 20230609
+! Version: 20230612
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! Description: My personal list that contains all I need, and has not been found anywhere easily.
@@ -228,6 +228,21 @@ introvertdear.com##slick-heartbeat
 
 introvertdear.com##[id^=AdThrive_]
 introvertdear.com##.slick-inline-search-panel
+
+
+! Meteum
+
+meteum.ai##div[class="content__top"]:style(margin: 12px 0 8px 0 !important)
+meteum.ai##div[class*=forecast-briefly][role="region"]:style(margin: 0 0 8px 0 !important)
+
+meteum.ai##a[class*="meteum-promo"][href="https://meteum.ai/meteum"]
+
+
+! Yandex Weather
+
+yandex.ru##:xpath(/html/body/div[1]/div[2]/div[1]):style(margin: 12px 0 8px 0 !important)
+yandex.ru##div[class*=forecast-briefly][role="region"]:style(margin: 0 0 8px 0 !important)
+yandex.ru##div[id="content_bottom"][class="content__bottom content__bottom_cards-count_2"]:style(margin-right: 0 !important)
 
 
 ! Wired
