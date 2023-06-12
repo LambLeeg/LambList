@@ -31,10 +31,9 @@
 !!!!!!!!!!!!!!!!!!!!
 
 
-! Global beacon blocking and pop-annoyance blocking
+! Global beacon blocking
 
 *$ping
-*$popunder
 
 
 ! Privacy
