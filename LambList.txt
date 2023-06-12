@@ -37,27 +37,37 @@
 
 
 ! Privacy
-
 ||accounts.google.com/gsi/$3p
 ||youtube.com/shorts$doc,script
 
-||facebook.*^$domain=~facebook.com|~facebook.net,important
+||facebook.com^$domain=~facebook.com|~facebook.net,important
+||facebook.net^$domain=~facebook.com|~facebook.net,important
 ||fbcdn.net^$domain=~facebook.com|~facebook.net,important
 ||fbsbx.com^$domain=~facebook.com|~facebook.net,important
-||reddit.*^$domain=~reddit.com,important
-||quora.*^$domain=~quora.com,important
-||snapchat.*^$domain=~snapchat.com,important
-||amazon.*^$domain=~amazon.com,important
-||pinterest.*^$domain=~pinterest.com|~pinterest.ru,important
-||microsoft.*^$domain=~microsoft.com|~microsoft.ru,important
-||bing.*^$domain=~bing.com|~bing.ru,important
-||linkedin.*^$domain=~linkedin.com,important
-||dzen.*^$domain=~dzen.ru|~yandex.ru,important
-||twitter.*^$domain=~twitter.com,important
-||tiktok.*^$domain=~tiktok.com,important
-||google.*^$domain=~google.com|~google.ru|~youtube.com,important
-||yandex.*^$domain=~yandex.ru|~yandex.net|~meteum.ai|~dzen.ru,important
-||vk.*^$domain=~vk.com|~vk.ru,important
+
+||reddit.com^$domain=~reddit.com,important
+||quora.com^$domain=~quora.com,important
+||snapchat.com^$domain=~snapchat.com,important
+||amazon.com^$domain=~amazon.com,important
+||linkedin.com^$domain=~linkedin.com,important
+||twitter.com^$domain=~twitter.com,important
+||tiktok.com^$domain=~tiktok.com,important
+||google.com^$domain=~google.com|~google.ru|~youtube.com,important
+||google.ru^$domain=~google.com|~google.ru|~youtube.com,important
+
+||pinterest.com^$domain=~pinterest.com|~pinterest.ru,important
+||pinterest.ru^$domain=~pinterest.com|~pinterest.ru,important
+
+||microsoft.com^$domain=~microsoft.com|~microsoft.ru,important
+||microsoft.ru^$domain=~microsoft.com|~microsoft.ru,important
+||bing.com^$domain=~bing.com|~bing.ru,important
+||bing.ru^$domain=~bing.com|~bing.ru,important
+
+||dzen.ru^$domain=~dzen.ru|~yandex.ru,important
+||yandex.ru^$domain=~yandex.ru|~yandex.net|~meteum.ai|~dzen.ru,important
+||yandex.net^$domain=~yandex.ru|~yandex.net|~meteum.ai|~dzen.ru,important
+||vk.com^$domain=~vk.com|~vk.ru,important
+||vk.ru^$domain=~vk.com|~vk.ru,important
 ||ok.ru^$domain=~ok.ru,important
 
 
