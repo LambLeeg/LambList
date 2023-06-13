@@ -40,6 +40,10 @@
 .googleanalytics.js$third-party,script
 .GoogleAnalytics/*$third-party,script
 
+/stats/*$third-party,script
+/analytics.min.js$third-party,script
+/ads/tags/*$third-party,script
+
 
 !!!!!!!!!!!!!!!!!!!!
 ! STATIC FILTERING !
