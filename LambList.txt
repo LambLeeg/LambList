@@ -53,8 +53,8 @@
 
 ! Privacy
 
-||accounts.google.com/gsi/$3p
-||youtube.com/shorts$doc,script
+||accounts.google.com/gsi/$third-party
+||youtube.com/shorts$document,script
 
 ||facebook.com^$important,domain=~facebook.com|~facebook.net
 ||facebook.net^$important,domain=~facebook.com|~facebook.net
