@@ -1,6 +1,6 @@
 [Adblock Plus 2.0; uBlock Origin]
 ! Title: 🌚 LambLeeg's list
-! Version: 20230612
+! Version: 20230613
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! Description: My personal list that contains all I need, and has not been found anywhere easily.
@@ -20,10 +20,25 @@
 ! QUICK FIXES !
 !!!!!!!!!!!!!!!
 
+
 ! YouTube history
 
 @@||s.youtube.com/api/stats/watchtime*
 @@||youtube.com/api/stats/watchtime*
+
+
+!!!!!!!!!!!!!!!!!!
+! UIVERSAL RULES !
+!!!!!!!!!!!!!!!!!!
+
+
+/metrika/*$third-party,script
+^ru/clck/$third-party,script
+^.ru/click/$third-party,script
+
+.Google.Tracker.js$third-party,script
+.googleanalytics.js$third-party,script
+.GoogleAnalytics/*$third-party,script
 
 
 !!!!!!!!!!!!!!!!!!!!
@@ -37,6 +52,7 @@
 
 
 ! Privacy
+
 ||accounts.google.com/gsi/$3p
 ||youtube.com/shorts$doc,script
 
@@ -83,6 +99,10 @@
 ||moatads.com^
 ||segment.io^
 ||sharethis.com^
+||demdex.net^  
+||hybrid.ai^
+||adhigh.net^
+||mediavoice.com^
 
 
 ! Annoyances
@@ -93,6 +113,7 @@
 ||wisepops.com^
 ||adsninja.ca^
 ||adthrive.com^
+||adriver.ru^
 
 
 ! Ads
@@ -226,6 +247,12 @@
 ||gemini.yahoo.com^
 ||adtech.yahooinc.com^
 
+||ad.mail.ru^
+||top-fwz1.mail.ru^
+
+||an.yandex.ru^
+||clck.yandex.ru^
+||mc.yandex.ru^
 ||extmaps-api.yandex.net^
 ||appmetrica.yandex.ru^
 ||adfstat.yandex.ru^
