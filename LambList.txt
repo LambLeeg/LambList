@@ -33,8 +33,8 @@
 
 
 /metrika/*$third-party,script
-^ru/clck/$third-party,script
-^.ru/click/$third-party,script
+.ru/clck/$third-party,script
+.ru/click/$third-party,script
 
 .Google.Tracker.js$third-party,script
 .googleanalytics.js$third-party,script
@@ -312,9 +312,17 @@ old.reddit.com##[id="login_login-main"]
 
 ! Reddit Mobile
 
+!#if ext_ublock
+www.reddit.com##[class^=XPromo]:remove()
+www.reddit.com##[class^=xpromo]:remove()
+www.reddit.com##[bundlename="bottom_bar_xpromo"]:remove()
+!#endif
+
+!#if !ext_ublock
 www.reddit.com##[class^=XPromo]
 www.reddit.com##[class^=xpromo]
 www.reddit.com##[bundlename="bottom_bar_xpromo"]
+!#endif
 
 www.reddit.com##reddit-header-overflow-menu
 www.reddit.com##.TopNav__ShredditParity
@@ -370,6 +378,22 @@ youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerRespon
 
 ! Dzen
 
+!#if ext_ublock
+dzen.ru##article[class="card-wrapper _is-mobile _is-mobile-redesign _theme_white _with-overflow-hidden card-news__container-2U card-news__mobile-1N"]:remove()
+
+dzen.ru##div[class="dzen-wrapper-with-top-content-desktop__topContent-1Q dzen-wrapper-with-top-content-desktop__hasFloors-2H"]:remove()
+dzen.ru##div[class="dzen-search-arrow-common"]:remove()
+
+dzen.ru##aside[id="article__right"][class="publication-columns-layout__right article__right"]:remove()
+dzen.ru##article[class="publication-columns-layout__middle article__middle"]:style(max-width: 100% !important)
+dzen.ru##div[class="publication-columns-layout__right article__right"]:remove()
+dzen.ru##div[class="publication-columns-layout__middle article__middle"]:style(max-width: 100% !important; display: flex !important)
+
+dzen.ru##div[class="article-recommender article-recommender_is-white-dzen_undefined article-recommender_theme_white"]:remove()
+dzen.ru##div[class="article-recommender__feed-container"]:remove()
+!#endif
+
+!#if !ext_ublock
 dzen.ru##article[class="card-wrapper _is-mobile _is-mobile-redesign _theme_white _with-overflow-hidden card-news__container-2U card-news__mobile-1N"]
 
 dzen.ru##div[class="dzen-wrapper-with-top-content-desktop__topContent-1Q dzen-wrapper-with-top-content-desktop__hasFloors-2H"]
@@ -382,18 +406,36 @@ dzen.ru##div[class="publication-columns-layout__middle article__middle"]:style(m
 
 dzen.ru##div[class="article-recommender article-recommender_is-white-dzen_undefined article-recommender_theme_white"]
 dzen.ru##div[class="article-recommender__feed-container"]
+!#endif
 
 
 ! Introvertdear
 
+!#if ext_ublock
+introvertdear.com##^[class^=has-text-align-center]
+introvertdear.com##^[class*="social-wrap"]
+!#endif
+
+!#if !ext_ublock
 introvertdear.com##[class^=has-text-align-center]
 introvertdear.com##[class*="social-wrap"]
+!#endif
 
+!#if ext_ublock
+introvertdear.com##slick-search-panel:remove()
+introvertdear.com##slick-heartbeat:remove()
+
+introvertdear.com##[id^=AdThrive_]:remove()
+introvertdear.com##.slick-inline-search-panel:remove()
+!#endif
+
+!#if !ext_ublock
 introvertdear.com##slick-search-panel
 introvertdear.com##slick-heartbeat
 
 introvertdear.com##[id^=AdThrive_]
 introvertdear.com##.slick-inline-search-panel
+!#endif
 
 
 ! Meteum
@@ -401,7 +443,13 @@ introvertdear.com##.slick-inline-search-panel
 meteum.ai##div[class="content__top"]:style(margin: 12px 0 8px 0 !important)
 meteum.ai##div[class*=forecast-briefly][role="region"]:style(margin: 0 0 8px 0 !important)
 
+!#if ext_ublock
+meteum.ai##a[class*="meteum-promo"][href="https://meteum.ai/meteum"]:remove()
+!#endif
+
+!#if !ext_ublock
 meteum.ai##a[class*="meteum-promo"][href="https://meteum.ai/meteum"]
+!#endif
 
 
 ! Yandex Weather
@@ -418,5 +466,12 @@ wired.com##:xpath(/html/body/div[1]/div/div[5])
 
 ! AndroidAuthority
 
+!#if ext_ublock
+www.androidauthority.com##div[class="-__Eb"]:remove()
+www.androidauthority.com##div[class="-__hh"]:remove()
+!#endif
+
+!#if !ext_ublock
 www.androidauthority.com##div[class="-__Eb"]
 www.androidauthority.com##div[class="-__hh"]
+!#endif
