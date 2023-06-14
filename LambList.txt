@@ -477,3 +477,5 @@ www.androidauthority.com##div[class="-__hh"]:remove()
 www.androidauthority.com##div[class="-__Eb"]
 www.androidauthority.com##div[class="-__hh"]
 !#endif
+
+androidauthority.com##:xpath(/html/body/div/main/div[2]/div[6]/div/div[1])
