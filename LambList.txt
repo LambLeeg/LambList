@@ -32,7 +32,7 @@
 !!!!!!!!!!!!!!!!!!
 
 
-/metrika/
+*/metrika/
 .ru/clck/
 .ru/click/
 .ru/ads/
@@ -41,12 +41,12 @@
 .googleanalytics.js
 .GoogleAnalytics/
 
-/stats/
+*/stats/
 /analytics.min.js
-/ads/tags/
+*/ads/tags/
 /counter.js
-/counter/
-/counters/
+*/counter/
+*/counters/
 
 
 !!!!!!!!!!!!!!!!!!!!
