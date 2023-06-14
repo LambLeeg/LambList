@@ -88,8 +88,8 @@
 ||bing.ru^$important,domain=~bing.com|~bing.ru
 
 ||dzen.ru^$important,domain=~dzen.ru|~yandex.ru
-||yandex.ru^$important,domain=~yandex.ru|~yandex.net|~meteum.ai|~dzen.ru
-||yandex.net^$important,domain=~yandex.ru|~yandex.net|~meteum.ai|~dzen.ru
+||yandex.ru^$important,domain=~ya.ru|~yandex.ru|~yandex.net|~meteum.ai|~dzen.ru
+||yandex.net^$important,domain=~ya.ru|~yandex.ru|~yandex.net|~meteum.ai|~dzen.ru
 ||vk.com^$important,domain=~vk.com|~vk.ru
 ||vk.ru^$important,domain=~vk.com|~vk.ru
 ||ok.ru^$important,domain=~ok.ru
