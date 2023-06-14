@@ -41,6 +41,7 @@
 .googleanalytics.js
 .GoogleAnalytics/
 
+&event=view&
 /analytics^
 */ads/tags/
 /counter.js
