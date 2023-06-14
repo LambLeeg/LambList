@@ -249,6 +249,8 @@
 ||ad.mail.ru^$important
 ||top-fwz1.mail.ru^$important
 
+||http-check-headers.yandex.ru^$important
+||statchecker.yandex.ru^$important
 ||an.yandex.ru^$important
 ||clck.yandex.ru^$important
 ||mc.yandex.ru^$important
