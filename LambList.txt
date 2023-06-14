@@ -1,6 +1,6 @@
 [Adblock Plus 2.0; uBlock Origin]
 ! Title: 🌚 LambLeeg's list
-! Version: 20230613
+! Version: 20230614
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! Description: My personal list that contains all I need, and has not been found anywhere easily.
@@ -93,184 +93,179 @@
 
 ! Mix
 
-||addthis.com^
-||close.io^
-||cookielaw.org^
-||datadome.co^
-||dotmetrics.net^
-||collector.github.com^
-||mailtag.io^
-||moatads.com^
-||segment.io^
-||sharethis.com^
-||demdex.net^  
-||hybrid.ai^
-||adhigh.net^
-||mediavoice.com^
+||addthis.com^$important
+||close.io^$important
+||cookielaw.org^$important
+||datadome.co^$important
+||dotmetrics.net^$important
+||collector.github.com^$important
+||mailtag.io^$important
+||moatads.com^$important
+||segment.io^$important
+||sharethis.com^$important
+||demdex.net^$important  
+||hybrid.ai^$important
+||adhigh.net^$important
+||mediavoice.com^$important
 
 
 ! Annoyances
 
-||slickstream.com^
-||disqus.com^
-||disquscdn.com^
-||wisepops.com^
-||adsninja.ca^
-||adthrive.com^
-||adriver.ru^
+||slickstream.com^$important
+||disqus.com^$important
+||disquscdn.com^$important
+||wisepops.com^$important
+||adsninja.ca^$important
+||adthrive.com^$important
+||adriver.ru^$important
 
 
 ! Ads
 
-||amazon-adsystem.com^
-||adtago.s3.amazonaws.com^
-||analyticsengine.s3.amazonaws.com^
-||analytics.s3.amazonaws.com^
-||advice-ads.s3.amazonaws.com^
-||advertising-api-eu.amazon.com^
+||amazon-adsystem.com^$important
+||adtago.s3.amazonaws.com^$important
+||analyticsengine.s3.amazonaws.com^$important
+||analytics.s3.amazonaws.com^$important
+||advice-ads.s3.amazonaws.com^$important
+||advertising-api-eu.amazon.com^$important
 
-||googleadservices.com^
-||googlehosted.com^
-||googleoptimize.com^
-||googlesyndication.com^
-||googletagmanager.com^
-||googletagservices.com^
-||adgoogle.net^
-||ajax.googleapis.com^
-||pagead2.googlesyndication.com^
-||adservice.google.com^
-||pagead2.googleadservices.com^
-||afs.googlesyndication.com^
+||doubleclick.net^$important
+||googleadservices.com^$important
+||googlehosted.com^$important
+||googleoptimize.com^$important
+||googlesyndication.com^$important
+||googletagmanager.com^$important
+||googletagservices.com^$important
+||adgoogle.net^$important
+||ajax.googleapis.com^$important
+||pagead2.googlesyndication.com^$important
+||adservice.google.com^$important
+||pagead2.googleadservices.com^$important
+||afs.googlesyndication.com^$important
 
-||stats.g.doubleclick.net^
-||ad.doubleclick.net^
-||static.doubleclick.net^
-||m.doubleclick.net^
-||mediavisor.doubleclick.net^
+||ads30.adcolony.com^$important
+||adc3-launch.adcolony.com^$important
+||events3alt.adcolony.com^$important
+||wd.adcolony.com^$important
 
-||ads30.adcolony.com^
-||adc3-launch.adcolony.com^
-||events3alt.adcolony.com^
-||wd.adcolony.com^
-
-||static.media.net^
-||media.net^
-||adservetx.media.net^
+||static.media.net^$important
+||media.net^$important
+||adservetx.media.net^$important
 
 
 ! Analytics
 
-||googleanalytics.com^
-||app-measurement.com^
-||analytics.google.com^
-||click.googleanalytics.com^
-||google-analytics.com^
-||ssl.google-analytics.com^
+||googleanalytics.com^$important
+||app-measurement.com^$important
+||analytics.google.com^$important
+||click.googleanalytics.com^$important
+||google-analytics.com^$important
+||ssl.google-analytics.com^$important
 
-||adm.hotjar.com^
-||identify.hotjar.com^
-||insights.hotjar.com^
-||script.hotjar.com^
-||surveys.hotjar.com^
-||careers.hotjar.com^
-||events.hotjar.io^
+||adm.hotjar.com^$important
+||identify.hotjar.com^$important
+||insights.hotjar.com^$important
+||script.hotjar.com^$important
+||surveys.hotjar.com^$important
+||careers.hotjar.com^$important
+||events.hotjar.io^$important
 
-||mouseflow.com^
-||api.mouseflow.com^
-||tools.mouseflow.com^
-||cdn-test.mouseflow.com^
+||mouseflow.com^$important
+||api.mouseflow.com^$important
+||tools.mouseflow.com^$important
+||cdn-test.mouseflow.com^$important
 
-||freshmarketer.com^
-||claritybt.freshmarketer.com^
-||fwtracks.freshmarketer.com^
+||freshmarketer.com^$important
+||claritybt.freshmarketer.com^$important
+||fwtracks.freshmarketer.com^$important
 
-||luckyorange.com^
-||api.luckyorange.com^
-||realtime.luckyorange.com^
-||cdn.luckyorange.com^
-||w1.luckyorange.com^
-||upload.luckyorange.net^
-||cs.luckyorange.net^
-||settings.luckyorange.net^
+||luckyorange.com^$important
+||api.luckyorange.com^$important
+||realtime.luckyorange.com^$important
+||cdn.luckyorange.com^$important
+||w1.luckyorange.com^$important
+||upload.luckyorange.net^$important
+||cs.luckyorange.net^$important
+||settings.luckyorange.net^$important
 
-||stats.wp.com^
-||pixel.wp.com^
-||widgets.wp.com^
+||stats.wp.com^$important
+||pixel.wp.com^$important
+||widgets.wp.com^$important
 
 
 ! Error Trackers
 
-||notify.bugsnag.com^
-||sessions.bugsnag.com^
-||api.bugsnag.com^
-||app.bugsnag.com^
+||notify.bugsnag.com^$important
+||sessions.bugsnag.com^$important
+||api.bugsnag.com^$important
+||app.bugsnag.com^$important
 
-||browser.sentry-cdn.com^
-||app.getsentry.com^
+||browser.sentry-cdn.com^$important
+||app.getsentry.com^$important
 
 
 ! Social Trackers
 
-||pixel.facebook.com^
-||an.facebook.com^
+||pixel.facebook.com^$important
+||an.facebook.com^$important
 
-||static.ads-twitter.com^
-||ads-api.twitter.com^
+||static.ads-twitter.com^$important
+||ads-api.twitter.com^$important
 
-||ads.linkedin.com^
-||analytics.pointdrive.linkedin.com^
+||ads.linkedin.com^$important
+||analytics.pointdrive.linkedin.com^$important
 
-||ads.pinterest.com^
-||log.pinterest.com^
-||analytics.pinterest.com^
-||trk.pinterest.com^
-||widgets.pinterest.com^
+||ads.pinterest.com^$important
+||log.pinterest.com^$important
+||analytics.pinterest.com^$important
+||trk.pinterest.com^$important
+||widgets.pinterest.com^$important
 
-||events.reddit.com^
-||events.redditmedia.com^
+||events.reddit.com^$important
+||events.redditmedia.com^$important
 
-||ads.youtube.com^
+||ads.youtube.com^$important
 
-||ads-api.tiktok.com^
-||analytics.tiktok.com^
-||ads-sg.tiktok.com^
-||analytics-sg.tiktok.com^
-||business-api.tiktok.com^
-||ads.tiktok.com^
-||log.byteoversea.com^
+||ads-api.tiktok.com^$important
+||analytics.tiktok.com^$important
+||ads-sg.tiktok.com^$important
+||analytics-sg.tiktok.com^$important
+||business-api.tiktok.com^$important
+||ads.tiktok.com^$important
+||log.byteoversea.com^$important
 
-||ads.yahoo.com^
-||analytics.yahoo.com^
-||geo.yahoo.com^
-||udc.yahoo.com^
-||udcm.yahoo.com^
-||advertising.yahoo.com^
-||analytics.query.yahoo.com^
-||partnerads.ysm.yahoo.com^
-||log.fc.yahoo.com^
-||gemini.yahoo.com^
-||adtech.yahooinc.com^
+||ads.yahoo.com^$important
+||analytics.yahoo.com^$important
+||geo.yahoo.com^$important
+||udc.yahoo.com^$important
+||udcm.yahoo.com^$important
+||advertising.yahoo.com^$important
+||analytics.query.yahoo.com^$important
+||partnerads.ysm.yahoo.com^$important
+||log.fc.yahoo.com^$important
+||gemini.yahoo.com^$important
+||adtech.yahooinc.com^$important
 
-||ad.mail.ru^
-||top-fwz1.mail.ru^
+||ad.mail.ru^$important
+||top-fwz1.mail.ru^$important
 
-||an.yandex.ru^
-||clck.yandex.ru^
-||mc.yandex.ru^
-||extmaps-api.yandex.net^
-||appmetrica.yandex.ru^
-||adfstat.yandex.ru^
-||metrika.yandex.ru^
-||advertising.yandex.ru^
-||offerwall.yandex.net^
-||adfox.yandex.ru^
-||adfox.ru^
-||yadro.ru^
+||an.yandex.ru^$important
+||clck.yandex.ru^$important
+||mc.yandex.ru^$important
+||extmaps-api.yandex.net^$important
+||appmetrica.yandex.ru^$important
+||adfstat.yandex.ru^$important
+||metrika.yandex.ru^$important
+||advertising.yandex.ru^$important
+||offerwall.yandex.net^$important
+||adfox.yandex.ru^$important
+||adfox.ru^$important
+||yadro.ru^$important
 
-||auction.unityads.unity3d.com^
-||webview.unityads.unity3d.com^
-||config.unityads.unity3d.com^
-||adserver.unityads.unity3d.com^
+||auction.unityads.unity3d.com^$important
+||webview.unityads.unity3d.com^$important
+||config.unityads.unity3d.com^$important
+||adserver.unityads.unity3d.com^$important
 
 
 !!!!!!!!!!!!!!!!!!!!!!
