@@ -471,11 +471,13 @@ wired.com##:xpath(/html/body/div[1]/div/div[5])
 !#if ext_ublock
 www.androidauthority.com##div[class="-__Eb"]:remove()
 www.androidauthority.com##div[class="-__hh"]:remove()
+www.androidauthority.com##div[class*="ad-banner"]:remove()
 !#endif
 
 !#if !ext_ublock
 www.androidauthority.com##div[class="-__Eb"]
 www.androidauthority.com##div[class="-__hh"]
+www.androidauthority.com##div[class*="ad-banner"]
 !#endif
 
-androidauthority.com##:xpath(/html/body/div/main/div[2]/div[6]/div/div[1])
+www.androidauthority.com##:xpath(/html/body/div/main/div[2]/div[6]/div/div[1])
