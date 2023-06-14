@@ -41,8 +41,7 @@
 .googleanalytics.js
 .GoogleAnalytics/
 
-*/stats/
-/analytics.min.js
+/analytics^
 */ads/tags/
 /counter.js
 */counter/
@@ -250,6 +249,8 @@
 ||gemini.yahoo.com^$important
 ||adtech.yahooinc.com^$important
 
+||log.dzen.ru^$important
+||clck.dzen.ru^$important
 ||ad.mail.ru^$important
 ||top-fwz1.mail.ru^$important
 
