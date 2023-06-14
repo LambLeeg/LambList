@@ -32,17 +32,21 @@
 !!!!!!!!!!!!!!!!!!
 
 
-/metrika/*$third-party,script
-.ru/clck/*$third-party,script
-.ru/click/*$third-party,script
+/metrika/
+.ru/clck/
+.ru/click/
+.ru/ads/
 
-.Google.Tracker.js$third-party,script
-.googleanalytics.js$third-party,script
-.GoogleAnalytics/*$third-party,script
+.Google.Tracker.js
+.googleanalytics.js
+.GoogleAnalytics/
 
-/stats/*$third-party,script
-/analytics.min.js$third-party,script
-/ads/tags/*$third-party,script
+/stats/
+/analytics.min.js
+/ads/tags/
+/counter.js
+/counter/
+/counters/
 
 
 !!!!!!!!!!!!!!!!!!!!
@@ -275,10 +279,15 @@
 !!!!!!!!!!!!!!!!!!!!!!
 
 
-! JS tracking and touchscreen blocking
+! Mix
 
 ##+js(aeld, mouseout)
 ##+js(aeld, touchmove)
+
+##[id*="yandex_rtb"]
+##[id*="yandex_ad"]
+##[class*="sideads"]
+##[class*="pagead"]
 
 
 ! Reddit
