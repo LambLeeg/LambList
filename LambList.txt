@@ -70,24 +70,24 @@
 ||fbsbx.com^$important,domain=~facebook.com|~facebook.net
 
 ||reddit.com^$important,domain=~reddit.com
-||quora.com^$important,domain=~quora.com
-||snapchat.com^$important,domain=~snapchat.com
+!||quora.com^$important,domain=~quora.com
+!||snapchat.com^$important,domain=~snapchat.com
 ||amazon.com^$important,domain=~amazon.com
-||linkedin.com^$important,domain=~linkedin.com
+!||linkedin.com^$important,domain=~linkedin.com
 ||twitter.com^$important,domain=~twitter.com
 ||tiktok.com^$important,domain=~tiktok.com
 !||google.com^$important,domain=~google.com|~google.ru|~youtube.com
 ||google.ru^$important,domain=~google.com|~google.ru
 
-||pinterest.com^$important,domain=~pinterest.com|~pinterest.ru
-||pinterest.ru^$important,domain=~pinterest.com|~pinterest.ru
+!||pinterest.com^$important,domain=~pinterest.com|~pinterest.ru
+!||pinterest.ru^$important,domain=~pinterest.com|~pinterest.ru
 
 ||microsoft.com^$important,domain=~microsoft.com|~microsoft.ru
 ||microsoft.ru^$important,domain=~microsoft.com|~microsoft.ru
 ||bing.com^$important,domain=~bing.com|~bing.ru
 ||bing.ru^$important,domain=~bing.com|~bing.ru
 
-||dzen.ru^$important,domain=~dzen.ru|~yandex.ru
+!||dzen.ru^$important,domain=~dzen.ru|~yandex.ru
 !||yandex.ru^$important,domain=~ya.ru|~yandex.ru|~yandex.net|~meteum.ai|~dzen.ru
 !||yandex.net^$important,domain=~ya.ru|~yandex.ru|~yandex.net|~meteum.ai|~dzen.ru
 ||vk.com^$important,domain=~vk.com|~vk.ru
