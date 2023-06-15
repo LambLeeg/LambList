@@ -1,6 +1,6 @@
 [Adblock Plus 2.0; uBlock Origin]
 ! Title: 🌚 LambLeeg's list
-! Version: 20230614
+! Version: 20230615
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! Description: My personal list that contains all I need, and has not been found anywhere else.
@@ -76,8 +76,8 @@
 ||linkedin.com^$important,domain=~linkedin.com
 ||twitter.com^$important,domain=~twitter.com
 ||tiktok.com^$important,domain=~tiktok.com
-||google.com^$important,domain=~google.com|~google.ru|~youtube.com
-||google.ru^$important,domain=~google.com|~google.ru|~youtube.com
+!||google.com^$important,domain=~google.com|~google.ru|~youtube.com
+||google.ru^$important,domain=~google.com|~google.ru
 
 ||pinterest.com^$important,domain=~pinterest.com|~pinterest.ru
 ||pinterest.ru^$important,domain=~pinterest.com|~pinterest.ru
@@ -88,8 +88,8 @@
 ||bing.ru^$important,domain=~bing.com|~bing.ru
 
 ||dzen.ru^$important,domain=~dzen.ru|~yandex.ru
-||yandex.ru^$important,domain=~ya.ru|~yandex.ru|~yandex.net|~meteum.ai|~dzen.ru
-||yandex.net^$important,domain=~ya.ru|~yandex.ru|~yandex.net|~meteum.ai|~dzen.ru
+!||yandex.ru^$important,domain=~ya.ru|~yandex.ru|~yandex.net|~meteum.ai|~dzen.ru
+!||yandex.net^$important,domain=~ya.ru|~yandex.ru|~yandex.net|~meteum.ai|~dzen.ru
 ||vk.com^$important,domain=~vk.com|~vk.ru
 ||vk.ru^$important,domain=~vk.com|~vk.ru
 ||ok.ru^$important,domain=~ok.ru
