@@ -230,6 +230,7 @@
 ||gemini.yahoo.com^$important
 ||adtech.yahooinc.com^$important
 
+||static.dzeninfra.ru^$important
 ||log.dzen.ru^$important
 ||clck.dzen.ru^$important
 ||ad.mail.ru^$important
