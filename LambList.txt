@@ -351,20 +351,7 @@ m.youtube.com##ytm-single-column-watch-next-results-renderer ytm-thumbnail-overl
 
 ! YouTube
 
-!#if ext_ublock
-youtube.com##ytd-rich-section-renderer:remove()
-youtube.com##:matches-path(/shorts) body
-youtube.com###items > ytd-guide-entry-renderer:nth-child(2):remove()
-!#endif
-
-!#if !ext_ublock
-youtube.com##ytd-rich-section-renderer
 youtube.com###items > ytd-guide-entry-renderer:nth-child(2)
-!#endif
-
-youtube.com##ytd-search .ytd-thumbnail[href^="/shorts/"]:upward(ytd-video-renderer)
-youtube.com##ytd-watch-next-secondary-results-renderer .ytd-thumbnail[href^="/shorts/"]:upward(ytd-compact-video-renderer,ytd-shelf-renderer)
-youtube.com##ytd-browse #dismissible ytd-rich-grid-slim-media[is-short]:upward(ytd-rich-section-renderer)
 
 youtube.com##span.ytd-rich-shelf-renderer:has-text(/Breaking news/):upward(ytd-rich-section-renderer)
 youtube.com##ytd-button-renderer:has([aria-label="Share"])
@@ -374,6 +361,41 @@ youtube.com##ytd-button-renderer:has([aria-label="Search with your voice"])
 
 youtube.com##ytd-button-renderer:has([aria-label="Поделиться"])
 youtube.com##ytd-button-renderer:has([aria-label="Создать клип"])
+
+
+! Shorts
+
+www.youtube.com##ytd-guide-renderer a.yt-simple-endpoint path[d^="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33"]:upward(ytd-guide-entry-renderer)
+www.youtube.com##ytd-mini-guide-renderer a.yt-simple-endpoint path[d^="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33"]:upward(ytd-mini-guide-entry-renderer)
+www.youtube.com##ytd-browse #dismissible ytd-rich-grid-slim-media[is-short]:upward(ytd-rich-section-renderer)
+www.youtube.com##ytd-browse[page-subtype="home"] .ytd-thumbnail[href^="/shorts/"]:upward(ytd-rich-item-renderer)
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] .ytd-thumbnail[href^="/shorts/"]:upward(ytd-grid-video-renderer,ytd-rich-item-renderer)
+www.youtube.com##ytd-search .ytd-thumbnail[href^="/shorts/"]:upward(ytd-video-renderer)
+www.youtube.com##ytd-watch-next-secondary-results-renderer .ytd-thumbnail[href^="/shorts/"]:upward(ytd-compact-video-renderer,ytd-shelf-renderer)
+www.youtube.com##ytd-watch-next-secondary-results-renderer ytd-reel-shelf-renderer
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-video-renderer .ytd-thumbnail[href^="/shorts/"]:upward(ytd-item-section-renderer)
+www.youtube.com##ytd-browse[page-subtype="channels"] #contents.ytd-reel-shelf-renderer:upward(ytd-item-section-renderer)
+www.youtube.com##ytd-browse[page-subtype="trending"] .ytd-thumbnail[href^="/shorts/"]:upward(ytd-video-renderer)
+www.youtube.com##ytd-search #contents ytd-reel-shelf-renderer
+
+www.youtube.com##ytd-browse ytd-grid-video-renderer:has(#video-title[title]:has-text(/\b#shorts\b/i))
+www.youtube.com##ytd-browse ytd-rich-item-renderer:has(#video-title-link[title]:has-text(/\b#shorts\b/i))
+www.youtube.com##ytd-search ytd-video-renderer:has(#video-title[title]:has-text(/\b#shorts\b/i))
+www.youtube.com##ytd-watch-next-secondary-results-renderer ytd-compact-video-renderer:has(#video-title[title]:has-text(/\b#shorts\b/i))
+m.youtube.com##ytm-browse ytm-video-with-context-renderer:has(.media-item-headline:has-text(/\b#shorts\b/i))
+m.youtube.com##ytm-search ytm-video-with-context-renderer:has(.media-item-headline:has-text(/\b#shorts\b/i))
+m.youtube.com##.watch-below-the-player ytm-video-with-context-renderer:has(.media-item-headline:has-text(/\b#shorts\b/i))
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-video-renderer #video-title[title]:has-text(/\b#shorts\b/i):upward(ytd-item-section-renderer)
+m.youtube.com##ytm-browse div[tab-identifier="FEsubscriptions"] ytm-video-with-context-renderer:has(.media-item-headline:has-text(/\b#shorts\b/i))
+youtube.com##ytd-rich-grid-row, #contents.ytd-rich-grid-row:style(display:contents !important;)
+
+m.youtube.com##ytm-reel-shelf-renderer
+m.youtube.com##ytm-pivot-bar-renderer div.pivot-shorts:upward(ytm-pivot-bar-item-renderer)
+m.youtube.com##ytm-browse ytm-item-section-renderer ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-video-with-context-renderer)
+m.youtube.com##ytm-browse ytm-item-section-renderer ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-compact-video-renderer)
+m.youtube.com##ytm-search ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-compact-video-renderer)
+m.youtube.com##ytm-single-column-watch-next-results-renderer ytm-thumbnail-overlay-time-status-renderer span:has-text(/^(0:\d\d|1:0\d)$/):upward(ytm-video-with-context-renderer)
+youtube.com##ytd-rich-grid-row, #contents.ytd-rich-grid-row:style(display:contents !important;)
 
 
 ! YouTube Premuim
@@ -491,3 +513,39 @@ www.androidauthority.com##div[class*="ad-banner"]
 
 www.androidauthority.com##:xpath(/html/body/div/main/div[2]/div[6]/div/div[1])
 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GET RID FROM THE SEARCH !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+! Reddit
+
+www.google.*##.g:has(a[href*="reddit.com"])
+www.google.*##a[href*="reddit.com"]:upward(1)
+
+duckduckgo.com##a[data-testid="result-title-a"][href*="reddit.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="reddit.com"]:upward(.tile)
+
+startpage.com##.w-gl__result:has(a[href*="reddit.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(reddit.com)
+
+search.brave.com###results a[href*="reddit.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="reddit.com"]:upward([id^="img"])
+search.brave.com###results a[href*="reddit.com"]:upward(.card)
+
+
+! Quora
+
+www.google.*##.g:has(a[href*="quora.com"])
+www.google.*##a[href*="quora.com"]:upward(1)
+
+duckduckgo.com##a[data-testid="result-title-a"][href*="quora.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="quora.com"]:upward(.tile)
+
+startpage.com##.w-gl__result:has(a[href*="quora.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(quora.com))
+
+search.brave.com###results a[href*="quora.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="quora.com"]:upward([id^="img"])
+search.brave.com###results a[href*="quora.com"]:upward(.card)
