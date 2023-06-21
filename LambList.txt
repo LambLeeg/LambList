@@ -1,5 +1,5 @@
-[Adblock Plus 2.0; uBlock Origin]
-! Title: 🌚 LLL aka LambLeeg's list
+[uBlock Origin; Adblock Plus 2.0]
+! Title: 🌚 LLL
 ! Version: 20230621
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
@@ -11,7 +11,7 @@
 ! | |   / _` | '_ ` _ \| '_ \| |   / _ \/ _ \/ _` |
 ! | |__| (_| | | | | | | |_) | |__|  __/  __/ (_| |
 ! |_____\__,_|_| |_| |_|_.__/|_____\___|\___|\__, |
-!                                            |___/ 
+! aka LambLeeg's list                        |___/ 
 ! My uBlock config file, also works with Brave Shields
 ! ----------------------------------------------------
 
@@ -528,7 +528,7 @@ duckduckgo.com##a[data-testid="result-title-a"][href*="reddit.com"]:upward(.nrn-
 duckduckgo.com##.tile-wrap a[href*="reddit.com"]:upward(.tile)
 
 startpage.com##.w-gl__result:has(a[href*="reddit.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(reddit.com)
+startpage.com##.image-container:has(div.image-quick-details span:has-text(reddit.com))
 
 search.brave.com###results a[href*="reddit.com"]:upward(.snippet)
 search.brave.com###img-results a[href*="reddit.com"]:upward([id^="img"])
