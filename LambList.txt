@@ -69,13 +69,12 @@
 
 ||twitter.com^$important,domain=~twitter.com
 ||tiktok.com^$important,domain=~tiktok.com
-||amazon.com^$important,domain=~amazon.com
+||amazon.*^$important,domain=~amazon.com
 ||quora.com^$important,domain=~quora.com
 ||reddit.com^$important,domain=~reddit.com
 
 ||instagram.com^$important,domain=~instagram.com
-||facebook.com^$important,domain=~facebook.com|~facebook.net
-||facebook.net^$important,domain=~facebook.com|~facebook.net
+||facebook.*^$important,domain=~facebook.com|~facebook.net
 ||fbcdn.net^$important,domain=~facebook.com|~facebook.net
 ||fbsbx.com^$important,domain=~facebook.com|~facebook.net
 
