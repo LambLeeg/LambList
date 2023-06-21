@@ -502,6 +502,7 @@ dzen.ru##div[class="article-recommender__feed-container"]
 
 ! Meteum
 
+meteum.ai##div[class="alerts alerts_cols_2"]:style(margin: 0 0 0 0 !important)
 meteum.ai##div[class="content__top"]:style(margin: 12px 0 8px 0 !important)
 meteum.ai##div[class*=forecast-briefly][role="region"]:style(margin: 0 0 8px 0 !important)
 
