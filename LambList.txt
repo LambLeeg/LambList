@@ -514,13 +514,6 @@ meteum.ai##a[class*="meteum-promo"][href="https://meteum.ai/meteum"]
 !#endif
 
 
-! Yandex Weather
-
-yandex.ru##:xpath(/html/body/div[1]/div[2]/div[1]):style(margin: 12px 0 8px 0 !important)
-yandex.ru##div[class*=forecast-briefly][role="region"]:style(margin: 0 0 8px 0 !important)
-yandex.ru##div[id="content_bottom"][class="content__bottom content__bottom_cards-count_2"]:style(margin-right: 0 !important)
-
-
 ! Introvertdear
 
 !#if ext_ublock
