@@ -1,5 +1,5 @@
 [Adblock Plus 2.0; uBlock Origin]
-! Title: 🌚 LambLeeg's list
+! Title: 🌚 LLL aka LambLeeg's list
 ! Version: 20230621
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
@@ -327,20 +327,19 @@ www.reddit.com##[class*="h-header-large"]
 
 ! YouTube Mobile
 
+!#if ext_ublock
+m.youtube.com###app > ytm-pivot-bar-renderer > ytm-pivot-bar-item-renderer:nth-child(2):remove()
+
+m.youtube.com##ytm-button-renderer[class="slim_video_action_bar_renderer_button icon-flag"]:remove()
+m.youtube.com##ytm-button-renderer[class="slim_video_action_bar_renderer_button icon-share_arrow"]:remove()
+!#endif
+
+!#if !ext_ublock
 m.youtube.com###app > ytm-pivot-bar-renderer > ytm-pivot-bar-item-renderer:nth-child(2)
 
 m.youtube.com##ytm-button-renderer[class="slim_video_action_bar_renderer_button icon-flag"]
 m.youtube.com##ytm-button-renderer[class="slim_video_action_bar_renderer_button icon-share_arrow"]
-
-
-! YT Shorts
-
-youtube.com##ytd-rich-section-renderer
-youtube.com##:matches-path(/shorts) body
-
-youtube.com##ytd-search .ytd-thumbnail[href^="/shorts/"]:upward(ytd-video-renderer)
-youtube.com##ytd-watch-next-secondary-results-renderer .ytd-thumbnail[href^="/shorts/"]:upward(ytd-compact-video-renderer,ytd-shelf-renderer)
-youtube.com##ytd-browse #dismissible ytd-rich-grid-slim-media[is-short]:upward(ytd-rich-section-renderer)
+!#endif
 
 m.youtube.com##ytm-reel-shelf-renderer
 m.youtube.com##ytm-pivot-bar-renderer div.pivot-shorts:upward(ytm-pivot-bar-item-renderer)
@@ -352,7 +351,20 @@ m.youtube.com##ytm-single-column-watch-next-results-renderer ytm-thumbnail-overl
 
 ! YouTube
 
+!#if ext_ublock
+youtube.com##ytd-rich-section-renderer:remove()
+youtube.com##:matches-path(/shorts) body
+youtube.com###items > ytd-guide-entry-renderer:nth-child(2):remove()
+!#endif
+
+!#if !ext_ublock
+youtube.com##ytd-rich-section-renderer
 youtube.com###items > ytd-guide-entry-renderer:nth-child(2)
+!#endif
+
+youtube.com##ytd-search .ytd-thumbnail[href^="/shorts/"]:upward(ytd-video-renderer)
+youtube.com##ytd-watch-next-secondary-results-renderer .ytd-thumbnail[href^="/shorts/"]:upward(ytd-compact-video-renderer,ytd-shelf-renderer)
+youtube.com##ytd-browse #dismissible ytd-rich-grid-slim-media[is-short]:upward(ytd-rich-section-renderer)
 
 youtube.com##span.ytd-rich-shelf-renderer:has-text(/Breaking news/):upward(ytd-rich-section-renderer)
 youtube.com##ytd-button-renderer:has([aria-label="Share"])
@@ -478,3 +490,4 @@ www.androidauthority.com##div[class*="ad-banner"]
 !#endif
 
 www.androidauthority.com##:xpath(/html/body/div/main/div[2]/div[6]/div/div[1])
+
