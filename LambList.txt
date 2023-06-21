@@ -1,6 +1,6 @@
 [Adblock Plus 2.0; uBlock Origin]
 ! Title: 🌚 LambLeeg's list
-! Version: 20230615
+! Version: 20230621
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! Description: My personal list that contains all I need, and has not been found anywhere else.
@@ -376,11 +376,11 @@ youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerRespon
 !#if ext_ublock
 dzen.ru##[class*="card-news"]:remove()
 
-dzen.ru##^div[class="track-scroll-position__anchor-1s"]:remove()
-dzen.ru##^div[class="dzen-wrapper-with-top-content-desktop__topContent-1Q dzen-wrapper-with-top-content-desktop__hasFloors-2H"]:remove()
-dzen.ru##^div[class="dzen-search-arrow-common"]:remove()
+dzen.ru##div[class="track-scroll-position__anchor-1s"]:remove()
+dzen.ru##div[class="dzen-wrapper-with-top-content-desktop__topContent-1Q dzen-wrapper-with-top-content-desktop__hasFloors-2H"]:remove()
+dzen.ru##div[class="dzen-search-arrow-common"]:remove()
 
-dzen.ru##^aside[id="article__right"][class="publication-columns-layout__right article__right"]:remove()
+dzen.ru##aside[id="article__right"][class="publication-columns-layout__right article__right"]:remove()
 dzen.ru##article[class="publication-columns-layout__middle article__middle"]:style(max-width: 100% !important)
 dzen.ru##div[class="publication-columns-layout__right article__right"]:remove()
 dzen.ru##div[class="publication-columns-layout__middle article__middle"]:style(max-width: 100% !important; display: flex !important)
