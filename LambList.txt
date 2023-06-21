@@ -1,5 +1,5 @@
 [uBlock Origin; Adblock Plus 2.0]
-! Title: 🌚 LLL
+! Title: 🌚 L'n'LL
 ! Version: 20230621
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
@@ -11,7 +11,7 @@
 ! | |   / _` | '_ ` _ \| '_ \| |   / _ \/ _ \/ _` |
 ! | |__| (_| | | | | | | |_) | |__|  __/  __/ (_| |
 ! |_____\__,_|_| |_| |_|_.__/|_____\___|\___|\__, |
-! aka LambLeeg's list                        |___/ 
+! aka Lamb(and)Leeg's list                   |___/ 
 ! My uBlock config file, also works with Brave Shields
 ! ----------------------------------------------------
 
@@ -258,6 +258,43 @@
 ||webview.unityads.unity3d.com^$important
 ||config.unityads.unity3d.com^$important
 ||adserver.unityads.unity3d.com^$important
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GET RID FROM THE SEARCH !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+! Reddit
+
+www.google.*##.g:has(a[href*="reddit.com"])
+www.google.*##a[href*="reddit.com"]:upward(1)
+
+duckduckgo.com##a[data-testid="result-title-a"][href*="reddit.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="reddit.com"]:upward(.tile)
+
+startpage.com##.w-gl__result:has(a[href*="reddit.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(reddit.com))
+
+search.brave.com###results a[href*="reddit.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="reddit.com"]:upward([id^="img"])
+search.brave.com###results a[href*="reddit.com"]:upward(.card)
+
+
+! Quora
+
+www.google.*##.g:has(a[href*="quora.com"])
+www.google.*##a[href*="quora.com"]:upward(1)
+
+duckduckgo.com##a[data-testid="result-title-a"][href*="quora.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="quora.com"]:upward(.tile)
+
+startpage.com##.w-gl__result:has(a[href*="quora.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(quora.com))
+
+search.brave.com###results a[href*="quora.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="quora.com"]:upward([id^="img"])
+search.brave.com###results a[href*="quora.com"]:upward(.card)
 
 
 !!!!!!!!!!!!!!!!!!!!!!
@@ -512,40 +549,3 @@ www.androidauthority.com##div[class*="ad-banner"]
 !#endif
 
 www.androidauthority.com##:xpath(/html/body/div/main/div[2]/div[6]/div/div[1])
-
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! GET RID FROM THE SEARCH !
-!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-
-! Reddit
-
-www.google.*##.g:has(a[href*="reddit.com"])
-www.google.*##a[href*="reddit.com"]:upward(1)
-
-duckduckgo.com##a[data-testid="result-title-a"][href*="reddit.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="reddit.com"]:upward(.tile)
-
-startpage.com##.w-gl__result:has(a[href*="reddit.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(reddit.com))
-
-search.brave.com###results a[href*="reddit.com"]:upward(.snippet)
-search.brave.com###img-results a[href*="reddit.com"]:upward([id^="img"])
-search.brave.com###results a[href*="reddit.com"]:upward(.card)
-
-
-! Quora
-
-www.google.*##.g:has(a[href*="quora.com"])
-www.google.*##a[href*="quora.com"]:upward(1)
-
-duckduckgo.com##a[data-testid="result-title-a"][href*="quora.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="quora.com"]:upward(.tile)
-
-startpage.com##.w-gl__result:has(a[href*="quora.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(quora.com))
-
-search.brave.com###results a[href*="quora.com"]:upward(.snippet)
-search.brave.com###img-results a[href*="quora.com"]:upward([id^="img"])
-search.brave.com###results a[href*="quora.com"]:upward(.card)
