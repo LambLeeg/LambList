@@ -78,6 +78,9 @@
 ||fbcdn.net^$important,domain=~facebook.com|~facebook.net
 ||fbsbx.com^$important,domain=~facebook.com|~facebook.net
 
+||google.*^$important,domain=~youtube.com|~google.com
+||yandex.*^$important,domain=~ya.ru|~yandex.ru|~yandex.com|~meteum.ai
+
 ||telegram.*^$important,domain=~telegram.org|~web.telegram.org
 ||dzen.ru^$important,domain=~dzen.ru|~yandex.ru
 ||vk.com^$important,domain=~vk.com|~vk.ru
