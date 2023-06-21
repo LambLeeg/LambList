@@ -61,7 +61,6 @@
 
 ! Privacy
 
-||google.com/recaptcha/$third-party
 ||accounts.google.com/gsi/$third-party
 ||youtube.com/shorts$document,script
 
@@ -92,6 +91,8 @@
 ||hybrid.ai^$important
 ||adhigh.net^$important
 ||mediavoice.com^$important
+||videoplayerhub.com^$important
+||sharethis.com^$important
 
 
 ! Annoyances
