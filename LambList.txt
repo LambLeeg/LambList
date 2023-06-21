@@ -61,6 +61,7 @@
 
 ! Privacy
 
+||google.com/recaptcha/$third-party
 ||accounts.google.com/gsi/$third-party
 ||youtube.com/shorts$document,script
 
@@ -102,6 +103,7 @@
 ||adsninja.ca^$important
 ||adthrive.com^$important
 ||adriver.ru^$important
+||flodesk.com^$important
 
 
 ! Ads
