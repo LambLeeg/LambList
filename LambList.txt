@@ -328,7 +328,7 @@ www.reddit.com##[class*="h-header-large"]
 ! YouTube Mobile
 
 !#if ext_ublock
-m.youtube.com###app > ytm-pivot-bar-renderer > ytm-pivot-bar-item-renderer:nth-child(2):remove()
+m.youtube.com###app > ytm-pivot-bar-renderer > ytm-pivot-bar-item-renderer:nth-child(2)
 
 m.youtube.com##ytm-button-renderer[class="slim_video_action_bar_renderer_button icon-flag"]:remove()
 m.youtube.com##ytm-button-renderer[class="slim_video_action_bar_renderer_button icon-share_arrow"]:remove()
