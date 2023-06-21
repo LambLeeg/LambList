@@ -107,6 +107,7 @@
 ||mediavoice.com^
 ||videoplayerhub.com^
 ||sharethis.com^
+||condenastdigital.com^
 
 
 ! Annoyances
