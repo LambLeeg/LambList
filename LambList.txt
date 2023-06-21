@@ -64,6 +64,16 @@
 ||accounts.google.com/gsi/$third-party
 ||youtube.com/shorts$document,script
 
+
+! Social media jail
+
+||twitter.com^$important,domain=~twitter.com
+||tiktok.com^$important,domain=~tiktok.com
+||amazon.com^$important,domain=~amazon.com
+||quora.com^$important,domain=~quora.com
+||reddit.com^$important,domain=~reddit.com
+
+||instagram.com^$important,domain=~instagram.com
 ||facebook.com^$important,domain=~facebook.com|~facebook.net
 ||facebook.net^$important,domain=~facebook.com|~facebook.net
 ||fbcdn.net^$important,domain=~facebook.com|~facebook.net
@@ -267,18 +277,18 @@
 
 ! Reddit
 
-www.google.*##.g:has(a[href*="reddit.com"])
-www.google.*##a[href*="reddit.com"]:upward(1)
+!www.google.*##.g:has(a[href*="reddit.com"])
+!www.google.*##a[href*="reddit.com"]:upward(1)
 
-duckduckgo.com##a[data-testid="result-title-a"][href*="reddit.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="reddit.com"]:upward(.tile)
+!duckduckgo.com##a[data-testid="result-title-a"][href*="reddit.com"]:upward(.nrn-react-div)
+!duckduckgo.com##.tile-wrap a[href*="reddit.com"]:upward(.tile)
 
-startpage.com##.w-gl__result:has(a[href*="reddit.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(reddit.com))
+!startpage.com##.w-gl__result:has(a[href*="reddit.com"])
+!startpage.com##.image-container:has(div.image-quick-details span:has-text(reddit.com))
 
-search.brave.com###results a[href*="reddit.com"]:upward(.snippet)
-search.brave.com###img-results a[href*="reddit.com"]:upward([id^="img"])
-search.brave.com###results a[href*="reddit.com"]:upward(.card)
+!search.brave.com###results a[href*="reddit.com"]:upward(.snippet)
+!search.brave.com###img-results a[href*="reddit.com"]:upward([id^="img"])
+!search.brave.com###results a[href*="reddit.com"]:upward(.card)
 
 
 ! Quora
