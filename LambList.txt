@@ -156,6 +156,7 @@
 
 ! Analytics
 
+||jnn-pa.googleapis.com^$important
 ||googleanalytics.com^$important
 ||app-measurement.com^$important
 ||analytics.google.com^$important
