@@ -4,7 +4,7 @@
 ! Expires: 10 days
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
-! Description: My personal list that contains all I need, and has not been found anywhere else.
+! Description: My personal list that contains all I need, and has not been found anywhere else. The main goal is to make visual adjustments, and is to block the most annoying things alike.
 
 ! ----------------------------------------------------
 !  _                    _     _                    
@@ -403,12 +403,22 @@ wired.com##:xpath(/html/body/div[1]/div/div[5])
 www.androidauthority.com##div[class="-__Eb"]:remove()
 www.androidauthority.com##div[class="-__hh"]:remove()
 www.androidauthority.com##div[class*="ad-banner"]:remove()
+
+www.androidauthority.com##div[class="-__Mb"]:remove()
+www.androidauthority.com##div[class="-__d -__-b -__Vj"]:remove()
+www.androidauthority.com##aside[class="-__Uc"]:remove()
+www.androidauthority.com##div[class="-__d"]:remove()
 !#endif
 
 !#if !ext_ublock
 www.androidauthority.com##div[class="-__Eb"]
 www.androidauthority.com##div[class="-__hh"]
 www.androidauthority.com##div[class*="ad-banner"]
+
+www.androidauthority.com##div[class="-__Mb"]
+www.androidauthority.com##div[class="-__d -__-b -__Vj"]
+www.androidauthority.com##aside[class="-__Uc"]
+www.androidauthority.com##div[class="-__d"]
 !#endif
 
 www.androidauthority.com##:xpath(/html/body/div/main/div[2]/div[6]/div/div[1])
