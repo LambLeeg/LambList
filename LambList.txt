@@ -1,6 +1,7 @@
 [uBlock Origin; Adblock Plus 2.0]
 ! Title: 🌚 L'n'LL
-! Version: 20230621
+! Version: 20230622
+! Expires: 10 days
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! Description: My personal list that contains all I need, and has not been found anywhere else.
@@ -14,7 +15,7 @@
 ! aka Lamb(and)Leeg's list                   |___/ 
 ! My uBlock config file, also works with Brave Shields
 ! ----------------------------------------------------
-
+! *$script,third-party,important,~media,domain=~github.com
 
 !!!!!!!!!!!!!!!
 ! QUICK FIXES !
