@@ -1,6 +1,6 @@
 [uBlock Origin; Adblock Plus 2.0]
 ! Title: 🌚 L'n'LL
-! Version: 20230622
+! Version: 20230623
 ! Expires: 10 days
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
@@ -306,6 +306,12 @@ youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, playerResponse
 
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, auxiliaryUi.messageRenderers.enforcementMessageViewModel)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.auxiliaryUi.messageRenderers.enforcementMessageViewModel, undefined)
+
+
+! Dzen mobile
+
+dzen.ru##[class="article-render-mobile__embed_embed-type_yandex-direct.article-render-mobile__embed"]
+dzen.ru##[class="article-mobile__bottom-embed"]
 
 
 ! Dzen
