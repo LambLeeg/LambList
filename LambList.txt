@@ -34,21 +34,17 @@
 !!!!!!!!!!!!!!!!!!
 
 
-*/metrika/*
-*.ru/clck/*
-*.ru/click/*
-*.ru/ads/*
-
-.Google.Tracker.js
-.googleanalytics.js
-.GoogleAnalytics/
+/metrika/
+.ru/clck/
+.ru/click/
+.ru/ads/
 
 &event=view&
 /analytics^
-*/ads/tags/*
+/ads/tags/
 /counter.js
-*/counter/*
-*/counters/*
+/counter/
+/counters/
 
 
 !!!!!!!!!!!!!!!!!!!!
