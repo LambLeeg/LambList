@@ -188,9 +188,8 @@ old.reddit.com##[id="login_login-main"]
 
 ! Reddit
 
-www.reddit.com##[class^=XPromo]
-www.reddit.com##[class^=xpromo]
-www.reddit.com##[bundlename="bottom_bar_xpromo"]
+www.reddit.com##[class*=XPromo]
+www.reddit.com##[class*=xpromo]]
 
 www.reddit.com##body.scroll-is-blocked:style(overflow: visible!important; position: static!important;)
 www.reddit.com##[class*="useApp"]
@@ -299,11 +298,14 @@ dzen.ru##div[class="article-recommender__feed-container"]
 
 ! Meteum
 
+meteum.ai##a[class*="header-meteum"][href="https://b2b.meteum.ai/platform?utm_source=from_meteum_menu"]
+
 meteum.ai##div[class^="alerts alerts_cols_"]:style(margin: 0 0 0 0 !important)
 meteum.ai##div[class="content__top"]:style(margin: 12px 0 8px 0 !important)
 meteum.ai##div[class*=forecast-briefly][role="region"]:style(margin: 0 0 8px 0 !important)
 
 meteum.ai##a[class*="meteum-promo"][href="https://meteum.ai/meteum"]
+meteum.ai##div.footer__links > div:nth-child(3)
 
 
 ! Introvertdear
