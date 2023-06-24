@@ -281,10 +281,8 @@ dzen.ru##div[class="dzen-wrapper-with-top-content-desktop__topContent-1Q dzen-wr
 dzen.ru##div[class="dzen-search-arrow-common"]
 
 dzen.ru##[class*="publication-columns-layout__right"]
-dzen.ru##[class*="publication-columns-layout__middle"]:style(max-width: 100% !important; display: flex !important)
 
-dzen.ru##div[class="article-recommender article-recommender_is-white-dzen_undefined article-recommender_theme_white"]
-dzen.ru##div[class="article-recommender__feed-container"]
+dzen.ru##div[class*="article-recommender"]
 
 
 ! Meteum
