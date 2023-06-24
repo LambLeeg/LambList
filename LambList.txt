@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 🌚 L'n'LL
-! Version: 20230623
+! Version: 20230624
 ! Expires: 10 days
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
@@ -265,14 +265,11 @@ youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, auxiliaryUi.me
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.auxiliaryUi.messageRenderers.enforcementMessageViewModel, undefined)
 
 
-! Dzen mobile
+! Dzen
 
 dzen.ru##div[class*="yandex-direct"]
-dzen.ru##[class*="mobile__embed"]
-dzen.ru##[class*="mobile__bottom-embed"]
-
-
-! Dzen
+dzen.ru##[class*="_embed"]
+dzen.ru##[class*="_bottom-embed"]
 
 dzen.ru##[class*="card-news"]
 
@@ -283,10 +280,8 @@ dzen.ru##div[class="track-scroll-position__anchor-1s"]
 dzen.ru##div[class="dzen-wrapper-with-top-content-desktop__topContent-1Q dzen-wrapper-with-top-content-desktop__hasFloors-2H"]
 dzen.ru##div[class="dzen-search-arrow-common"]
 
-dzen.ru##aside[id="article__right"][class="publication-columns-layout__right article__right"]
-dzen.ru##article[class="publication-columns-layout__middle article__middle"]:style(max-width: 100% !important)
-dzen.ru##div[class="publication-columns-layout__right article__right"]
-dzen.ru##div[class="publication-columns-layout__middle article__middle"]:style(max-width: 100% !important; display: flex !important)
+dzen.ru##[class*="publication-columns-layout__right"]
+dzen.ru##[class*="publication-columns-layout__middle"]:style(max-width: 100% !important; display: flex !important)
 
 dzen.ru##div[class="article-recommender article-recommender_is-white-dzen_undefined article-recommender_theme_white"]
 dzen.ru##div[class="article-recommender__feed-container"]
