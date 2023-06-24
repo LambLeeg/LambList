@@ -174,7 +174,7 @@ search.brave.com###results a[href*="quora.com"]:upward(.card)
 ##[class*="pagead"]
 
 
-! Reddit Old Desktop
+! Reddit Old
 
 old.reddit.com##[class="infobar commentsignupbar"]
 old.reddit.com##[class="footer-parent"]
@@ -191,6 +191,20 @@ www.reddit.com##body.scroll-is-blocked:style(overflow: visible!important; positi
 www.reddit.com##[class*="useApp"]
 
 
+! YouTube
+
+www.youtube.com###items > ytd-guide-entry-renderer:nth-child(2)
+
+www.youtube.com##span.ytd-rich-shelf-renderer:has-text(/Breaking news/):upward(ytd-rich-section-renderer)
+www.youtube.com##ytd-button-renderer:has([aria-label="Share"])
+www.youtube.com##ytd-button-renderer:has([aria-label="Thanks"])
+www.youtube.com##ytd-button-renderer:has([aria-label="Join this channel"])
+www.youtube.com##ytd-button-renderer:has([aria-label="Search with your voice"])
+
+www.youtube.com##ytd-button-renderer:has([aria-label="Поделиться"])
+www.youtube.com##ytd-button-renderer:has([aria-label="Создать клип"])
+
+
 ! YouTube Mobile
 
 m.youtube.com###app > ytm-pivot-bar-renderer > ytm-pivot-bar-item-renderer:nth-child(2)
@@ -204,20 +218,6 @@ m.youtube.com##ytm-browse ytm-item-section-renderer ytm-thumbnail-overlay-time-s
 m.youtube.com##ytm-browse ytm-item-section-renderer ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-compact-video-renderer)
 m.youtube.com##ytm-search ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-compact-video-renderer)
 m.youtube.com##ytm-single-column-watch-next-results-renderer ytm-thumbnail-overlay-time-status-renderer span:has-text(/^(0:\d\d|1:0\d)$/):upward(ytm-video-with-context-renderer)
-
-
-! YouTube
-
-www.youtube.com###items > ytd-guide-entry-renderer:nth-child(2)
-
-www.youtube.com##span.ytd-rich-shelf-renderer:has-text(/Breaking news/):upward(ytd-rich-section-renderer)
-www.youtube.com##ytd-button-renderer:has([aria-label="Share"])
-www.youtube.com##ytd-button-renderer:has([aria-label="Thanks"])
-www.youtube.com##ytd-button-renderer:has([aria-label="Join this channel"])
-www.youtube.com##ytd-button-renderer:has([aria-label="Search with your voice"])
-
-www.youtube.com##ytd-button-renderer:has([aria-label="Поделиться"])
-www.youtube.com##ytd-button-renderer:has([aria-label="Создать клип"])
 
 
 ! Shorts
