@@ -131,22 +131,6 @@
 !!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
-! Reddit
-
-!www.google.*##.g:has(a[href*="reddit.com"])
-!www.google.*##a[href*="reddit.com"]:upward(1)
-
-!duckduckgo.com##a[data-testid="result-title-a"][href*="reddit.com"]:upward(.nrn-react-div)
-!duckduckgo.com##.tile-wrap a[href*="reddit.com"]:upward(.tile)
-
-!startpage.com##.w-gl__result:has(a[href*="reddit.com"])
-!startpage.com##.image-container:has(div.image-quick-details span:has-text(reddit.com))
-
-!search.brave.com###results a[href*="reddit.com"]:upward(.snippet)
-!search.brave.com###img-results a[href*="reddit.com"]:upward([id^="img"])
-!search.brave.com###results a[href*="reddit.com"]:upward(.card)
-
-
 ! Quora
 
 www.google.*##.g:has(a[href*="quora.com"])
