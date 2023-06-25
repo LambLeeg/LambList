@@ -36,13 +36,12 @@
 .net/tag/js/
 /advertising.js
 
-/analytics/*
 /counter.js
 /counter/*
 /counters/*
 .net/client/static
 &event=view&
-
+/analytics/*
 /adsbygoogle.js
 /analytics.js
 /analytics/event
@@ -67,7 +66,6 @@
 ! Privacy
 
 ||accounts.google.com/gsi/$third-party
-||youtube.com/shorts$document,script
 
 ||google.*^$important,domain=~youtube.com|~google.com
 ||yandex.*^$important,domain=~ya.ru|~yandex.ru|~yandex.com|~meteum.ai|~dzen.ru
@@ -75,16 +73,16 @@
 
 ! Social media jail
 
-||instagram.com^$important,domain=~instagram.com
-||facebook.*^$important,domain=~facebook.com|~facebook.net
-||fbcdn.net^$important,domain=~facebook.com|~facebook.net
-||fbsbx.com^$important,domain=~facebook.com|~facebook.net
-
 ||twitter.com^$important,domain=~twitter.com
 ||tiktok.com^$important,domain=~tiktok.com
 ||amazon.*^$important,domain=~amazon.com
 ||quora.com^$important,domain=~quora.com
 ||reddit.com^$important,domain=~reddit.com
+
+||instagram.com^$important,domain=~instagram.com
+||facebook.*^$important,domain=~facebook.com|~facebook.net
+||fbcdn.net^$important,domain=~facebook.com|~facebook.net
+||fbsbx.com^$important,domain=~facebook.com|~facebook.net
 
 ||mail.ru^$important,domain=~mail.ru
 ||telegram.*^$important,domain=~telegram.org|~web.telegram.org
