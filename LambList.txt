@@ -32,22 +32,24 @@
 !!!!!!!!!!!!!!!!!!
 
 
-/ads/tags/*
-.net/tag/js/
 /advertising.js
+/ads/tags
+.net/tag/js
 
+/beacon.min.js
+/tracking.js
 /counter.js
-/counter/*
-/counters/*
-.net/client/static
-&event=view&
-/analytics/*
 /adsbygoogle.js
 /analytics.js
+/counter
+/counters
+.net/client/static
+&event=view&
+/analytics
 /analytics/event
-/beacon.min.js
 
-/metrika/*
+/ads-async.js
+.ru/metrika/
 .ru/clck/
 .ru/click/
 .ru/ads/
