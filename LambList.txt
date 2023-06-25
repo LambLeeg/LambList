@@ -198,8 +198,8 @@ www.reddit.com##[class*="useApp"]
 
 ! YouTube
 
-www.youtube.com##[id="top-level-buttons-computed"] > [class="style-scope ytd-menu-renderer"]
-www.youtube.com##[id="flexible-item-buttons"][class="style-scope ytd-menu-renderer"]
+www.youtube.com###top-level-buttons-computed > ytd-button-renderer.ytd-menu-renderer.style-scope
+www.youtube.com###flexible-item-buttons
 
 m.youtube.com##[class="slim_video_action_bar_renderer_button icon-flag"]
 m.youtube.com##[class="slim_video_action_bar_renderer_button icon-share_arrow"]
