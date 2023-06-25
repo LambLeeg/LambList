@@ -198,30 +198,11 @@ www.reddit.com##[class*="useApp"]
 
 ! YouTube
 
-www.youtube.com##span.ytd-rich-shelf-renderer:has-text(/Breaking news/):upward(ytd-rich-section-renderer)
-www.youtube.com##ytd-button-renderer:has([aria-label="Share"])
-www.youtube.com##ytd-button-renderer:has([aria-label="Thanks"])
-www.youtube.com##ytd-button-renderer:has([aria-label="Join this channel"])
-www.youtube.com##ytd-button-renderer:has([aria-label="Search with your voice"])
+www.youtube.com##[id="top-level-buttons-computed"] > [class="style-scope ytd-menu-renderer"]
+www.youtube.com##[id="flexible-item-buttons"][class="style-scope ytd-menu-renderer"]
 
-www.youtube.com##ytd-button-renderer:has([aria-label="Поделиться"])
-www.youtube.com##ytd-button-renderer:has([aria-label="Создать клип"])
-
-
-! YouTube Mobile
-
-m.youtube.com##ytm-button-renderer[class="slim_video_action_bar_renderer_button icon-flag"]
-m.youtube.com##ytm-button-renderer[class="slim_video_action_bar_renderer_button icon-share_arrow"]
-
-
-! YouTube Premuim
-
-youtube.com,youtubekids.com,youtube-nocookie.com#@#+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
-youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds)
-youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds, playerConfig)
-
-youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, auxiliaryUi.messageRenderers.enforcementMessageViewModel)
-youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.auxiliaryUi.messageRenderers.enforcementMessageViewModel, undefined)
+m.youtube.com##[class="slim_video_action_bar_renderer_button icon-flag"]
+m.youtube.com##[class="slim_video_action_bar_renderer_button icon-share_arrow"]
 
 
 ! Dzen
