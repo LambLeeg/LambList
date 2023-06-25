@@ -1,7 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 🌚 L'n'LL
-! Version: 20230624
-! Expires: 10 days
+! Version: 20230625
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! Description: My personal list that contains all I need, and has not been found anywhere else. The main goal is to make visual adjustments, and is to block the most annoying things alike.
@@ -15,7 +14,6 @@
 ! aka Lamb(and)Leeg's list                   |___/ 
 ! My uBlock config file, also works with Brave Shields
 ! ----------------------------------------------------
-! *$script,third-party,important,~media,domain=~github.com
 
 
 !!!!!!!!!!!!!!!
@@ -34,17 +32,26 @@
 !!!!!!!!!!!!!!!!!!
 
 
+/ads/tags/
+.net/tag/js/
+/advertising.js
+
+/analytics/
+/counter.js
+/counter/
+/counters/
+.net/client/static
+&event=view&
+
+/adsbygoogle.js
+/analytics.js
+/analytics/event
+/beacon.min.js
+
 /metrika/
 .ru/clck/
 .ru/click/
 .ru/ads/
-
-&event=view&
-/analytics^
-/ads/tags/
-/counter.js
-/counter/
-/counters/
 
 
 !!!!!!!!!!!!!!!!!!!!
@@ -193,8 +200,6 @@ www.reddit.com##[class*="useApp"]
 
 ! YouTube
 
-www.youtube.com###items > ytd-guide-entry-renderer:nth-child(2)
-
 www.youtube.com##span.ytd-rich-shelf-renderer:has-text(/Breaking news/):upward(ytd-rich-section-renderer)
 www.youtube.com##ytd-button-renderer:has([aria-label="Share"])
 www.youtube.com##ytd-button-renderer:has([aria-label="Thanks"])
@@ -207,52 +212,8 @@ www.youtube.com##ytd-button-renderer:has([aria-label="Создать клип"])
 
 ! YouTube Mobile
 
-m.youtube.com###app > ytm-pivot-bar-renderer > ytm-pivot-bar-item-renderer:nth-child(2)
-
 m.youtube.com##ytm-button-renderer[class="slim_video_action_bar_renderer_button icon-flag"]
 m.youtube.com##ytm-button-renderer[class="slim_video_action_bar_renderer_button icon-share_arrow"]
-
-m.youtube.com##ytm-reel-shelf-renderer
-m.youtube.com##ytm-pivot-bar-renderer div.pivot-shorts:upward(ytm-pivot-bar-item-renderer)
-m.youtube.com##ytm-browse ytm-item-section-renderer ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-video-with-context-renderer)
-m.youtube.com##ytm-browse ytm-item-section-renderer ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-compact-video-renderer)
-m.youtube.com##ytm-search ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-compact-video-renderer)
-m.youtube.com##ytm-single-column-watch-next-results-renderer ytm-thumbnail-overlay-time-status-renderer span:has-text(/^(0:\d\d|1:0\d)$/):upward(ytm-video-with-context-renderer)
-
-
-! Shorts
-
-www.youtube.com##ytd-guide-renderer a.yt-simple-endpoint path[d^="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33"]:upward(ytd-guide-entry-renderer)
-www.youtube.com##ytd-mini-guide-renderer a.yt-simple-endpoint path[d^="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33"]:upward(ytd-mini-guide-entry-renderer)
-www.youtube.com##ytd-browse #dismissible ytd-rich-grid-slim-media[is-short]:upward(ytd-rich-section-renderer)
-www.youtube.com##ytd-browse[page-subtype="home"] .ytd-thumbnail[href^="/shorts/"]:upward(ytd-rich-item-renderer)
-www.youtube.com##ytd-browse[page-subtype="subscriptions"] .ytd-thumbnail[href^="/shorts/"]:upward(ytd-grid-video-renderer,ytd-rich-item-renderer)
-www.youtube.com##ytd-search .ytd-thumbnail[href^="/shorts/"]:upward(ytd-video-renderer)
-www.youtube.com##ytd-watch-next-secondary-results-renderer .ytd-thumbnail[href^="/shorts/"]:upward(ytd-compact-video-renderer,ytd-shelf-renderer)
-www.youtube.com##ytd-watch-next-secondary-results-renderer ytd-reel-shelf-renderer
-www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-video-renderer .ytd-thumbnail[href^="/shorts/"]:upward(ytd-item-section-renderer)
-www.youtube.com##ytd-browse[page-subtype="channels"] #contents.ytd-reel-shelf-renderer:upward(ytd-item-section-renderer)
-www.youtube.com##ytd-browse[page-subtype="trending"] .ytd-thumbnail[href^="/shorts/"]:upward(ytd-video-renderer)
-www.youtube.com##ytd-search #contents ytd-reel-shelf-renderer
-
-www.youtube.com##ytd-browse ytd-grid-video-renderer:has(#video-title[title]:has-text(/\b#shorts\b/i))
-www.youtube.com##ytd-browse ytd-rich-item-renderer:has(#video-title-link[title]:has-text(/\b#shorts\b/i))
-www.youtube.com##ytd-search ytd-video-renderer:has(#video-title[title]:has-text(/\b#shorts\b/i))
-www.youtube.com##ytd-watch-next-secondary-results-renderer ytd-compact-video-renderer:has(#video-title[title]:has-text(/\b#shorts\b/i))
-m.youtube.com##ytm-browse ytm-video-with-context-renderer:has(.media-item-headline:has-text(/\b#shorts\b/i))
-m.youtube.com##ytm-search ytm-video-with-context-renderer:has(.media-item-headline:has-text(/\b#shorts\b/i))
-m.youtube.com##.watch-below-the-player ytm-video-with-context-renderer:has(.media-item-headline:has-text(/\b#shorts\b/i))
-www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-video-renderer #video-title[title]:has-text(/\b#shorts\b/i):upward(ytd-item-section-renderer)
-m.youtube.com##ytm-browse div[tab-identifier="FEsubscriptions"] ytm-video-with-context-renderer:has(.media-item-headline:has-text(/\b#shorts\b/i))
-youtube.com##ytd-rich-grid-row, #contents.ytd-rich-grid-row:style(display:contents !important;)
-
-m.youtube.com##ytm-reel-shelf-renderer
-m.youtube.com##ytm-pivot-bar-renderer div.pivot-shorts:upward(ytm-pivot-bar-item-renderer)
-m.youtube.com##ytm-browse ytm-item-section-renderer ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-video-with-context-renderer)
-m.youtube.com##ytm-browse ytm-item-section-renderer ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-compact-video-renderer)
-m.youtube.com##ytm-search ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-compact-video-renderer)
-m.youtube.com##ytm-single-column-watch-next-results-renderer ytm-thumbnail-overlay-time-status-renderer span:has-text(/^(0:\d\d|1:0\d)$/):upward(ytm-video-with-context-renderer)
-youtube.com##ytd-rich-grid-row, #contents.ytd-rich-grid-row:style(display:contents !important;)
 
 
 ! YouTube Premuim
@@ -277,7 +238,7 @@ dzen.ru##div[class="navigation-sidebar__separator-Nm"]
 dzen.ru##aside[class*="navigation-sidebar"] > ul[class*="sidebar-meta-links"]
 
 dzen.ru##div[class="track-scroll-position__anchor-1s"]
-dzen.ru##div[class="dzen-wrapper-with-top-content-desktop__topContent-1Q dzen-wrapper-with-top-content-desktop__hasFloors-2H"]
+dzen.ru##div[class*="dzen-wrapper-with-top-content-desktop__topContent"]
 dzen.ru##div[class="dzen-search-arrow-common"]
 
 dzen.ru##[class*="publication-columns-layout__right"]
@@ -295,18 +256,16 @@ meteum.ai##div[class*=forecast-briefly][role="region"]:style(margin: 0 0 8px 0 !
 
 meteum.ai##a[class*="-promo"][href="https://meteum.ai/meteum"]
 
-meteum.ai##div.footer__links > div:nth-child(3)
-
 
 ! Introvertdear
 
-introvertdear.com##[class^=has-text-align-center]
+introvertdear.com##[class*=has-text-align-center]
 introvertdear.com##[class*="social-wrap"]
 
 introvertdear.com##slick-search-panel
 introvertdear.com##slick-heartbeat
 
-introvertdear.com##[id^=AdThrive_]
+introvertdear.com##[id*=AdThrive_]
 introvertdear.com##.slick-inline-search-panel
 
 
