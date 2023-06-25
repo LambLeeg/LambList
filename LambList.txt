@@ -191,9 +191,7 @@ old.reddit.com##[id="login_login-main"]
 
 ! Reddit
 
-www.reddit.com##[class*=XPromo]
-www.reddit.com##[class*=xpromo]
-
+www.reddit.com##[class*="/xpromo/i"]
 www.reddit.com##body.scroll-is-blocked:style(overflow: visible!important; position: static!important;)
 www.reddit.com##[class*="useApp"]
 
