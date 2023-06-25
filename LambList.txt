@@ -32,14 +32,14 @@
 !!!!!!!!!!!!!!!!!!
 
 
-/ads/tags/
+/ads/tags/*
 .net/tag/js/
 /advertising.js
 
-/analytics/
+/analytics/*
 /counter.js
-/counter/
-/counters/
+/counter/*
+/counters/*
 .net/client/static
 &event=view&
 
@@ -48,7 +48,7 @@
 /analytics/event
 /beacon.min.js
 
-/metrika/
+/metrika/*
 .ru/clck/
 .ru/click/
 .ru/ads/
@@ -192,7 +192,7 @@ old.reddit.com##[id="login_login-main"]
 ! Reddit
 
 www.reddit.com##[class*=XPromo]
-www.reddit.com##[class*=xpromo]]
+www.reddit.com##[class*=xpromo]
 
 www.reddit.com##body.scroll-is-blocked:style(overflow: visible!important; position: static!important;)
 www.reddit.com##[class*="useApp"]
