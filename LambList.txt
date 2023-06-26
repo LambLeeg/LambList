@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 🌚 L'n'LL
-! Version: 20230625
+! Version: 20230626
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! Description: My personal list that contains all I need, and has not been found anywhere else. The main goal is to make visual adjustments, and is to block the most annoying things alike.
@@ -32,14 +32,26 @@
 !!!!!!!!!!!!!!!!!!
 
 
+/adsbygoogle.js
 /advertising.js
+/nativeads/script
 /ads/tags
 .net/tag/js
+/generate_204
 
+/beacon.js
 /beacon.min.js
+/sensorsdata.js
+/sensorsdata.min.js
+
 /tracking.js
+/track.js
 /counter.js
-/adsbygoogle.js
+/count.js
+/datadog-logs-v4.js
+/tracker
+/track^
+
 /analytics.js
 /counter
 /counters
@@ -47,12 +59,15 @@
 &event=view&
 /analytics
 /analytics/event
+/browser/stats
 
+/watch_serp.js
 /ads-async.js
-.ru/metrika/
-.ru/clck/
-.ru/click/
-.ru/ads/
+.ru/count
+.ru/metrika
+.ru/clck
+.ru/click
+.ru/ads
 
 
 !!!!!!!!!!!!!!!!!!!!
@@ -96,6 +111,7 @@
 
 ! Mix
 
+||doubleclick.*^
 ||addthis.com^
 ||close.io^
 ||cookielaw.org^
@@ -126,27 +142,6 @@
 ||adthrive.com^
 ||adriver.ru^
 ||flodesk.com^
-
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! GET RID FROM THE SEARCH !
-!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-
-! Quora
-
-www.google.*##.g:has(a[href*="quora.com"])
-www.google.*##a[href*="quora.com"]:upward(1)
-
-duckduckgo.com##a[data-testid="result-title-a"][href*="quora.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="quora.com"]:upward(.tile)
-
-startpage.com##.w-gl__result:has(a[href*="quora.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(quora.com))
-
-search.brave.com###results a[href*="quora.com"]:upward(.snippet)
-search.brave.com###img-results a[href*="quora.com"]:upward([id^="img"])
-search.brave.com###results a[href*="quora.com"]:upward(.card)
 
 
 !!!!!!!!!!!!!!!!!!!!!!
