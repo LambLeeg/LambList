@@ -31,11 +31,17 @@
 ! UIVERSAL RULES !
 !!!!!!!!!!!!!!!!!!
 
+/launcher/tags/*/launcher
 
+^ads.js
+/ads/ads.js
+/ads/ads.css
 /adsbygoogle.js
 /advertising.js
 /nativeads/script
+/ad/event
 /ads/tags
+/native-ad
 .net/tag/js
 /generate_204
 
@@ -61,6 +67,8 @@
 
 /watch_serp.js
 /ads-async.js
+.ru/api/*/launcher/stats
+/adfox
 .ru/count
 .ru/metrika
 .ru/clck
@@ -109,7 +117,7 @@
 
 ! Mix
 
-||doubleclick.*^
+||doubleclick.net^
 ||addthis.com^
 ||close.io^
 ||datadome.co^
@@ -123,6 +131,11 @@
 ||demdex.net^
 ||hybrid.ai^
 ||mediavoice.com^
+||clck.yandex.ru^
+||mc.yandex.ru^
+||http-check-headers.yandex.ru^
+​||concert.io^
+||cnzz.com^
 
 
 ! Annoyances
@@ -222,6 +235,7 @@ introvertdear.com##[class*="social-wrap"]
 introvertdear.com##slick-search-panel
 introvertdear.com##slick-heartbeat
 
+introvertdear.com##[id^=AdThrive_]
 introvertdear.com##[id*=AdThrive_]
 introvertdear.com##.slick-inline-search-panel
 
