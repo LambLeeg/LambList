@@ -54,11 +54,9 @@
 
 /analytics.js
 /counter
-/counters
 .net/client/static
 &event=view&
 /analytics
-/analytics/event
 /browser/stats
 
 /watch_serp.js
@@ -90,16 +88,16 @@
 
 ! Social media jail
 
+||instagram.com^$important,domain=~instagram.com
+||facebook.*^$important,domain=~facebook.com|~facebook.net
+||fbcdn.net^$important,domain=~facebook.com|~facebook.net
+||fbsbx.com^$important,domain=~facebook.com|~facebook.net
+
 ||twitter.com^$important,domain=~twitter.com
 ||tiktok.com^$important,domain=~tiktok.com
 ||amazon.*^$important,domain=~amazon.com
 ||quora.com^$important,domain=~quora.com
 ||reddit.com^$important,domain=~reddit.com
-
-||instagram.com^$important,domain=~instagram.com
-||facebook.*^$important,domain=~facebook.com|~facebook.net
-||fbcdn.net^$important,domain=~facebook.com|~facebook.net
-||fbsbx.com^$important,domain=~facebook.com|~facebook.net
 
 ||mail.ru^$important,domain=~mail.ru
 ||telegram.*^$important,domain=~telegram.org|~web.telegram.org
@@ -114,7 +112,6 @@
 ||doubleclick.*^
 ||addthis.com^
 ||close.io^
-||cookielaw.org^
 ||datadome.co^
 ||dotmetrics.net^
 ||collector.github.com^
@@ -125,15 +122,13 @@
 ||sharethis.com^
 ||demdex.net^
 ||hybrid.ai^
-||adhigh.net^
 ||mediavoice.com^
-||videoplayerhub.com^
-||sharethis.com^
-||condenastdigital.com^
 
 
 ! Annoyances
 
+||adhigh.net^
+||cookielaw.org^
 ||slickstream.com^
 ||disqus.com^
 ||disquscdn.com^
@@ -142,6 +137,9 @@
 ||adthrive.com^
 ||adriver.ru^
 ||flodesk.com^
+||videoplayerhub.com^
+||sharethis.com^
+||condenastdigital.com^
 
 
 !!!!!!!!!!!!!!!!!!!!!!
@@ -170,6 +168,7 @@ old.reddit.com##[id="login_login-main"]
 
 ! Reddit
 
+www.reddit.com##[class^="/xpromo/i"]
 www.reddit.com##[class*="/xpromo/i"]
 www.reddit.com##body.scroll-is-blocked:style(overflow: visible!important; position: static!important;)
 www.reddit.com##[class*="useApp"]
