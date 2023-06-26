@@ -40,7 +40,7 @@
 /adsbygoogle.js
 /advertising.js
 /nativeads/script
-​/api/ads/*
+/api/ads/*
 /ad/event
 /ads/tags
 /native-ad
@@ -138,7 +138,7 @@
 ||clck.yandex.ru^
 ||mc.yandex.ru^
 ||http-check-headers.yandex.ru^
-​||concert.io^
+||concert.io^
 ||cnzz.com^
 ||sentry.io^
 ||hotjar.com^
@@ -180,20 +180,20 @@
 ##[class*="pagead"]
 
 
-! Reddit Old
-
-old.reddit.com##[class="infobar commentsignupbar"]
-old.reddit.com##[class="footer-parent"]
-old.reddit.com##[id="header-bottom-right"]
-old.reddit.com##[id="login_login-main"]
-
-
 ! Reddit
 
 www.reddit.com##[class^="/xpromo/i"]
 www.reddit.com##[class*="/xpromo/i"]
 www.reddit.com##body.scroll-is-blocked:style(overflow: visible!important; position: static!important;)
 www.reddit.com##[class*="useApp"]
+
+
+! Reddit Old
+
+old.reddit.com##[class="infobar commentsignupbar"]
+old.reddit.com##[class="footer-parent"]
+old.reddit.com##[id="header-bottom-right"]
+old.reddit.com##[id="login_login-main"]
 
 
 ! YouTube
