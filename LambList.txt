@@ -158,6 +158,7 @@
 ||clck.yandex.ru^
 ||mc.yandex.ru^
 ||http-check-headers.yandex.ru^
+||statchecker.yandex.ru^
 ||top-fwz1.mail.ru^
 ||ad.mail.ru^
 ||reklama.mail.ru^
