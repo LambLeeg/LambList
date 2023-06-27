@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 🌚 L'n'LL
-! Version: 20230626
+! Version: 20230627
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! Description: My personal list that contains all I need, and has not been found anywhere else. The main goal is to make visual adjustments, and is to block the most annoying things alike.
@@ -57,21 +57,24 @@
 /counter.js
 /count.js
 /datadog-logs
+/csp_report
 /telemetry
 /tracker
 /track^
 
 /analytics.js
-/counter
-.net/client/static
 &event=view&
+/counter
+/ytr_counter
 /analytics
 /browser/stats
+.net/client/static
 
 /watch_serp.js
 /ads-async.js
-.ru/api/*/launcher/stats
+/px.js?ch=
 /adfox
+.ru/api/*/launcher/stats
 .ru/count
 .ru/metrika
 .ru/clck
@@ -120,48 +123,61 @@
 
 ! Mix
 
-||google-analytics.com^
-||doubleclick.net^
-||addthis.com^
-||close.io^
+||cookielaw.org^
 ||datadome.co^
-||dotmetrics.net^
-||collector.github.com^
-||mailtag.io^
-||jnn-pa.googleapis.com^
-||moatads.com^
-||segment.io^
-||sharethis.com^
-||demdex.net^
 ||hybrid.ai^
-||mediavoice.com^
-||clck.yandex.ru^
-||mc.yandex.ru^
-||http-check-headers.yandex.ru^
-||concert.io^
-||cnzz.com^
-||sentry.io^
-||hotjar.com^
-||consentframework.com^
-||privacymanager.io^
-
-
-! Annoyances
+||adsninja.ca^
 
 ||adhigh.net^
-||cookielaw.org^
+||doubleclick.net^
+||dotmetrics.net^
+||demdex.net^
+||mradx.net^
+
+||collector.github.com^
+||mediavoice.com^
+||cnzz.com^
+||hotjar.com^
+||consentframework.com^
+||jnn-pa.googleapis.com^
+||moatads.com^
+||sharethis.com^
+||addthis.com^
+||google-analytics.com^
+||flodesk.com^
+||videoplayerhub.com^
+||sharethis.com^
+||condenastdigital.com^
+||adthrive.com^
 ||cookieyes.com^
 ||slickstream.com^
 ||disqus.com^
 ||disquscdn.com^
 ||wisepops.com^
-||adsninja.ca^
-||adthrive.com^
+
+||clck.yandex.ru^
+||mc.yandex.ru^
+||http-check-headers.yandex.ru^
+||top-fwz1.mail.ru^
+||ad.mail.ru^
+||reklama.mail.ru^
+||trk.mail.ru^
+||xray.mail.ru^
+||likemore-go.imgsmail.ru^
+||rs.mail.ru^
+||radar.imgsmail.ru^
+||cspreport.mail.ru^
 ||adriver.ru^
-||flodesk.com^
-||videoplayerhub.com^
-||sharethis.com^
-||condenastdigital.com^
+||yadro.ru^
+||tns-counter.ru^
+
+||close.io^
+||mailtag.io^
+||segment.io^
+||concert.io^
+||sentry.io^
+||privacymanager.io^
+||polyfill.io^
 
 
 !!!!!!!!!!!!!!!!!!!!!!
