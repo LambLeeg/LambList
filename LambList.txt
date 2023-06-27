@@ -96,22 +96,22 @@
 
 ||accounts.google.com/gsi/$third-party
 
-||google.*^$domain=~youtube.com|~google.com|~wide-youtube.l.google.com
-||yandex.*^$domain=~ya.ru|~yandex.ru|~yandex.com|~meteum.ai|~dzen.ru
+||google.*^$important,domain=~youtube.com|~google.com|~wide-youtube.l.google.com
+||yandex.*^$important,domain=~ya.ru|~yandex.ru|~yandex.com|~meteum.ai|~dzen.ru
 
 
 ! Social media jail
-
-||instagram.com^$important,domain=~instagram.com
-||facebook.*^$important,domain=~facebook.com|~facebook.net
-||fbcdn.net^$important,domain=~facebook.com|~facebook.net
-||fbsbx.com^$important,domain=~facebook.com|~facebook.net
 
 ||twitter.com^$important,domain=~twitter.com
 ||tiktok.com^$important,domain=~tiktok.com
 ||amazon.*^$important,domain=~amazon.com
 ||quora.com^$important,domain=~quora.com
 ||reddit.com^$important,domain=~reddit.com
+
+||instagram.com^$important,domain=~instagram.com
+||facebook.*^$important,domain=~facebook.com|~facebook.net
+||fbcdn.net^$important,domain=~facebook.com|~facebook.net
+||fbsbx.com^$important,domain=~facebook.com|~facebook.net
 
 ||mail.ru^$important,domain=~mail.ru
 ||telegram.*^$important,domain=~telegram.org|~web.telegram.org
