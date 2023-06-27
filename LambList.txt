@@ -196,6 +196,11 @@
 ##[class*="pagead"]
 
 
+# Telegram Web
+
+web.telegram.org##.CommentButton
+
+
 ! Reddit
 
 www.reddit.com##[class^="/xpromo/i"]
