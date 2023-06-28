@@ -101,8 +101,9 @@
 
 ||google.*^$important,domain=~youtube.com|~google.com|~wide-youtube.l.google.com
 ||yandex.*^$important,domain=~ya.ru|~yandex.ru|~yandex.com|~meteum.ai|~dzen.ru
-||vk.*^$important,domain=~vk.com|~vk.ru|~vk.company
 
+||vk.*^$important,domain=~vk.com|~vk.ru|~vk.company
+||vkcdn.ru^$important,domain=~vk.com|~vk.ru|~vk.company
 
 ! Social media jail
 
