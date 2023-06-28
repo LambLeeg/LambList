@@ -100,6 +100,7 @@
 
 ||google.*^$important,domain=~youtube.com|~google.com|~wide-youtube.l.google.com
 ||yandex.*^$important,domain=~ya.ru|~yandex.ru|~yandex.com|~meteum.ai|~dzen.ru
+||vk.*^$important,domain=~vk.com|~vk.ru|~vk.company
 
 
 ! Social media jail
@@ -118,8 +119,6 @@
 ||mail.ru^$important,domain=~mail.ru
 ||telegram.*^$important,domain=~telegram.org|~web.telegram.org
 ||dzen.ru^$important,domain=~dzen.ru|~yandex.ru
-||vk.com^$important,domain=~vk.com|~vk.ru
-||vk.ru^$important,domain=~vk.com|~vk.ru
 ||ok.ru^$important,domain=~ok.ru
 
 
