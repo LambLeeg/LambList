@@ -13,6 +13,7 @@
 ! |_____\__,_|_| |_| |_|_.__/|_____\___|\___|\__, |
 ! aka Lamb(and)Leeg's list                   |___/ 
 ! My uBlock config file, also works with Brave Shields
+! This list may be called aggresive-ish
 ! ----------------------------------------------------
 
 
@@ -94,7 +95,7 @@
 *$ping
 
 
-! Privacy
+! Privacy (Everywhere companies)
 
 ||accounts.google.com/gsi/$third-party
 
@@ -135,6 +136,14 @@
 ||demdex.net^
 ||mradx.net^
 
+||close.io^
+||mailtag.io^
+||segment.io^
+||concert.io^
+||sentry.io^
+||privacymanager.io^
+||polyfill.io^
+
 ||collector.github.com^
 ||mediavoice.com^
 ||cnzz.com^
@@ -172,14 +181,6 @@
 ||adriver.ru^
 ||yadro.ru^
 ||tns-counter.ru^
-
-||close.io^
-||mailtag.io^
-||segment.io^
-||concert.io^
-||sentry.io^
-||privacymanager.io^
-||polyfill.io^
 
 
 !!!!!!!!!!!!!!!!!!!!!!
