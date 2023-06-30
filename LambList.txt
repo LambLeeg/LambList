@@ -223,6 +223,8 @@ old.reddit.com##[id="login_login-main"]
 
 ! YouTube
 
+www.youtube.com###comments #content-text:style(font-size: 16px !important;)
+
 www.youtube.com###top-level-buttons-computed > ytd-button-renderer.ytd-menu-renderer.style-scope
 www.youtube.com###flexible-item-buttons
 
