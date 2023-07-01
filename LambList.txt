@@ -211,8 +211,8 @@ web.telegram.org##.CommentButton
 
 ! Reddit
 
-www.reddit.com##[class^="/xpromo/i"]
-www.reddit.com##[class*="/xpromo/i"]
+www.reddit.com##[class^="Xpromo"]
+www.reddit.com##[class^="xpromo"]
 www.reddit.com##body.scroll-is-blocked:style(overflow: visible!important; position: static!important;)
 www.reddit.com##[class*="useApp"]
 
@@ -264,6 +264,7 @@ meteum.ai##div[class^="alerts alerts_cols_"]:style(margin: 0 0 0 0 !important)
 meteum.ai##div[class="content__top"]:style(margin: 12px 0 8px 0 !important)
 meteum.ai##div[class*=forecast-briefly][role="region"]:style(margin: 0 0 8px 0 !important)
 
+meteum.ai##[class*="PollutionWidget"]
 meteum.ai##[class*="pollution-widget"]
 meteum.ai##a[class*="-promo"][href="https://meteum.ai/meteum"]
 
