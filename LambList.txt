@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 🌚 L'n'LL
-! Version: 20230628
+! Version: 20230701
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! Description: My personal list that contains all I need, and has not been found anywhere else. The main goal is to make visual adjustments, and is to block the most annoying things alike.
@@ -104,6 +104,10 @@
 
 ||vk.*^$important,domain=~vk.com|~vk.ru|~vk.company
 ||vkcdn.ru^$important,domain=~vk.com|~vk.ru|~vk.company
+
+||duckduckgo.com^$important,domain=~duckduckgo.com
+||search.brave.com^$important,domain=~search.brave.com
+
 
 ! Social media jail
 
@@ -260,6 +264,7 @@ meteum.ai##div[class^="alerts alerts_cols_"]:style(margin: 0 0 0 0 !important)
 meteum.ai##div[class="content__top"]:style(margin: 12px 0 8px 0 !important)
 meteum.ai##div[class*=forecast-briefly][role="region"]:style(margin: 0 0 8px 0 !important)
 
+meteum.ai##[class*="pollution-widget"]
 meteum.ai##a[class*="-promo"][href="https://meteum.ai/meteum"]
 
 
