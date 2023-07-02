@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 🌚 L'n'LL
-! Version: 20230701
+! Version: 20230702
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! Description: My personal list that contains all I need, and has not been found anywhere else. The main goal is to make visual adjustments, and is to block the most annoying things alike.
@@ -13,7 +13,6 @@
 ! |_____\__,_|_| |_| |_|_.__/|_____\___|\___|\__, |
 ! aka Lamb(and)Leeg's list                   |___/ 
 ! My uBlock config file, also works with Brave Shields
-! This list may be called aggresive-ish
 ! ----------------------------------------------------
 
 
@@ -31,6 +30,7 @@
 !!!!!!!!!!!!!!!!!!
 ! UIVERSAL RULES !
 !!!!!!!!!!!!!!!!!!
+
 
 /get_site_data?requestuuid=
 /tags/*/launcher
@@ -95,40 +95,9 @@
 *$ping
 
 
-! Privacy (Everywhere companies)
+! Mix
 
 ||accounts.google.com/gsi/$third-party
-
-||google.*^$important,domain=~youtube.com|~google.com|~wide-youtube.l.google.com
-||yandex.*^$important,domain=~ya.ru|~yandex.ru|~yandex.com|~meteum.ai|~dzen.ru
-
-||vk.*^$important,domain=~vk.com|~vk.ru|~vk.company
-||vkcdn.ru^$important,domain=~vk.com|~vk.ru|~vk.company
-
-||duckduckgo.com^$important,domain=~duckduckgo.com
-||search.brave.com^$important,domain=~search.brave.com
-
-
-! Social media jail
-
-||twitter.com^$important,domain=~twitter.com
-||tiktok.com^$important,domain=~tiktok.com
-||amazon.*^$important,domain=~amazon.com
-||quora.com^$important,domain=~quora.com
-||reddit.com^$important,domain=~reddit.com
-
-||instagram.com^$important,domain=~instagram.com
-||facebook.*^$important,domain=~facebook.com|~facebook.net
-||fbcdn.net^$important,domain=~facebook.com|~facebook.net
-||fbsbx.com^$important,domain=~facebook.com|~facebook.net
-
-||mail.ru^$important,domain=~mail.ru
-||telegram.*^$important,domain=~telegram.org|~web.telegram.org
-||dzen.ru^$important,domain=~dzen.ru|~yandex.ru
-||ok.ru^$important,domain=~ok.ru
-
-
-! Mix
 
 ||cookielaw.org^
 ||datadome.co^
