@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 🌚 L'n'LL
-! Version: 20230702
+! Version: 20230703
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! Description: My personal list that contains all I need, and has not been found anywhere else. The main goal is to make visual adjustments, and is to block the most annoying things alike.
@@ -25,6 +25,11 @@
 
 @@||s.youtube.com/api/stats/watchtime*
 @@||youtube.com/api/stats/watchtime*
+
+
+! Yandex
+
+@@||yastatic.net^$domain=ya.ru
 
 
 !!!!!!!!!!!!!!!!!!
