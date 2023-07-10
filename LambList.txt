@@ -27,6 +27,12 @@
 @@||youtube.com/api/stats/watchtime*
 
 
+! VK Messenger
+
+@@||vk.com/images/icons/vkme_favicons/*.ico
+@@||vk.com/images/icons/vkme_favicons/*.svg
+
+
 ! Yandex
 
 @@||yastatic.net^$domain=ya.ru
