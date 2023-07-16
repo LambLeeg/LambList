@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 🌚 L'n'LL
-! Version: 20230715
+! Version: 20230716
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! Description: My personal list that contains all I need, and has not been found anywhere else. The main goal is to make visual adjustments, and is to block the most annoying things alike.
@@ -131,27 +131,62 @@
 
 # Telegram Web
 
+!#if ext_ublock
+web.telegram.org##^.CommentButton
+!#endif
+
+!#if !ext_ublock
 web.telegram.org##.CommentButton
+!#endif
 
 
 ! Reddit
 
+!#if ext_ublock
+www.reddit.com##^[class^="Xpromo"]
+www.reddit.com##^[class^="xpromo"]
+www.reddit.com##^body.scroll-is-blocked:style(overflow: visible!important; position: static!important;)
+www.reddit.com##^[class*="useApp"]
+!#endif
+
+!#if !ext_ublock
 www.reddit.com##[class^="Xpromo"]
 www.reddit.com##[class^="xpromo"]
 www.reddit.com##body.scroll-is-blocked:style(overflow: visible!important; position: static!important;)
 www.reddit.com##[class*="useApp"]
+!#endif
 
 
 ! Reddit Old
 
+!#if ext_ublock
+old.reddit.com##^[class="infobar commentsignupbar"]
+old.reddit.com##^[class="footer-parent"]
+old.reddit.com##^[id="header-bottom-right"]
+old.reddit.com##^[id="login_login-main"]
+!#endif
+
+!#if !ext_ublock
 old.reddit.com##[class="infobar commentsignupbar"]
 old.reddit.com##[class="footer-parent"]
 old.reddit.com##[id="header-bottom-right"]
 old.reddit.com##[id="login_login-main"]
+!#endif
 
 
 ! YouTube
 
+!#if ext_ublock
+www.youtube.com##^#comments #content-text:style(font-size: 16px !important;)
+
+www.youtube.com##^#top-level-buttons-computed > ytd-button-renderer.ytd-menu-renderer.style-scope
+www.youtube.com##^#flexible-item-buttons
+
+m.youtube.com##^[class="slim_video_action_bar_renderer_button icon-flag"]
+m.youtube.com##^[class="slim_video_action_bar_renderer_button icon-share_arrow"]
+!#endif
+
+!#if !ext_ublock
 www.youtube.com###comments #content-text:style(font-size: 16px !important;)
 
 www.youtube.com###top-level-buttons-computed > ytd-button-renderer.ytd-menu-renderer.style-scope
@@ -159,10 +194,31 @@ www.youtube.com###flexible-item-buttons
 
 m.youtube.com##[class="slim_video_action_bar_renderer_button icon-flag"]
 m.youtube.com##[class="slim_video_action_bar_renderer_button icon-share_arrow"]
+!#endif
 
 
 ! Dzen
 
+!#if ext_ublock
+dzen.ru##^div[class*="yandex-direct"]
+dzen.ru##^[class*="_embed"]
+dzen.ru##^[class*="_bottom-embed"]
+
+dzen.ru##^[class*="card-news"]
+
+dzen.ru##^div[class="navigation-sidebar__separator-Nm"]
+dzen.ru##^aside[class*="navigation-sidebar"] > ul[class*="sidebar-meta-links"]
+
+dzen.ru##^div[class="track-scroll-position__anchor-1s"]
+dzen.ru##^div[class*="dzen-wrapper-with-top-content-desktop__topContent"]
+dzen.ru##^div[class="dzen-search-arrow-common"]
+
+dzen.ru##^[class*="publication-columns-layout__right"]
+
+dzen.ru##^div[class*="article-recommender"]
+!#endif
+
+!#if !ext_ublock
 dzen.ru##div[class*="yandex-direct"]
 dzen.ru##[class*="_embed"]
 dzen.ru##[class*="_bottom-embed"]
@@ -179,15 +235,36 @@ dzen.ru##div[class="dzen-search-arrow-common"]
 dzen.ru##[class*="publication-columns-layout__right"]
 
 dzen.ru##div[class*="article-recommender"]
+!#endif
 
 
 ! VK
 
+!#if ext_ublock
+vk.com##^div[class="page_block"] > div[id="react_rootShortVideoStub"]
+!#endif
+
+!#if !ext_ublock
 vk.com##div[class="page_block"] > div[id="react_rootShortVideoStub"]
+!#endif
 
 
 ! Meteum
 
+!#if ext_ublock
+meteum.ai##^a[class*="header-meteum"][href="https://b2b.meteum.ai/platform?utm_source=from_meteum_menu"]
+
+meteum.ai##^div[class^="alerts alerts_cols_"]:style(margin: 0 0 0 0 !important)
+meteum.ai##^div[class="content__top"]:style(margin: 12px 0 8px 0 !important)
+meteum.ai##^div[class*=forecast-briefly][role="region"]:style(margin: 0 0 8px 0 !important)
+meteum.ai##^div[class*="pro-entry-points"]:style(margin: 0 0 8px 0 !important)
+
+meteum.ai##^[class*="PollutionWidget"]
+meteum.ai##^[class*="pollution-widget"]
+meteum.ai##^a[class*="-promo"][href="https://meteum.ai/meteum"]
+!#endif
+
+!#if !ext_ublock
 meteum.ai##a[class*="header-meteum"][href="https://b2b.meteum.ai/platform?utm_source=from_meteum_menu"]
 
 meteum.ai##div[class^="alerts alerts_cols_"]:style(margin: 0 0 0 0 !important)
@@ -198,10 +275,25 @@ meteum.ai##div[class*="pro-entry-points"]:style(margin: 0 0 8px 0 !important)
 meteum.ai##[class*="PollutionWidget"]
 meteum.ai##[class*="pollution-widget"]
 meteum.ai##a[class*="-promo"][href="https://meteum.ai/meteum"]
+!#endif
 
 
 ! Introvertdear
 
+!#if ext_ublock
+introvertdear.com##^[class*=has-text-align-center]
+introvertdear.com##^[class*="social-wrap"]
+introvertdear.com##^[class^="wp-block-group"]
+
+introvertdear.com##^slick-search-panel
+introvertdear.com##^slick-heartbeat
+
+introvertdear.com##^[id^=AdThrive_]
+introvertdear.com##^[id*=AdThrive_]
+introvertdear.com##^.slick-inline-search-panel
+!#endif
+
+!#if !ext_ublock
 introvertdear.com##[class*=has-text-align-center]
 introvertdear.com##[class*="social-wrap"]
 introvertdear.com##[class^="wp-block-group"]
@@ -212,10 +304,23 @@ introvertdear.com##slick-heartbeat
 introvertdear.com##[id^=AdThrive_]
 introvertdear.com##[id*=AdThrive_]
 introvertdear.com##.slick-inline-search-panel
+!#endif
 
 
 ! AndroidAuthority
 
+!#if ext_ublock
+www.androidauthority.com##^div[class="-__Eb"]
+www.androidauthority.com##^div[class="-__hh"]
+www.androidauthority.com##^div[class*="ad-banner"]
+
+www.androidauthority.com##^div[class="-__Mb"]
+www.androidauthority.com##^div[class="-__d -__-b -__Vj"]
+www.androidauthority.com##^aside[class="-__Uc"]
+www.androidauthority.com##^div[class="-__d"]
+!#endif
+
+!#if !ext_ublock
 www.androidauthority.com##div[class="-__Eb"]
 www.androidauthority.com##div[class="-__hh"]
 www.androidauthority.com##div[class*="ad-banner"]
@@ -224,4 +329,4 @@ www.androidauthority.com##div[class="-__Mb"]
 www.androidauthority.com##div[class="-__d -__-b -__Vj"]
 www.androidauthority.com##aside[class="-__Uc"]
 www.androidauthority.com##div[class="-__d"]
-
+!#endif
