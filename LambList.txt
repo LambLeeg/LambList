@@ -304,3 +304,7 @@ www.androidauthority.com##aside[class="-__Uc"]
 www.androidauthority.com##div[class="-__d"]
 !#endif
 
+
+! GlobalTimes
+
+www.globaltimes.cn##[id="commentIframe"]
