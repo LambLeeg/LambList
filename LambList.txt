@@ -46,6 +46,11 @@
 /get_site_data?requestuuid=
 /tags/*/launcher
 
+/beacon.js
+/beacon.min.js
+/sensorsdata.js
+/sensorsdata.min.js
+
 /ads.min.js
 /ads.js
 /ads.css
@@ -59,11 +64,6 @@
 .net/tag/js
 /generate_204
 /ads
-
-/beacon.js
-/beacon.min.js
-/sensorsdata.js
-/sensorsdata.min.js
 
 /tracking.min.js
 /tracking.js
@@ -276,8 +276,3 @@ www.androidauthority.com##div[class="-__d -__-b -__Vj"]
 www.androidauthority.com##aside[class="-__Uc"]
 www.androidauthority.com##div[class="-__d"]
 !#endif
-
-
-! GlobalTimes
-
-www.globaltimes.cn##[id="commentIframe"]
