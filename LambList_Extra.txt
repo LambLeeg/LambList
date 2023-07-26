@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 🌚 L'n'LL Extra
-! Version: 20230725
+! Version: 20230726
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! Description: My personal list that contains all I need, and has not been found anywhere else. The main goal is to make visual adjustments, and is to block the most annoying things alike.
@@ -36,8 +36,8 @@
 ||fbcdn.net^$important,domain=~facebook.com|~facebook.net
 ||fbsbx.com^$important,domain=~facebook.com|~facebook.net
 
-||vk.*^$important,domain=~vk.com|~vk.ru|~vk.company|~vk.mail.ru
-||vkcdn.ru^$important,domain=~vk.com|~vk.ru|~vk.company|~vk.mail.ru
+||vk.*^$important,domain=~vk.com|~vk.ru|~vk.me|~vk.company|~vk.mail.ru
+||vkcdn.ru^$important,domain=~vk.com|~vk.ru|~vk.me|~vk.company|~vk.mail.ru
 
 ||mail.ru^$important,domain=~mail.ru
 ||telegram.*^$important,domain=~telegram.org|~web.telegram.org
