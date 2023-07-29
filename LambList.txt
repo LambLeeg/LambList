@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 🌚 L'n'LL
-! Version: 20230724
+! Version: 20230729
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! Description: My personal list that contains all I need, and has not been found anywhere else. The main goal is to make visual adjustments, and is to block the most annoying things alike.
@@ -106,8 +106,6 @@
 ! Global uBO-ish (Adguard)
 
 *$ping
-*$csp
-*$removeheader
 
 
 ! Mix
@@ -127,36 +125,18 @@ web.telegram.org##.CommentButton
 
 ! Reddit
 
-!#if ext_ublock
-www.reddit.com##^[class^="Xpromo"]
-www.reddit.com##^[class^="xpromo"]
-www.reddit.com##body.scroll-is-blocked:style(overflow: visible!important; position: static!important;)
-www.reddit.com##^[class*="useApp"]
-!#endif
-
-!#if !ext_ublock
 www.reddit.com##[class^="Xpromo"]
 www.reddit.com##[class^="xpromo"]
 www.reddit.com##body.scroll-is-blocked:style(overflow: visible!important; position: static!important;)
 www.reddit.com##[class*="useApp"]
-!#endif
 
 
 ! Reddit Old
 
-!#if ext_ublock
-old.reddit.com##^[class="infobar commentsignupbar"]
-old.reddit.com##^[class="footer-parent"]
-old.reddit.com##^[id="header-bottom-right"]
-old.reddit.com##^[id="login_login-main"]
-!#endif
-
-!#if !ext_ublock
 old.reddit.com##[class="infobar commentsignupbar"]
 old.reddit.com##[class="footer-parent"]
 old.reddit.com##[id="header-bottom-right"]
 old.reddit.com##[id="login_login-main"]
-!#endif
 
 
 ! YouTube
@@ -197,20 +177,6 @@ vk.ru,vk.com##div[class="page_block"] > div[id="react_rootShortVideoStub"]
 
 ! Meteum
 
-!#if ext_ublock
-meteum.ai##^a[class*="header-meteum"][href="https://b2b.meteum.ai/platform?utm_source=from_meteum_menu"]
-
-meteum.ai##div[class^="alerts alerts_cols_"]:style(margin: 0 0 0 0 !important)
-meteum.ai##div[class="content__top"]:style(margin: 12px 0 8px 0 !important)
-meteum.ai##div[class*=forecast-briefly][role="region"]:style(margin: 0 0 8px 0 !important)
-meteum.ai##div[class*="pro-entry-points"]:style(margin: 0 0 8px 0 !important)
-
-meteum.ai##^[class*="PollutionWidget"]
-meteum.ai##^[class*="pollution-widget"]
-meteum.ai##^a[class*="-promo"][href="https://meteum.ai/meteum"]
-!#endif
-
-!#if !ext_ublock
 meteum.ai##a[class*="header-meteum"][href="https://b2b.meteum.ai/platform?utm_source=from_meteum_menu"]
 
 meteum.ai##div[class^="alerts alerts_cols_"]:style(margin: 0 0 0 0 !important)
@@ -221,26 +187,10 @@ meteum.ai##div[class*="pro-entry-points"]:style(margin: 0 0 8px 0 !important)
 meteum.ai##[class*="PollutionWidget"]
 meteum.ai##[class*="pollution-widget"]
 meteum.ai##a[class*="-promo"][href="https://meteum.ai/meteum"]
-!#endif
 
 
 ! Introvertdear
 
-!#if ext_ublock
-introvertdear.com##^[class*=has-text-align-center]
-introvertdear.com##^[class*="social-wrap"]
-introvertdear.com##^[class^="wp-block-group"]
-
-introvertdear.com##^slick-search-panel
-introvertdear.com##^slick-heartbeat
-
-introvertdear.com##^[class="sidebar-inner-wrap"]
-introvertdear.com##^[id^=AdThrive_]
-introvertdear.com##^[id*=AdThrive_]
-introvertdear.com##[class="slick-inline-search-panel"]
-!#endif
-
-!#if !ext_ublock
 introvertdear.com##[class*=has-text-align-center]
 introvertdear.com##[class*="social-wrap"]
 introvertdear.com##[class^="wp-block-group"]
@@ -252,23 +202,10 @@ introvertdear.com##[class="sidebar-inner-wrap"]
 introvertdear.com##[id^=AdThrive_]
 introvertdear.com##[id*=AdThrive_]
 introvertdear.com##.slick-inline-search-panel
-!#endif
 
 
 ! AndroidAuthority
 
-!#if ext_ublock
-www.androidauthority.com##^div[class="-__Eb"]
-www.androidauthority.com##^div[class="-__hh"]
-www.androidauthority.com##^div[class*="ad-banner"]
-
-www.androidauthority.com##^div[class="-__Mb"]
-www.androidauthority.com##^div[class="-__d -__-b -__Vj"]
-www.androidauthority.com##^aside[class="-__Uc"]
-www.androidauthority.com##^div[class="-__d"]
-!#endif
-
-!#if !ext_ublock
 www.androidauthority.com##div[class="-__Eb"]
 www.androidauthority.com##div[class="-__hh"]
 www.androidauthority.com##div[class*="ad-banner"]
@@ -277,4 +214,3 @@ www.androidauthority.com##div[class="-__Mb"]
 www.androidauthority.com##div[class="-__d -__-b -__Vj"]
 www.androidauthority.com##aside[class="-__Uc"]
 www.androidauthority.com##div[class="-__d"]
-!#endif
