@@ -103,14 +103,22 @@
 !!!!!!!!!!!!!!!!!!!!
 
 
-! Global uBO-ish (Adguard)
+! Global beacon hit man
 
 *$ping
 
 
 ! Mix
 
+||facebook.*^$third-party
+||amazon.*^$third-party
+||mail.ru^$third-party
+
+||google.*^$third-party,domain=~youtube.com|~wide-youtube.l.google.com
+||yandex.*^$third-party,domain=~ya.ru|~meteum.ai|~dzen.ru
+
 ||accounts.google.com/gsi/$third-party
+||slickstream.com^$third-party
 
 
 !!!!!!!!!!!!!!!!!!!!!!
