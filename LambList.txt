@@ -33,9 +33,10 @@
 @@||vk.com/images/icons/vkme_favicons/*.svg
 
 
-! Yandex
+! Yandex & Google
 
 @@||yastatic.net^$domain=ya.ru
+@@||gstatic.com^$domain=youtube.com
 
 
 !!!!!!!!!!!!!!!!!!
@@ -115,7 +116,6 @@
 ||mail.ru^$third-party
 
 ||google.*^$third-party,domain=~youtube.com|~wide-youtube.l.google.com
-||yandex.*^$third-party,domain=~ya.ru|~meteum.ai|~dzen.ru
 
 ||accounts.google.com/gsi/$third-party
 ||slickstream.com^$third-party
