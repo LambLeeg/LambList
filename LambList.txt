@@ -3,7 +3,7 @@
 ! Version: 20230801
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
-! Description: This list is made to ne small, yet powerful enough to stop massive tracking and is made to cometic some sites properly.
+! Description: This list is made to be small, yet powerful enough to stop massive tracking, and is made to cosmetic some sites properly.
 ! ----------------------------------------------------
 !  _                    _     _                    
 ! | |    __ _ _ __ ___ | |__ | |    ___  ___  __ _ 
