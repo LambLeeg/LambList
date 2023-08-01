@@ -1,10 +1,9 @@
 [Adblock Plus 2.0]
 ! Title: 🌚 L'n'LL
-! Version: 20230731
+! Version: 20230801
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
-! Description: My personal list that contains all I need, and has not been found anywhere else. The main goal is to make visual adjustments, and is to block the most annoying things alike.
-
+! Description: This list is made to ne small, yet powerful enough to stop massive tracking and is made to cometic some sites properly.
 ! ----------------------------------------------------
 !  _                    _     _                    
 ! | |    __ _ _ __ ___ | |__ | |    ___  ___  __ _ 
@@ -114,10 +113,27 @@
 ! Mix
 
 ||facebook.*^$third-party
-||amazon.*^$third-party
+||fbsbx.com^$third-party,domain=~facebook.com
+||fbcdn.net^$third-party,domain=~facebook.com
+||tfbnw.net^$third-party,domain=~facebook.com
 
+||amazon.*^$third-party
+||amazon-adsystem.com^$third-party,domain=~amazon.com
+||amazonaws.com^$third-party,domain=~amazon.com
+
+||apple.com^$third-party
+||mzstatic.com^$third-party
+||icloud.com^$third-party
+||mac.com^$third-party
+
+||google.*^$third-party,domain=~youtube.com
 ||googleoptimize.com^$third-party,script
 ||googletagmanager.com^$third-party,script
+||googleadservices.com^$third-party,script
+||googleanalytics.com^$third-party,script
+||google-analytics.com^$third-party,script
+||googleads.com^$third-party,script
+||crashlytics.com^$third-party,script
 
 ||accounts.google.com/gsi/$third-party
 ||slickstream.com^$third-party
