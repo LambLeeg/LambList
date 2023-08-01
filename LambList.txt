@@ -88,9 +88,11 @@
 /browser/stats
 .net/client/static
 
+/metrika/watch.js
 /watch_serp.js
 /ads-async.js
 /px.js?ch=
+/metrika
 /adfox
 .ru/api/*/launcher/stats
 .ru/count
@@ -134,6 +136,14 @@
 ||google-analytics.com^$third-party,script
 ||googleads.com^$third-party,script
 ||crashlytics.com^$third-party,script
+
+||yandex.*^$third-party,domain=~yandex.ru|~yandex.net|~yandex.com|~ya.ru|~dzen.ru|~yastatic.net
+||metrica.yandex.*^$third-party
+||mc.yandex.ru^$third-party,script
+||an.yandex.ru^$third-party,script
+||adfstat.yandex.ru^$third-party,script
+||awsync.yandex.ru^$third-party,script
+||statchecker.yandex.ru^$third-party,script
 
 ||accounts.google.com/gsi/$third-party
 ||slickstream.com^$third-party
