@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 🌚 L'n'LL
-! Version: 20230801
+! Version: 20230802
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! Description: This list is made to be small, yet powerful enough to stop massive tracking, and is made to cosmetic some sites properly.
@@ -36,6 +36,9 @@
 
 @@||yastatic.net^$domain=ya.ru
 @@||gstatic.com^$domain=youtube.com
+
+@@||api-maps.yandex.ru^
+@@||maps.yandex.net^
 
 
 !!!!!!!!!!!!!!!!!!
@@ -137,7 +140,7 @@
 ||googleads.com^$third-party,script
 ||crashlytics.com^$third-party,script
 
-||yandex.*^$third-party,domain=~yandex.ru|~yandex.net|~yandex.com|~ya.ru|~dzen.ru|~yastatic.net
+||yandex.*^$third-party,domain=~yandex.ru|~yandex.net|~yandex.com|~ya.ru|~dzen.ru|~yastatic.net|~meteum.ai
 ||metrica.yandex.*^$third-party
 ||mc.yandex.ru^$third-party,script
 ||an.yandex.ru^$third-party,script
