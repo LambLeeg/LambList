@@ -138,6 +138,7 @@
 ||googleanalytics.com^$third-party,script
 ||google-analytics.com^$third-party,script
 ||googleads.com^$third-party,script
+||doubleclick.net^$third-party,script
 ||crashlytics.com^$third-party,script
 
 ||yandex.*^$third-party,domain=~yandex.ru|~yandex.net|~yandex.com|~ya.ru|~dzen.ru|~yastatic.net|~meteum.ai
@@ -164,6 +165,14 @@ web.telegram.org##.CommentButton
 
 
 ! VK
+
+vk.ru,vk.com##+js(set-constant, noAdsAtAll, {})
+vk.ru,vk.com##+js(set-constant, noAdsAtAll, true)
+vk.ru,vk.com##+js(set-constant, window.Unauthorized2, undefined)
+vk.ru,vk.com##+js(set-constant, window.PageBottomBanners.initUnauthBanner, noopFunc)
+vk.ru,vk.com##+js(abort-on-property-read, Groups.showDisclaimer)
+vk.ru,vk.com##+js(abort-on-property-read, PageBottomBanners)
+vk.ru,vk.com##+js(href-sanitizer, a[href*="/away.php?to="], ?to)
 
 vk.ru,vk.com##div[id*="box_donut"]
 vk.ru,vk.com##div[class="page_block"] > div[id="react_rootShortVideoStub"]
