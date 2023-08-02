@@ -165,6 +165,7 @@ web.telegram.org##.CommentButton
 
 ! VK
 
+vk.ru,vk.com##div[id*="box_donut"]
 vk.ru,vk.com##div[class="page_block"] > div[id="react_rootShortVideoStub"]
 
 
