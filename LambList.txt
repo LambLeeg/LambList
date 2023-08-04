@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 🌚 L'n'LL
-! Version: 20230802
+! Version: 20230804
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! Description: This list is made to be small, yet powerful enough to stop massive tracking, and is made to cosmetic some sites properly.
@@ -166,6 +166,7 @@ web.telegram.org##.CommentButton
 
 ! VK
 
+vk.ru,vk.com##+js(abort-on-property-read, Unauthorized2)
 vk.ru,vk.com##+js(set-constant, noAdsAtAll, {})
 vk.ru,vk.com##+js(set-constant, noAdsAtAll, true)
 vk.ru,vk.com##+js(set-constant, window.Unauthorized2, undefined)
