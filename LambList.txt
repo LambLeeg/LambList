@@ -131,7 +131,7 @@
 ||icloud.com^$third-party
 ||mac.com^$third-party
 
-||google.*^$third-party,domain=~youtube.com
+||google.*^$third-party,domain=~youtube.com|~ytimg.l.google.com
 ||googleoptimize.com^$third-party,script
 ||googletagmanager.com^$third-party,script
 ||googleadservices.com^$third-party,script
