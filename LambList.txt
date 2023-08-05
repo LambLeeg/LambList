@@ -154,6 +154,10 @@
 ||awsync.yandex.ru^$3p,script
 ||statchecker.yandex.ru^$3p,script
 
+||vk.*^$3p,script,domain=~vk.mail.ru|~id.vk.com|~vk.me|~vk.com
+||stats.vk-portal.net^$3p,script
+||tns-counter.ru^$3p,script
+
 ||reddit.com^$3p,script
 ||tiktok.com^$3p,script
 ||twitter.com^$3p,script
