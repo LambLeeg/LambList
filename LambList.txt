@@ -90,6 +90,7 @@
 
 @@||s.youtube.com/api/stats/watchtime*
 @@||youtube.com/api/stats/watchtime*
+@@||l.google.com^
 
 
 ! VK Messenger
@@ -134,7 +135,7 @@
 ||mac.com^$3p
 
 ||accounts.google.com/gsi/$3p
-||google.*^$3p,domain=~youtube.com|~ytimg.l.google.com
+||google.*^$3p,domain=~youtube.com
 ||googleoptimize.com^$3p,script
 ||googletagmanager.com^$3p,script
 ||googleadservices.com^$3p,script
