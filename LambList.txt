@@ -1,6 +1,6 @@
-[Adblock Plus 2.0]
+[uBlock Origin]
 ! Title: 🌚 L'n'LL
-! Version: 20230804
+! Version: 20230805
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! Description: This list is made to be small, yet powerful enough to stop massive tracking, and is made to cosmetic some sites properly.
@@ -11,7 +11,9 @@
 ! | |__| (_| | | | | | | |_) | |__|  __/  __/ (_| |
 ! |_____\__,_|_| |_| |_|_.__/|_____\___|\___|\__, |
 ! aka Lamb(and)Leeg's list                   |___/ 
-! My uBlock config file, also works with Brave Shields
+! ----------------------------------------------------
+! The list is made for uBlock Origin, compatibility 
+! ain't guarantied with any other software
 ! ----------------------------------------------------
 
 
@@ -117,44 +119,47 @@
 
 ! Mix
 
-||facebook.*^$third-party
-||fbsbx.com^$third-party,domain=~facebook.com
-||fbcdn.net^$third-party,domain=~facebook.com
-||tfbnw.net^$third-party,domain=~facebook.com
+||facebook.*^$3p
+||fbsbx.com^$3p,domain=~facebook.com
+||fbcdn.net^$3p,domain=~facebook.com
+||tfbnw.net^$3p,domain=~facebook.com
 
-||amazon.*^$third-party
-||amazon-adsystem.com^$third-party,domain=~amazon.com
-||amazonaws.com^$third-party,domain=~amazon.com
+||amazon.*^$3p
+||amazon-adsystem.com^$3p,domain=~amazon.com
+||amazonaws.com^$3p,domain=~amazon.com
 
-||apple.com^$third-party
-||mzstatic.com^$third-party
-||icloud.com^$third-party
-||mac.com^$third-party
+||apple.com^$3p
+||mzstatic.com^$3p
+||icloud.com^$3p
+||mac.com^$3p
 
-||google.*^$third-party,domain=~youtube.com|~ytimg.l.google.com
-||googleoptimize.com^$third-party,script
-||googletagmanager.com^$third-party,script
-||googleadservices.com^$third-party,script
-||googleanalytics.com^$third-party,script
-||google-analytics.com^$third-party,script
-||googleads.com^$third-party,script
-||doubleclick.net^$third-party,script
-||crashlytics.com^$third-party,script
+||accounts.google.com/gsi/$3p
+||google.*^$3p,domain=~youtube.com|~ytimg.l.google.com
+||googleoptimize.com^$3p,script
+||googletagmanager.com^$3p,script
+||googleadservices.com^$3p,script
+||googleanalytics.com^$3p,script
+||google-analytics.com^$3p,script
+||googleads.com^$3p,script
+||doubleclick.net^$3p,script
+||crashlytics.com^$3p,script
 
-||yandex.*^$third-party,domain=~yandex.ru|~yandex.net|~yandex.com|~ya.ru|~dzen.ru|~yastatic.net|~meteum.ai
-||metrica.yandex.*^$third-party
-||mc.yandex.ru^$third-party,script
-||an.yandex.ru^$third-party,script
-||clck.yandex.ru^$third-party,script
-||adfstat.yandex.ru^$third-party,script
-||awsync.yandex.ru^$third-party,script
-||statchecker.yandex.ru^$third-party,script
+||yandex.*^$3p,domain=~yandex.ru|~yandex.net|~yandex.com|~ya.ru|~dzen.ru|~yastatic.net|~meteum.ai
+||metrica.yandex.*^$3p
+||mc.yandex.ru^$3p,script
+||an.yandex.ru^$3p,script
+||clck.yandex.ru^$3p,script
+||adfstat.yandex.ru^$3p,script
+||awsync.yandex.ru^$3p,script
+||statchecker.yandex.ru^$3p,script
 
-||accounts.google.com/gsi/$third-party
-||slickstream.com^$third-party
-||reddit.com^$third-party
-||tiktok.com^$third-party
-||twitter.com^$third-party
+||reddit.com^$3p
+||tiktok.com^$3p
+||twitter.com^$3p
+
+||slickstream.com^$3p,script
+||disqus.*^$3p,script
+||disquscdn.com$3p,script
 
 
 !!!!!!!!!!!!!!!!!!!!!!
@@ -179,15 +184,14 @@ vk.ru,vk.com##+js(abort-on-property-read, PageBottomBanners)
 vk.ru,vk.com##+js(href-sanitizer, a[href*="/away.php?to="], ?to)
 
 vk.ru,vk.com##div[id*="box_donut"]
-vk.ru,vk.com##div[class="page_block"] > div[id="react_rootShortVideoStub"]
+vk.ru,vk.com##div[class="page_block"] > div[id="react_rootShortVideoStub"]:remove()
 
 
 ! Reddit
 
-www.reddit.com##[class^="Xpromo"]
-www.reddit.com##[class^="xpromo"]
+www.reddit.com##[class^="Xpromo"]:remove()
+www.reddit.com##[class^="xpromo"]:remove()
 www.reddit.com##body.scroll-is-blocked:style(overflow: visible!important; position: static!important;)
-www.reddit.com##[class*="useApp"]
 
 
 ! Reddit Old
@@ -200,7 +204,7 @@ old.reddit.com##[id="login_login-main"]
 
 ! YouTube
 
-www.youtube.com###comments #content-text:style(font-size: 16px !important;)
+www.youtube.com###comments #content-text:style(font-size: 18px !important;)
 
 www.youtube.com###top-level-buttons-computed > ytd-button-renderer.ytd-menu-renderer.style-scope
 www.youtube.com###flexible-item-buttons
@@ -245,12 +249,16 @@ meteum.ai##a[class*="-promo"][href="https://meteum.ai/meteum"]
 
 ! Introvertdear
 
-introvertdear.com##[class*=has-text-align-center]
-introvertdear.com##[class*="social-wrap"]
+introvertdear.com##^[class*=has-text-align-center]
+introvertdear.com##^[class*="social-wrap"]
 introvertdear.com##[class^="wp-block-group"]
 
 introvertdear.com##slick-search-panel
 introvertdear.com##slick-heartbeat
+
+introvertdear.com##aside[id="secondary"][role="complementary"]:remove()
+introvertdear.com##div[class="content-container site-container"]:style(grid-template-columns: auto auto !important)
+introvertdear.com##div[id^="disqus_"]:remove()
 
 introvertdear.com##[class="sidebar-inner-wrap"]
 introvertdear.com##[id^=AdThrive_]
