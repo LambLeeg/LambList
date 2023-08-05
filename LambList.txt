@@ -169,7 +169,7 @@
 
 # Telegram Web
 
-web.telegram.org##.CommentButton
+web.telegram.org##.CommentButton:remove()
 
 
 ! VK
@@ -183,7 +183,7 @@ vk.ru,vk.com##+js(abort-on-property-read, Groups.showDisclaimer)
 vk.ru,vk.com##+js(abort-on-property-read, PageBottomBanners)
 vk.ru,vk.com##+js(href-sanitizer, a[href*="/away.php?to="], ?to)
 
-vk.ru,vk.com##div[id*="box_donut"]
+vk.ru,vk.com##div[id*="box_donut"]:remove()
 vk.ru,vk.com##div[class="page_block"] > div[id="react_rootShortVideoStub"]:remove()
 
 
@@ -206,8 +206,8 @@ old.reddit.com##[id="login_login-main"]
 
 www.youtube.com###comments #content-text:style(font-size: 18px !important;)
 
-www.youtube.com###top-level-buttons-computed > ytd-button-renderer.ytd-menu-renderer.style-scope
-www.youtube.com###flexible-item-buttons
+www.youtube.com###top-level-buttons-computed > ytd-button-renderer.ytd-menu-renderer.style-scope:remove()
+www.youtube.com###flexible-item-buttons:remove()
 
 m.youtube.com##[class="slim_video_action_bar_renderer_button icon-flag"]
 m.youtube.com##[class="slim_video_action_bar_renderer_button icon-share_arrow"]
@@ -235,44 +235,42 @@ dzen.ru##div[class*="article-recommender"]
 
 ! Meteum
 
-meteum.ai##a[class*="header-meteum"][href="https://b2b.meteum.ai/platform?utm_source=from_meteum_menu"]
+meteum.ai##a[class*="header-meteum"][href="https://b2b.meteum.ai/platform?utm_source=from_meteum_menu"]:remove()
 
 meteum.ai##div[class^="alerts alerts_cols_"]:style(margin: 0 0 0 0 !important)
 meteum.ai##div[class="content__top"]:style(margin: 12px 0 8px 0 !important)
 meteum.ai##div[class*=forecast-briefly][role="region"]:style(margin: 0 0 8px 0 !important)
 meteum.ai##div[class*="pro-entry-points"]:style(margin: 0 0 8px 0 !important)
 
-meteum.ai##[class*="PollutionWidget"]
-meteum.ai##[class*="pollution-widget"]
-meteum.ai##a[class*="-promo"][href="https://meteum.ai/meteum"]
+meteum.ai##a[class*="-promo"][href="https://meteum.ai/meteum"]:remove()
 
 
 ! Introvertdear
 
 introvertdear.com##^[class*=has-text-align-center]
 introvertdear.com##^[class*="social-wrap"]
-introvertdear.com##[class^="wp-block-group"]
+introvertdear.com##[class^="wp-block-group"]:remove()
 
-introvertdear.com##slick-search-panel
-introvertdear.com##slick-heartbeat
+introvertdear.com##slick-search-panel:remove()
+introvertdear.com##slick-heartbeat:remove()
 
 introvertdear.com##aside[id="secondary"][role="complementary"]:remove()
 introvertdear.com##div[class="content-container site-container"]:style(grid-template-columns: auto auto !important)
 introvertdear.com##div[id^="disqus_"]:remove()
 
-introvertdear.com##[class="sidebar-inner-wrap"]
-introvertdear.com##[id^=AdThrive_]
-introvertdear.com##[id*=AdThrive_]
-introvertdear.com##.slick-inline-search-panel
+introvertdear.com##[class="sidebar-inner-wrap"]:remove()
+introvertdear.com##[id^=AdThrive_]:remove()
+introvertdear.com##[id*=AdThrive_]:remove()
+introvertdear.com##.slick-inline-search-panel:remove()
 
 
 ! AndroidAuthority
 
-www.androidauthority.com##div[class="-__Eb"]
-www.androidauthority.com##div[class="-__hh"]
-www.androidauthority.com##div[class*="ad-banner"]
+www.androidauthority.com##div[class="-__Eb"]:remove()
+www.androidauthority.com##div[class="-__hh"]:remove()
+www.androidauthority.com##div[class*="ad-banner"]:remove()
 
-www.androidauthority.com##div[class="-__Mb"]
-www.androidauthority.com##div[class="-__d -__-b -__Vj"]
-www.androidauthority.com##aside[class="-__Uc"]
-www.androidauthority.com##div[class="-__d"]
+www.androidauthority.com##div[class="-__Mb"]:remove()
+www.androidauthority.com##div[class="-__d -__-b -__Vj"]:remove()
+www.androidauthority.com##aside[class="-__Uc"]:remove()
+www.androidauthority.com##div[class="-__d"]:remove()
