@@ -275,3 +275,9 @@ www.androidauthority.com##div[class="-__Mb"]:remove()
 www.androidauthority.com##div[class="-__d -__-b -__Vj"]:remove()
 www.androidauthority.com##aside[class="-__Uc"]:remove()
 www.androidauthority.com##div[class="-__d"]:remove()
+
+
+! ----------------------------------------------------
+! The L'n'LL is about to end here, beware of it! 
+! There is no need to scroll any further!
+! ----------------------------------------------------
