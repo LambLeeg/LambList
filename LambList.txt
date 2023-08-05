@@ -120,22 +120,22 @@
 
 ! Mix
 
-||facebook.*^$3p
-||fbsbx.com^$3p,domain=~facebook.com
-||fbcdn.net^$3p,domain=~facebook.com
-||tfbnw.net^$3p,domain=~facebook.com
+||facebook.*^$3p,script
+||fbsbx.com^$3p,script,domain=~facebook.com
+||fbcdn.net^$3p,script,domain=~facebook.com
+||tfbnw.net^$3p,script,domain=~facebook.com
 
-||amazon.*^$3p
-||amazon-adsystem.com^$3p,domain=~amazon.com
-||amazonaws.com^$3p,domain=~amazon.com
+||amazon.*^$3p,script
+||amazon-adsystem.com^$3p,script,domain=~amazon.com
+||amazonaws.com^$3p,script,domain=~amazon.com
 
-||apple.com^$3p
-||mzstatic.com^$3p
-||icloud.com^$3p
-||mac.com^$3p
+||apple.com^$3p,script
+||mzstatic.com^$3p,script
+||icloud.com^$3p,script
+||mac.com^$3p,script
 
 ||accounts.google.com/gsi/$3p
-||google.*^$3p,domain=~youtube.com
+||google.*^$3p,script,domain=~youtube.com
 ||googleoptimize.com^$3p,script
 ||googletagmanager.com^$3p,script
 ||googleadservices.com^$3p,script
@@ -145,8 +145,8 @@
 ||doubleclick.net^$3p,script
 ||crashlytics.com^$3p,script
 
-||yandex.*^$3p,domain=~yandex.ru|~yandex.net|~yandex.com|~ya.ru|~dzen.ru|~yastatic.net|~meteum.ai
-||metrica.yandex.*^$3p
+||yandex.*^$3p,script,domain=~yandex.ru|~yandex.net|~yandex.com|~ya.ru|~dzen.ru|~yastatic.net|~meteum.ai
+||metrica.yandex.*^$3p,script
 ||mc.yandex.ru^$3p,script
 ||an.yandex.ru^$3p,script
 ||clck.yandex.ru^$3p,script
@@ -154,9 +154,9 @@
 ||awsync.yandex.ru^$3p,script
 ||statchecker.yandex.ru^$3p,script
 
-||reddit.com^$3p
-||tiktok.com^$3p
-||twitter.com^$3p
+||reddit.com^$3p,script
+||tiktok.com^$3p,script
+||twitter.com^$3p,script
 
 ||slickstream.com^$3p,script
 ||disqus.*^$3p,script
