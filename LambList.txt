@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: 🌚 L'n'LL
-! Version: 20230805
+! Version: 20230806
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! Description: This list is made to be small, yet powerful enough to stop massive tracking, and is made to cosmetic some sites properly.
@@ -15,6 +15,16 @@
 ! The list is made for uBlock Origin, compatibility 
 ! ain't guarantied with any other software
 ! ----------------------------------------------------
+! uBlock Origin (uBO)'s manifesto:
+! The user decides what web content is acceptable
+! in their browser.
+! The uBO project does not support Adblock Plus' 
+! "Acceptable Ads Manifesto" because the 
+! "Acceptable Ads" marketing campaign
+! is the business plan of a for-profit entity.
+! ----------------------------------------------------
+
+Users are the best placed to know what is or is not acceptable to them. uBO's sole purpose is to give users the means to enforce their choices.
 
 
 !!!!!!!!!!!!!!!!!!
