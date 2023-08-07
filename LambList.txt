@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: 🌚 L'n'LL
-! Version: 20230806
+! Version: 20230807
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! Description: This list is made to be small, yet powerful enough to stop massive tracking, and is made to cosmetic some sites properly.
@@ -189,17 +189,22 @@ web.telegram.org##.CommentButton:remove()
 
 ! VK
 
-vk.ru,vk.com##+js(abort-on-property-read, Unauthorized2)
-vk.ru,vk.com##+js(set-constant, noAdsAtAll, {})
-vk.ru,vk.com##+js(set-constant, noAdsAtAll, true)
-vk.ru,vk.com##+js(set-constant, window.Unauthorized2, undefined)
-vk.ru,vk.com##+js(set-constant, window.PageBottomBanners.initUnauthBanner, noopFunc)
-vk.ru,vk.com##+js(abort-on-property-read, Groups.showDisclaimer)
-vk.ru,vk.com##+js(abort-on-property-read, PageBottomBanners)
-vk.ru,vk.com##+js(href-sanitizer, a[href*="/away.php?to="], ?to)
+vk.com##+js(abort-on-property-read, Unauthorized2)
+vk.com##+js(set-constant, noAdsAtAll, {})
+vk.com##+js(set-constant, noAdsAtAll, true)
+vk.com##+js(set-constant, window.Unauthorized2, undefined)
+vk.com##+js(set-constant, window.PageBottomBanners.initUnauthBanner, noopFunc)
+vk.com##+js(abort-on-property-read, Groups.showDisclaimer)
+vk.com##+js(abort-on-property-read, PageBottomBanners)
+vk.com##+js(href-sanitizer, a[href*="/away.php?to="], ?to)
 
-vk.ru,vk.com##div[id*="box_donut"]:remove()
-vk.ru,vk.com##div[class="page_block"] > div[id="react_rootShortVideoStub"]:remove()
+vk.com##div[class^="stories_"]:remove()
+vk.com##div[id^="stories_"]:remove()
+vk.com##div[class="FeedSkeleton__storyList FeedStoryListSkeleton"]:remove()
+vk.com##div[class^="FeedSkeleton"]:remove()
+
+vk.com##div[id*="box_donut"]:remove()
+vk.com##div[class="page_block"] > div[id="react_rootShortVideoStub"]:remove()
 
 
 ! Reddit
