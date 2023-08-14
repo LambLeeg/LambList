@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: 🌚 L'n'LL
-! Version: 20230811
+! Version: 20230814
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! Description: This list is made to be small, yet powerful enough to stop massive tracking, and is made to cosmetic some sites properly.
@@ -267,8 +267,8 @@ meteum.ai##a[class*="-promo"][href="https://meteum.ai/meteum"]
 
 ! Introvertdear
 
-introvertdear.com##^[class*=has-text-align-center]
-introvertdear.com##^[class*="social-wrap"]
+introvertdear.com##[class*=has-text-align-center]
+introvertdear.com##[class*="social-wrap"]
 introvertdear.com##[class^="wp-block-group"]
 
 introvertdear.com##slick-search-panel
