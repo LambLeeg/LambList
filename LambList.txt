@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: 🌚 L'n'LL
-! Version: 20230814
+! Version: 20230816
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! Description: This list is made to be small, yet powerful enough to stop massive tracking, and is made to cosmetic some sites properly.
@@ -32,63 +32,63 @@ Users are the best placed to know what is or is not acceptable to them. uBO's so
 !!!!!!!!!!!!!!!!!!
 
 
-/get_site_data?requestuuid=
-/tags/*/launcher
+^get_site_data?requestuuid=
+^tags^*^launcher
 
-/beacon.js
-/beacon.min.js
-/sensorsdata.js
-/sensorsdata.min.js
+^beacon.js
+^beacon.min.js
+^sensorsdata.js
+^sensorsdata.min.js
 
-/ads.min.js
-/ads.js
-/ads.css
-/adsbygoogle.js
-/advertising.js
-/nativeads/script
-/api/ads/*
-/ad/event
-/pagead
-/native-ad
-.com/ads
-.net/tag/js
-/generate_204
-/ads
+^ads.min.js
+^ads.js
+^ads.css
+^adsbygoogle.js
+^advertising.js
+^nativeads^script
+^api^ads^*
+^ad^event
+^pagead
+^native-ad
+.com^ads
+.net^tag^js
+^generate_204
+^ads
 
-/tracking.min.js
-/tracking.js
-/track.js
-/counter.js
-/count.js
-/datadog-logs
-/csp_report
-/telemetry
-/tracker
-/track^
+^tracking.min.js
+^tracking.js
+^track.js
+^counter.js
+^count.js
+^datadog-logs
+^csp_report
+^telemetry
+^tracker
+^track^
 
-/analytics.min.js
-/analytics.js
-/analysis.js
+^analytics.min.js
+^analytics.js
+^analysis.js
 &event=view&
-/counter
-/ytr_counter
-/analytics
-/web-stats
-/browser/stats
-.net/client/static
+^counter
+^ytr_counter
+^analytics
+^web-stats
+^browser^stats
+.net^client^static
 
-/metrika/watch.js
-/watch_serp.js
-/ads-async.js
-/px.js?ch=
-/metrika
-/adfox
-.ru/api/*/launcher/stats
-.ru/count
-.ru/metrika
-.ru/clck
-.ru/click
-.ru/ads
+^metrika^watch.js
+^watch_serp.js
+^ads-async.js
+^px.js?ch=
+^metrika
+^adfox
+.ru^api^*^launcher^stats
+.ru^count
+.ru^metrika
+.ru^clck
+.ru^click
+.ru^ads
 
 
 !!!!!!!!!!!!!!!
