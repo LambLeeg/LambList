@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: 🌚 L'n'LL
-! Version: 20230816
+! Version: 20230817
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! Description: This list is made to be small, yet powerful enough to stop massive tracking, and is made to cosmetic some sites properly.
@@ -15,6 +15,8 @@
 ! The list is made for uBlock Origin, compatibility 
 ! ain't guarantied with any other software
 ! ----------------------------------------------------
+! For NON-uBO is made a different list of basic filters
+! ----------------------------------------------------
 ! uBlock Origin (uBO)'s manifesto:
 ! The user decides what web content is acceptable
 ! in their browser.
@@ -23,8 +25,6 @@
 ! "Acceptable Ads" marketing campaign
 ! is the business plan of a for-profit entity.
 ! ----------------------------------------------------
-
-Users are the best placed to know what is or is not acceptable to them. uBO's sole purpose is to give users the means to enforce their choices.
 
 
 !!!!!!!!!!!!!!!!!!
@@ -130,56 +130,213 @@ Users are the best placed to know what is or is not acceptable to them. uBO's so
 
 ! Mix
 
-||facebook.*^$3p,script
-||fbsbx.com^$3p,script,domain=~facebook.com
-||fbcdn.net^$3p,script,domain=~facebook.com
-||tfbnw.net^$3p,script,domain=~facebook.com
+!#if ext_ublock
 
-||amazon.*^$3p,script
-||amazon-adsystem.com^$3p,script,domain=~amazon.com
-||amazonaws.com^$3p,script,domain=~amazon.com
+||facebook.*^$all
+||fbsbx.com^$all,domain=~facebook.com
+||fbcdn.net^$all,domain=~facebook.com
+||tfbnw.net^$all,domain=~facebook.com
 
-||apple.com^$3p,script
-||mzstatic.com^$3p,script
-||icloud.com^$3p,script
-||mac.com^$3p,script
+||amazon.*^$all
+||amazon-adsystem.com^$all,domain=~amazon.com
+||amazonaws.com^$all,domain=~amazon.com
+
+||apple.com^$all
+||mzstatic.com^$all
+||icloud.com^$all
+||mac.com^$all
 
 ||accounts.google.com/gsi/$3p
-||google.*^$3p,script,domain=~youtube.com
-||googleoptimize.com^$3p,script
-||googletagmanager.com^$3p,script
-||googleadservices.com^$3p,script
-||googleanalytics.com^$3p,script
-||google-analytics.com^$3p,script
-||googleads.com^$3p,script
-||doubleclick.net^$3p,script
-||crashlytics.com^$3p,script
+||google.*^$all,domain=~youtube.com
+||googleoptimize.com^$all
+||googletagmanager.com^$all
+||googleadservices.com^$all
+||googleanalytics.com^$all
+||google-analytics.com^$all
+||googleads.com^$all
+||doubleclick.net^$all
+||crashlytics.com^$all
 
-||yandex.*^$3p,script,domain=~yandex.ru|~yandex.net|~yandex.com|~ya.ru|~dzen.ru|~yastatic.net|~meteum.ai
-||metrica.yandex.*^$3p,script
-||mc.yandex.ru^$3p,script
-||an.yandex.ru^$3p,script
-||clck.yandex.ru^$3p,script
-||adfstat.yandex.ru^$3p,script
-||awsync.yandex.ru^$3p,script
-||statchecker.yandex.ru^$3p,script
+||yandex.*^$all,domain=~yandex.ru|~yandex.net|~yandex.com|~ya.ru|~dzen.ru|~yastatic.net|~meteum.ai
+||metrica.yandex.*^$all
+||mc.yandex.ru^$all
+||an.yandex.ru^$all
+||clck.yandex.ru^$all
+||adfstat.yandex.ru^$all
+||awsync.yandex.ru^$all
+||statchecker.yandex.ru^$all
 
-||vk.*^$3p,script,domain=~vk.mail.ru|~id.vk.com|~vk.me|~vk.com
-||stats.vk-portal.net^$3p,script
-||tns-counter.ru^$3p,script
+||vk.*^$all,domain=~vk.mail.ru|~id.vk.com|~vk.me|~vk.com
+||stats.vk-portal.net^$all
+||tns-counter.ru^$all
 
-||reddit.com^$3p,script
-||tiktok.com^$3p,script
-||twitter.com^$3p,script
+||reddit.com^$all
+||tiktok.com^$all
+||twitter.com^$all
 
-||slickstream.com^$3p,script
-||disqus.*^$3p,script
-||disquscdn.com$3p,script
+||slickstream.com^$all
+||disqus.*^$all
+||disquscdn.com$all
+
+!#endif
+
+
+!#if !ext_ublock
+
+||facebook.*^$third-party,script
+||fbsbx.com^$third-party,script,domain=~facebook.com
+||fbcdn.net^$third-party,script,domain=~facebook.com
+||tfbnw.net^$third-party,script,domain=~facebook.com
+
+||amazon.*^$third-party,script
+||amazon-adsystem.com^$third-party,script,domain=~amazon.com
+||amazonaws.com^$third-party,script,domain=~amazon.com
+
+||apple.com^$third-party,script
+||mzstatic.com^$third-party,script
+||icloud.com^$third-party,script
+||mac.com^$third-party,script
+
+||accounts.google.com/gsi/$third-party
+||google.*^$third-party,script,domain=~youtube.com
+||googleoptimize.com^$third-party,script
+||googletagmanager.com^$third-party,script
+||googleadservices.com^$third-party,script
+||googleanalytics.com^$third-party,script
+||google-analytics.com^$third-party,script
+||googleads.com^$third-party,script
+||doubleclick.net^$third-party,script
+||crashlytics.com^$third-party,script
+
+||yandex.*^$third-party,script,domain=~yandex.ru|~yandex.net|~yandex.com|~ya.ru|~dzen.ru|~yastatic.net|~meteum.ai
+||metrica.yandex.*^$third-party,script
+||mc.yandex.ru^$third-party,script
+||an.yandex.ru^$third-party,script
+||clck.yandex.ru^$third-party,script
+||adfstat.yandex.ru^$third-party,script
+||awsync.yandex.ru^$third-party,script
+||statchecker.yandex.ru^$third-party,script
+
+||vk.*^$third-party,script,domain=~vk.mail.ru|~id.vk.com|~vk.me|~vk.com
+||stats.vk-portal.net^$third-party,script
+||tns-counter.ru^$third-party,script
+
+||reddit.com^$third-party,script
+||tiktok.com^$third-party,script
+||twitter.com^$third-party,script
+
+||slickstream.com^$third-party,script
+||disqus.*^$third-party,script
+||disquscdn.com$third-party,script
+
+!#endif
 
 
 !!!!!!!!!!!!!!!!!!!!!!
 ! COSMETIC FILTERING !
 !!!!!!!!!!!!!!!!!!!!!!
+
+!#if ext_ublock
+
+
+# Telegram Web
+
+web.telegram.org##.CommentButton:remove()
+
+
+! VK
+
+vk.com##+js(abort-on-property-read, Unauthorized2)
+vk.com##+js(set-constant, noAdsAtAll, {})
+vk.com##+js(set-constant, noAdsAtAll, true)
+vk.com##+js(set-constant, window.Unauthorized2, undefined)
+vk.com##+js(set-constant, window.PageBottomBanners.initUnauthBanner, noopFunc)
+vk.com##+js(abort-on-property-read, Groups.showDisclaimer)
+vk.com##+js(abort-on-property-read, PageBottomBanners)
+vk.com##+js(href-sanitizer, a[href*="/away.php?to="], ?to)
+
+vk.com##div[class^="stories_"]:remove()
+vk.com##div[id^="stories_"]:remove()
+vk.com##div[class="FeedSkeleton__storyList FeedStoryListSkeleton"]:remove()
+vk.com##div[class^="FeedSkeleton"]:remove()
+
+vk.com##div[id*="box_donut"]:remove()
+vk.com##div[class="page_block"] > div[id="react_rootShortVideoStub"]:remove()
+
+
+! Reddit
+
+www.reddit.com##[class^="Xpromo"]:remove()
+www.reddit.com##[class^="xpromo"]:remove()
+www.reddit.com##body.scroll-is-blocked:style(overflow: visible!important; position: static!important;)
+
+
+! Reddit Old
+
+old.reddit.com##[class="infobar commentsignupbar"]:remove()
+old.reddit.com##[class="footer-parent"]:remove()
+old.reddit.com##[id="header-bottom-right"]:remove()
+old.reddit.com##[id="login_login-main"]:remove()
+
+
+! YouTube
+
+www.youtube.com###comments #content-text:style(font-size: 18px !important;)
+
+www.youtube.com###top-level-buttons-computed > ytd-button-renderer.ytd-menu-renderer.style-scope:remove()
+www.youtube.com###flexible-item-buttons:remove()
+
+m.youtube.com##[class="slim_video_action_bar_renderer_button icon-flag"]:remove()
+m.youtube.com##[class="slim_video_action_bar_renderer_button icon-share_arrow"]:remove()
+
+
+! Meteum
+
+meteum.ai##a[class*="header-meteum"][href="https://b2b.meteum.ai/platform?utm_source=from_meteum_menu"]:remove()
+
+meteum.ai##div[class^="alerts alerts_cols_"]:style(margin: 0 0 0 0 !important)
+meteum.ai##div[class="content__top"]:style(margin: 12px 0 8px 0 !important)
+meteum.ai##div[class*=forecast-briefly][role="region"]:style(margin: 0 0 8px 0 !important)
+meteum.ai##div[class*="pro-entry-points"]:style(margin: 0 0 8px 0 !important)
+
+meteum.ai##a[class*="-promo"][href="https://meteum.ai/meteum"]:remove()
+
+
+! Introvertdear
+
+introvertdear.com##^[class*=has-text-align-center]
+introvertdear.com##^[class*="social-wrap"]
+introvertdear.com##^[class^="wp-block-group"]
+
+introvertdear.com##slick-search-panel:remove()
+introvertdear.com##slick-heartbeat:remove()
+
+introvertdear.com##aside[id="secondary"][role="complementary"]:remove()
+introvertdear.com##div[class="content-container site-container"]:style(grid-template-columns: auto auto !important)
+introvertdear.com##div[id^="disqus_"]:remove()
+
+introvertdear.com##[class="sidebar-inner-wrap"]:remove()
+introvertdear.com##[id^=AdThrive_]:remove()
+introvertdear.com##[id*=AdThrive_]:remove()
+introvertdear.com##.slick-inline-search-panel:remove()
+
+
+! AndroidAuthority
+
+www.androidauthority.com##div[class="-__Eb"]:remove()
+www.androidauthority.com##div[class="-__hh"]:remove()
+www.androidauthority.com##div[class*="ad-banner"]:remove()
+
+www.androidauthority.com##div[class="-__Mb"]:remove()
+www.androidauthority.com##div[class="-__d -__-b -__Vj"]:remove()
+www.androidauthority.com##aside[class="-__Uc"]:remove()
+www.androidauthority.com##div[class="-__d"]:remove()
+
+
+!#endif
+
+
+!#if !ext_ublock
 
 
 # Telegram Web
@@ -233,26 +390,6 @@ m.youtube.com##[class="slim_video_action_bar_renderer_button icon-flag"]
 m.youtube.com##[class="slim_video_action_bar_renderer_button icon-share_arrow"]
 
 
-! Dzen
-
-dzen.ru##div[class*="yandex-direct"]
-dzen.ru##[class*="_embed"]
-dzen.ru##[class*="_bottom-embed"]
-
-dzen.ru##[class*="card-news"]
-
-dzen.ru##div[class="navigation-sidebar__separator-Nm"]
-dzen.ru##aside[class*="navigation-sidebar"] > ul[class*="sidebar-meta-links"]
-
-dzen.ru##div[class="track-scroll-position__anchor-1s"]
-dzen.ru##div[class*="dzen-wrapper-with-top-content-desktop__topContent"]
-dzen.ru##div[class="dzen-search-arrow-common"]
-
-dzen.ru##[class*="publication-columns-layout__right"]
-
-dzen.ru##div[class*="article-recommender"]
-
-
 ! Meteum
 
 meteum.ai##a[class*="header-meteum"][href="https://b2b.meteum.ai/platform?utm_source=from_meteum_menu"]
@@ -296,7 +433,12 @@ www.androidauthority.com##aside[class="-__Uc"]
 www.androidauthority.com##div[class="-__d"]
 
 
+!#endif
+
+
 ! ----------------------------------------------------
 ! The L'n'LL is about to end here, beware of it! 
 ! There is no need to scroll any further!
 ! ----------------------------------------------------
+
+
