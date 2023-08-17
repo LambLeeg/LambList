@@ -130,59 +130,6 @@
 
 ! Mix
 
-!#if ext_ublock
-
-||facebook.*^$all
-||fbsbx.com^$all,domain=~facebook.com
-||fbcdn.net^$all,domain=~facebook.com
-||tfbnw.net^$all,domain=~facebook.com
-
-||amazon.*^$all
-||amazon-adsystem.com^$all,domain=~amazon.com
-||amazonaws.com^$all,domain=~amazon.com
-
-||apple.com^$all
-||mzstatic.com^$all
-||icloud.com^$all
-||mac.com^$all
-
-||accounts.google.com/gsi/$3p
-||google.*^$all,domain=~youtube.com
-||googleoptimize.com^$all
-||googletagmanager.com^$all
-||googleadservices.com^$all
-||googleanalytics.com^$all
-||google-analytics.com^$all
-||googleads.com^$all
-||doubleclick.net^$all
-||crashlytics.com^$all
-
-||yandex.*^$all,domain=~yandex.ru|~yandex.net|~yandex.com|~ya.ru|~dzen.ru|~yastatic.net|~meteum.ai
-||metrica.yandex.*^$all
-||mc.yandex.ru^$all
-||an.yandex.ru^$all
-||clck.yandex.ru^$all
-||adfstat.yandex.ru^$all
-||awsync.yandex.ru^$all
-||statchecker.yandex.ru^$all
-
-||vk.*^$all,domain=~vk.mail.ru|~id.vk.com|~vk.me|~vk.com
-||stats.vk-portal.net^$all
-||tns-counter.ru^$all
-
-||reddit.com^$all,domain=~reddit.com
-||tiktok.com^$all,domain=~tiktok.com
-||twitter.com^$all
-
-||slickstream.com^$all
-||disqus.*^$all
-||disquscdn.com$all
-
-!#endif
-
-
-!#if !ext_ublock
-
 ||facebook.*^$third-party,script
 ||fbsbx.com^$third-party,script,domain=~facebook.com
 ||fbcdn.net^$third-party,script,domain=~facebook.com
@@ -228,8 +175,6 @@
 ||slickstream.com^$third-party,script
 ||disqus.*^$third-party,script
 ||disquscdn.com$third-party,script
-
-!#endif
 
 
 !!!!!!!!!!!!!!!!!!!!!!
