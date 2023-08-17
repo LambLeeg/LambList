@@ -170,8 +170,8 @@
 ||stats.vk-portal.net^$all
 ||tns-counter.ru^$all
 
-||reddit.com^$all
-||tiktok.com^$all
+||reddit.com^$all,domain=~reddit.com
+||tiktok.com^$all,domain=~tiktok.com
 ||twitter.com^$all
 
 ||slickstream.com^$all
@@ -221,8 +221,8 @@
 ||stats.vk-portal.net^$third-party,script
 ||tns-counter.ru^$third-party,script
 
-||reddit.com^$third-party,script
-||tiktok.com^$third-party,script
+||reddit.com^$third-party,script,domain=~reddit.com
+||tiktok.com^$third-party,script,domain=~tiktok.com
 ||twitter.com^$third-party,script
 
 ||slickstream.com^$third-party,script
@@ -235,6 +235,7 @@
 !!!!!!!!!!!!!!!!!!!!!!
 ! COSMETIC FILTERING !
 !!!!!!!!!!!!!!!!!!!!!!
+
 
 !#if ext_ublock
 
