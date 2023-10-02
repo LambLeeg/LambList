@@ -3,7 +3,6 @@
 ! Version: 20231002
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
-! Description: This list is made to be small, yet powerful enough to stop massive tracking, and is made to cosmetic some sites properly.
 ! ----------------------------------------------------
 !  _                    _     _                    
 ! | |    __ _ _ __ ___ | |__ | |    ___  ___  __ _ 
@@ -12,83 +11,6 @@
 ! |_____\__,_|_| |_| |_|_.__/|_____\___|\___|\__, |
 ! aka Lamb(and)Leeg's list                   |___/ 
 ! ----------------------------------------------------
-! The list is made for uBlock Origin, compatibility 
-! ain't guarantied with any other software
-! ----------------------------------------------------
-! For NON-uBO is made a different list of basic filters
-! ----------------------------------------------------
-! uBlock Origin (uBO)'s manifesto:
-! The user decides what web content is acceptable
-! in their browser.
-! The uBO project does not support Adblock Plus' 
-! "Acceptable Ads Manifesto" because the 
-! "Acceptable Ads" marketing campaign
-! is the business plan of a for-profit entity.
-! ----------------------------------------------------
-
-
-!!!!!!!!!!!!!!!!!!
-! UIVERSAL RULES !
-!!!!!!!!!!!!!!!!!!
-
-
-^get_site_data?requestuuid=
-^tags^*^launcher
-
-^beacon.js
-^beacon.min.js
-^sensorsdata.js
-^sensorsdata.min.js
-
-^ads.min.js
-^ads.js
-^ads.css
-^adsbygoogle.js
-^advertising.js
-^nativeads^script
-^api^ads^*
-^ad^event
-^pagead
-^native-ad
-.com^ads
-.net^tag^js
-^generate_204
-^ads
-
-^tracking.min.js
-^tracking.js
-^track.js
-^counter.js
-^count.js
-^datadog-logs
-^csp_report
-^telemetry
-^tracker
-^track^
-
-^analytics.min.js
-^analytics.js
-^analysis.js
-&event=view&
-^counter
-^ytr_counter
-^analytics
-^web-stats
-^browser^stats
-.net^client^static
-
-^metrika^watch.js
-^watch_serp.js
-^ads-async.js
-^px.js?ch=
-^metrika
-^adfox
-.ru^api^*^launcher^stats
-.ru^count
-.ru^metrika
-.ru^clck
-.ru^click
-.ru^ads
 
 
 !!!!!!!!!!!!!!!
