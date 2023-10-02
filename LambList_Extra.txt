@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 🌚 L'n'LL Extra
-! Version: 20230726
+! Version: 20231002
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! Description: My personal list that contains all I need, and has not been found anywhere else. The main goal is to make visual adjustments, and is to block the most annoying things alike.
@@ -17,29 +17,46 @@
 ! ----------------------------------------------------
 
 
-! Privacy (Everywhere companies)
-
-||google.*^$important,domain=~youtube.com|~google.com|~wide-youtube.l.google.com
-||yandex.*^$important,domain=~ya.ru|~yandex.ru|~yandex.com|~meteum.ai|~dzen.ru
-
-
 ! Social media jail
 
-||twitter.com^$important,domain=~twitter.com
-||tiktok.com^$important,domain=~tiktok.com
-||amazon.*^$important,domain=~amazon.com
-||quora.com^$important,domain=~quora.com
-||reddit.com^$important,domain=~reddit.com
+||facebook.*^$third-party,script
+||fbsbx.com^$third-party,script,domain=~facebook.com
+||fbcdn.net^$third-party,script,domain=~facebook.com
+||tfbnw.net^$third-party,script,domain=~facebook.com
 
-||instagram.com^$important,domain=~instagram.com
-||facebook.*^$important,domain=~facebook.com|~facebook.net
-||fbcdn.net^$important,domain=~facebook.com|~facebook.net
-||fbsbx.com^$important,domain=~facebook.com|~facebook.net
+||amazon.*^$third-party,script
+||amazon-adsystem.com^$third-party,script,domain=~amazon.com
+||amazonaws.com^$third-party,script,domain=~amazon.com
 
-||vk.*^$important,domain=~vk.com|~vk.ru|~vk.me|~vk.company|~vk.mail.ru
-||vkcdn.ru^$important,domain=~vk.com|~vk.ru|~vk.me|~vk.company|~vk.mail.ru
+||apple.com^$third-party,script
+||mzstatic.com^$third-party,script
+||icloud.com^$third-party,script
+||mac.com^$third-party,script
 
-||mail.ru^$important,domain=~mail.ru
-||telegram.*^$important,domain=~telegram.org|~web.telegram.org
-||dzen.ru^$important,domain=~dzen.ru|~yandex.ru
-||ok.ru^$important,domain=~ok.ru
+||accounts.google.com/gsi/$third-party
+||google.*^$third-party,script,domain=~youtube.com
+||googleoptimize.com^$third-party,script
+||googletagmanager.com^$third-party,script
+||googleadservices.com^$third-party,script
+||googleanalytics.com^$third-party,script
+||google-analytics.com^$third-party,script
+||googleads.com^$third-party,script
+||doubleclick.net^$third-party,script
+||crashlytics.com^$third-party,script
+
+||yandex.*^$third-party,script,domain=~yandex.ru|~yandex.net|~yandex.com|~ya.ru|~dzen.ru|~yastatic.net|~meteum.ai
+||metrica.yandex.*^$third-party,script
+||mc.yandex.ru^$third-party,script
+||an.yandex.ru^$third-party,script
+||clck.yandex.ru^$third-party,script
+||adfstat.yandex.ru^$third-party,script
+||awsync.yandex.ru^$third-party,script
+||statchecker.yandex.ru^$third-party,script
+
+||vk.*^$third-party,script,domain=~vk.mail.ru|~id.vk.com|~vk.me|~vk.com
+||stats.vk-portal.net^$third-party,script
+||tns-counter.ru^$third-party,script
+
+||reddit.com^$third-party,script,domain=~reddit.com
+||tiktok.com^$third-party,script,domain=~tiktok.com
+||twitter.com^$third-party,script
