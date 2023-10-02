@@ -17,6 +17,72 @@
 ! ----------------------------------------------------
 
 
+! Mix
+
+!!!!!!!!!!!!!!!!!!
+! UIVERSAL RULES !
+!!!!!!!!!!!!!!!!!!
+
+
+^get_site_data?requestuuid=
+^tags^*^launcher
+
+^beacon.js
+^beacon.min.js
+^sensorsdata.js
+^sensorsdata.min.js
+
+^ads.min.js
+^ads.js
+^ads.css
+^adsbygoogle.js
+^advertising.js
+^nativeads^script
+^api^ads^*
+^ad^event
+^pagead
+^native-ad
+.com^ads
+.net^tag^js
+^generate_204
+^ads
+
+^tracking.min.js
+^tracking.js
+^track.js
+^counter.js
+^count.js
+^datadog-logs
+^csp_report
+^telemetry$domain=~www.reddit.com
+^tracker
+^track^
+
+^analytics.min.js
+^analytics.js
+^analysis.js
+&event=view&
+^counter
+^ytr_counter
+^analytics
+^web-stats
+^browser^stats
+.net^client^static
+
+^metrika^watch.js
+^watch_serp.js
+^ads-async.js
+^px.js?ch=
+^metrika
+^adfox
+.ru^api^*^launcher^stats
+.ru^count
+.ru^metrika
+.ru^clck
+.ru^click
+.ru^ads
+
+
 ! Social media jail
 
 ||facebook.*^$third-party,script
