@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: 🌚 L'n'LL
-! Version: 20231002
+! Version: 20231030
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! ----------------------------------------------------
@@ -48,6 +48,51 @@
 ! Global beacon hit man
 
 *$ping
+
+
+! Social media jail
+
+||facebook.*^$third-party,script
+||fbsbx.com^$third-party,script,domain=~facebook.com
+||fbcdn.net^$third-party,script,domain=~facebook.com
+||tfbnw.net^$third-party,script,domain=~facebook.com
+
+||amazon.*^$third-party,script
+||amazon-adsystem.com^$third-party,script,domain=~amazon.com
+||amazonaws.com^$third-party,script,domain=~amazon.com
+
+||apple.com^$third-party,script
+||mzstatic.com^$third-party,script
+||icloud.com^$third-party,script
+||mac.com^$third-party,script
+
+||accounts.google.com/gsi/$third-party
+||google.*^$third-party,script,domain=~youtube.com
+||googleoptimize.com^$third-party,script
+||googletagmanager.com^$third-party,script
+||googleadservices.com^$third-party,script
+||googleanalytics.com^$third-party,script
+||google-analytics.com^$third-party,script
+||googleads.com^$third-party,script
+||doubleclick.net^$third-party,script
+||crashlytics.com^$third-party,script
+
+||yandex.*^$third-party,script,domain=~yandex.ru|~yandex.net|~yandex.com|~ya.ru|~dzen.ru|~yastatic.net|~meteum.ai
+||metrica.yandex.*^$third-party,script
+||mc.yandex.ru^$third-party,script
+||an.yandex.ru^$third-party,script
+||clck.yandex.ru^$third-party,script
+||adfstat.yandex.ru^$third-party,script
+||awsync.yandex.ru^$third-party,script
+||statchecker.yandex.ru^$third-party,script
+
+||vk.*^$third-party,script,domain=~vk.mail.ru|~id.vk.com|~vk.me|~vk.com
+||stats.vk-portal.net^$third-party,script
+||tns-counter.ru^$third-party,script
+
+||reddit.com^$third-party,script,domain=~reddit.com
+||tiktok.com^$third-party,script,domain=~tiktok.com
+||twitter.com^$third-party,script
 
 
 ! Mix
