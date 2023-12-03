@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: 🌚 L'n'LL
-! Version: 20231030
+! Version: 20231203
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! ----------------------------------------------------
@@ -145,17 +145,6 @@ old.reddit.com##[class="infobar commentsignupbar"]
 old.reddit.com##[class="footer-parent"]
 old.reddit.com##[id="header-bottom-right"]
 old.reddit.com##[id="login_login-main"]
-
-
-! YouTube
-
-www.youtube.com###comments #content-text:style(font-size: 18px !important;)
-
-www.youtube.com###top-level-buttons-computed > ytd-button-renderer.ytd-menu-renderer.style-scope
-www.youtube.com###flexible-item-buttons
-
-m.youtube.com##[class="slim_video_action_bar_renderer_button icon-flag"]
-m.youtube.com##[class="slim_video_action_bar_renderer_button icon-share_arrow"]
 
 
 ! Meteum
