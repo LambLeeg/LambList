@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: 🌚 L'n'LL
-! Version: 20231203
+! Version: 20240602
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! ----------------------------------------------------
@@ -25,12 +25,6 @@
 @@||l.google.com^
 
 
-! VK Messenger
-
-@@||vk.com/images/icons/vkme_favicons/*.ico
-@@||vk.com/images/icons/vkme_favicons/*.svg
-
-
 ! Yandex & Google
 
 @@||yastatic.net^$domain=ya.ru
@@ -48,6 +42,7 @@
 ! Global beacon hit man
 
 *$ping
+*$beacon
 
 
 ! Social media jail
@@ -95,16 +90,15 @@
 ||twitter.com^$third-party,script
 
 
-! Mix
-
-||slickstream.com^$third-party,script
-||disqus.*^$third-party,script
-||disquscdn.com$third-party,script
-
-
 !!!!!!!!!!!!!!!!!!!!!!
 ! COSMETIC FILTERING !
 !!!!!!!!!!!!!!!!!!!!!!
+
+
+! YA.ru
+
+ya.ru##[class="dist-overlay__content dist-overlay__content_button-theme_light"]:remove()
+ya.ru##[class*="simple-popup__overlay"]:remove()
 
 
 # Telegram Web
@@ -114,59 +108,29 @@ web.telegram.org##.CommentButton
 
 ! VK
 
-vk.com##+js(abort-on-property-read, Unauthorized2)
 vk.com##+js(set-constant, noAdsAtAll, {})
 vk.com##+js(set-constant, noAdsAtAll, true)
-vk.com##+js(set-constant, window.Unauthorized2, undefined)
-vk.com##+js(set-constant, window.PageBottomBanners.initUnauthBanner, noopFunc)
-vk.com##+js(abort-on-property-read, Groups.showDisclaimer)
-vk.com##+js(abort-on-property-read, PageBottomBanners)
-vk.com##+js(href-sanitizer, a[href*="/away.php?to="], ?to)
 
-vk.com##div[class^="stories_"]
-vk.com##div[id^="stories_"]
-vk.com##div[class="FeedSkeleton__storyList FeedStoryListSkeleton"]
-vk.com##div[class^="FeedSkeleton"]
+vk.com##^div[class^="FeedSkeleton"]:remove()
 
-vk.com##div[id*="box_donut"]
+vk.com##[class^="stories_"]
+vk.com##[id^="stories_"]
+
+vk.com##[id="friends_right_blocks_root"]
+vk.com##[class="NewMiniAppsRightBlock__root"]
+
 vk.com##div[class="page_block"] > div[id="react_rootShortVideoStub"]
-
-
-! Reddit
-
-www.reddit.com##[class^="Xpromo"]
-www.reddit.com##[class^="xpromo"]
-www.reddit.com##body.scroll-is-blocked:style(overflow: visible!important; position: static!important;)
-
-
-! Reddit Old
-
-old.reddit.com##[class="infobar commentsignupbar"]
-old.reddit.com##[class="footer-parent"]
-old.reddit.com##[id="header-bottom-right"]
-old.reddit.com##[id="login_login-main"]
-
-
-! Meteum
-
-meteum.ai##a[class*="header-meteum"][href="https://b2b.meteum.ai/platform?utm_source=from_meteum_menu"]
-
-meteum.ai##div[class^="alerts alerts_cols_"]:style(margin: 0 0 0 0 !important)
-meteum.ai##div[class="content__top"]:style(margin: 12px 0 8px 0 !important)
-meteum.ai##div[class*=forecast-briefly][role="region"]:style(margin: 0 0 8px 0 !important)
-meteum.ai##div[class*="pro-entry-points"]:style(margin: 0 0 8px 0 !important)
-
-meteum.ai##a[class*="-promo"][href="https://meteum.ai/meteum"]
 
 
 ! Introvertdear
 
-introvertdear.com##[class*=has-text-align-center]
+introvertdear.com##^[class*=has-text-align-center]
 introvertdear.com##[class*="social-wrap"]
 introvertdear.com##[class^="wp-block-group"]
 
 introvertdear.com##slick-search-panel
 introvertdear.com##slick-heartbeat
+introvertdear.com##.slick-inline-search-panel
 
 introvertdear.com##aside[id="secondary"][role="complementary"]
 introvertdear.com##div[class="content-container site-container"]:style(grid-template-columns: auto auto !important)
@@ -174,20 +138,6 @@ introvertdear.com##div[id^="disqus_"]
 
 introvertdear.com##[class="sidebar-inner-wrap"]
 introvertdear.com##[id^=AdThrive_]
-introvertdear.com##[id*=AdThrive_]
-introvertdear.com##.slick-inline-search-panel
-
-
-! AndroidAuthority
-
-www.androidauthority.com##div[class="-__Eb"]
-www.androidauthority.com##div[class="-__hh"]
-www.androidauthority.com##div[class*="ad-banner"]
-
-www.androidauthority.com##div[class="-__Mb"]
-www.androidauthority.com##div[class="-__d -__-b -__Vj"]
-www.androidauthority.com##aside[class="-__Uc"]
-www.androidauthority.com##div[class="-__d"]
 
 
 ! ----------------------------------------------------
