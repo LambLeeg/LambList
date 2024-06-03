@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: 🌚 L'n'LL
-! Version: 20240602
+! Version: 20240603
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! ----------------------------------------------------
@@ -95,10 +95,14 @@
 !!!!!!!!!!!!!!!!!!!!!!
 
 
-! YA.ru
+! YA.ru | Yandex
 
 ya.ru##[class="dist-overlay__content dist-overlay__content_button-theme_light"]:remove()
 ya.ru##[class*="simple-popup__overlay"]:remove()
+
+yandex.*##[class*="DistributionSplashScreenModal"]:remove()
+yandex.*##[class*="Popup"]
+yandex.*##a[class="Link DistrNav-Link"] > div[class^="Distribution-Title"]:has-text(Установите Яндекс Браузер):remove()
 
 
 # Telegram Web
