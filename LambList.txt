@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: 🌚 L'n'LL
-! Version: 20240603
+! Version: 20240607
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! ----------------------------------------------------
@@ -95,14 +95,27 @@
 !!!!!!!!!!!!!!!!!!!!!!
 
 
+! Universal
+
+##[class*="banner"]
+##[id*="banner"]
+##[class="movieads"]
+
+
+! Google
+
+www.google.com##html:style(overflow: visible !important)
+www.google.com##div[role="dialog"] span:has-text(/^See results closer to you\?$/):upward(7)
+
+
 ! YA.ru | Yandex
 
-ya.ru##[class="dist-overlay__content dist-overlay__content_button-theme_light"]:remove()
-ya.ru##[class*="simple-popup__overlay"]:remove()
+ya.ru##[class="dist-overlay__content dist-overlay__content_button-theme_light"]
+ya.ru##[class*="simple-popup__overlay"]
 
-yandex.*##[class*="DistributionSplashScreenModal"]:remove()
+yandex.*##[class*="DistributionSplashScreenModal"]
 yandex.*##[class*="Popup"]
-yandex.*##a[class="Link DistrNav-Link"] > div[class^="Distribution-Title"]:has-text(Установите Яндекс Браузер):remove()
+yandex.*##a[class="Link DistrNav-Link"] > div[class^="Distribution-Title"]:has-text(Установите Яндекс Браузер)
 
 
 # Telegram Web
@@ -115,7 +128,7 @@ web.telegram.org##.CommentButton
 vk.com##+js(set-constant, noAdsAtAll, {})
 vk.com##+js(set-constant, noAdsAtAll, true)
 
-vk.com##^div[class^="FeedSkeleton"]:remove()
+vk.com##div[class^="FeedSkeleton"]
 
 vk.com##[class^="stories_"]
 vk.com##[id^="stories_"]
@@ -128,7 +141,7 @@ vk.com##div[class="page_block"] > div[id="react_rootShortVideoStub"]
 
 ! Introvertdear
 
-introvertdear.com##^[class*=has-text-align-center]
+introvertdear.com##[class*=has-text-align-center]
 introvertdear.com##[class*="social-wrap"]
 introvertdear.com##[class^="wp-block-group"]
 
