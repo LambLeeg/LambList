@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: 🌚 L'n'LL
-! Version: 20240607
+! Version: 20240610
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! ----------------------------------------------------
@@ -88,6 +88,22 @@
 ||reddit.com^$third-party,script,domain=~reddit.com
 ||tiktok.com^$third-party,script,domain=~tiktok.com
 ||twitter.com^$third-party,script
+
+
+!!!!!!!!!!!!!!
+! JavaScript !
+!!!!!!!!!!!!!!
+
+
+##+js(set, navigator.plugins, undefined)
+##+js(set, navigator.deviceMemory, 8)
+##+js(set, navigator.hardwareConcurrency, 4)
+##+js(set, navigator.maxTouchPoints, 0)
+##+js(aopr, HTMLCanvasElement.prototype.toDataURL)
+##+js(aopr, AudioBuffer.prototype.getChannelData)
+##+js(aopr, WebGLRenderingContext.prototype.getExtension)
+##+js(aopr, WebGLRenderingContext.prototype.getParameter)
+##+js(aopr, BaseAudioContext.prototype.createOscillator) 
 
 
 !!!!!!!!!!!!!!!!!!!!!!
