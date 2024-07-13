@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: 🌚 L'n'LL
-! Version: 20240610
+! Version: 20240713
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! ----------------------------------------------------
@@ -30,8 +30,8 @@
 @@||yastatic.net^$domain=ya.ru
 @@||gstatic.com^$domain=youtube.com
 
-@@||api-maps.yandex.ru^
-@@||maps.yandex.net^
+@@||maps.yandex.*^
+@@||maps.google.*^
 
 
 !!!!!!!!!!!!!!!!!!!!
