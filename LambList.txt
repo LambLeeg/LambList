@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: 🌚 L'n'LL
-! Version: 20240713
+! Version: 20240926
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! ----------------------------------------------------
@@ -47,75 +47,53 @@
 
 ! Social media jail
 
-||facebook.*^$third-party,script
-||fbsbx.com^$third-party,script,domain=~facebook.com
-||fbcdn.net^$third-party,script,domain=~facebook.com
-||tfbnw.net^$third-party,script,domain=~facebook.com
+||facebook.*^$3p,script
+||fbsbx.com^$script,domain=~facebook.com
+||fbcdn.net^$script,domain=~facebook.com
+||tfbnw.net^$script,domain=~facebook.com
 
-||amazon.*^$third-party,script
-||amazon-adsystem.com^$third-party,script,domain=~amazon.com
-||amazonaws.com^$third-party,script,domain=~amazon.com
+||amazon.*^$3p,script
+||amazon-adsystem.com^$all
+||amazonaws.com^$3p,script
 
-||apple.com^$third-party,script
-||mzstatic.com^$third-party,script
-||icloud.com^$third-party,script
-||mac.com^$third-party,script
+||apple.com^$3p,script
+||mzstatic.com^$all
+||icloud.com^$3p,script
+||mac.com^$3p,script
 
-||accounts.google.com/gsi/$third-party
-||google.*^$third-party,script,domain=~youtube.com
-||googleoptimize.com^$third-party,script
-||googletagmanager.com^$third-party,script
-||googleadservices.com^$third-party,script
-||googleanalytics.com^$third-party,script
-||google-analytics.com^$third-party,script
-||googleads.com^$third-party,script
-||doubleclick.net^$third-party,script
-||crashlytics.com^$third-party,script
+||accounts.google.com/gsi/$3p
+||google.*^$3p,script,domain=~youtube.com
+||googleoptimize.com^$all
+||googletagmanager.com^$all
+||googleadservices.com^$all
+||googleanalytics.com^$all
+||google-analytics.com^$all
+||googleads.com^$all
+||doubleclick.net^$all
+||crashlytics.com^$all
 
-||yandex.*^$third-party,script,domain=~yandex.ru|~yandex.net|~yandex.com|~ya.ru|~dzen.ru|~yastatic.net|~meteum.ai
-||metrica.yandex.*^$third-party,script
-||mc.yandex.ru^$third-party,script
-||an.yandex.ru^$third-party,script
-||clck.yandex.ru^$third-party,script
-||adfstat.yandex.ru^$third-party,script
-||awsync.yandex.ru^$third-party,script
-||statchecker.yandex.ru^$third-party,script
+||yandex.*^$3p,script,domain=~yandex.ru|~yandex.net|~yandex.com|~ya.ru|~dzen.ru|~yastatic.net|~meteum.ai
+||metrica.yandex.*^$all
+||mc.yandex.ru^$all
+||an.yandex.ru^$all
+||clck.yandex.ru^$all
+||adfstat.yandex.ru^$all
+||awsync.yandex.ru^$all
+||statchecker.yandex.ru^$all
 
-||vk.*^$third-party,script,domain=~vk.mail.ru|~id.vk.com|~vk.me|~vk.com
-||stats.vk-portal.net^$third-party,script
-||tns-counter.ru^$third-party,script
+||vk.*^$3p,script,domain=~vk.mail.ru|~id.vk.com|~vk.me|~vk.com
+||stats.vk-portal.net^$all
+||tns-counter.ru^$all
 
-||reddit.com^$third-party,script,domain=~reddit.com
-||tiktok.com^$third-party,script,domain=~tiktok.com
-||twitter.com^$third-party,script
-
-
-!!!!!!!!!!!!!!
-! JavaScript !
-!!!!!!!!!!!!!!
-
-
-##+js(set, navigator.plugins, undefined)
-##+js(set, navigator.deviceMemory, 8)
-##+js(set, navigator.hardwareConcurrency, 4)
-##+js(set, navigator.maxTouchPoints, 0)
-##+js(aopr, HTMLCanvasElement.prototype.toDataURL)
-##+js(aopr, AudioBuffer.prototype.getChannelData)
-##+js(aopr, WebGLRenderingContext.prototype.getExtension)
-##+js(aopr, WebGLRenderingContext.prototype.getParameter)
-##+js(aopr, BaseAudioContext.prototype.createOscillator) 
+||reddit.com^$3p,script,domain=~reddit.com
+||tiktok.com^$3p,script,domain=~tiktok.com
+||twitter.com^$3p,script
+||x.com^$3p,script
 
 
 !!!!!!!!!!!!!!!!!!!!!!
 ! COSMETIC FILTERING !
 !!!!!!!!!!!!!!!!!!!!!!
-
-
-! Universal
-
-##[class*="banner"]
-##[id*="banner"]
-##[class="movieads"]
 
 
 ! Google
@@ -132,27 +110,6 @@ ya.ru##[class*="simple-popup__overlay"]
 yandex.*##[class*="DistributionSplashScreenModal"]
 yandex.*##[class*="Popup"]
 yandex.*##a[class="Link DistrNav-Link"] > div[class^="Distribution-Title"]:has-text(Установите Яндекс Браузер)
-
-
-# Telegram Web
-
-web.telegram.org##.CommentButton
-
-
-! VK
-
-vk.com##+js(set-constant, noAdsAtAll, {})
-vk.com##+js(set-constant, noAdsAtAll, true)
-
-vk.com##div[class^="FeedSkeleton"]
-
-vk.com##[class^="stories_"]
-vk.com##[id^="stories_"]
-
-vk.com##[id="friends_right_blocks_root"]
-vk.com##[class="NewMiniAppsRightBlock__root"]
-
-vk.com##div[class="page_block"] > div[id="react_rootShortVideoStub"]
 
 
 ! Introvertdear
