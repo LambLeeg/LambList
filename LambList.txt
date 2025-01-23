@@ -124,12 +124,14 @@ yandex.*##a[class="Link DistrNav-Link"] > div[class^="Distribution-Title"]:has-t
 
 ! Introvertdear
 
+introvertdear.com##[class*="slick"]
+introvertdear.com##[id*="slick"]
+introvertdear.com##[class^="slick"]
+introvertdear.com##[id^="slick"]
+
 introvertdear.com##[class*=has-text-align-center]
 introvertdear.com##[class*="social-wrap"]
 introvertdear.com##[class^="wp-block-group"]
-
-introvertdear.com##[class*="slick"]
-introvertdear.com##[id*="slick"]
 
 introvertdear.com##aside[id="secondary"][role="complementary"]
 introvertdear.com##div[class="content-container site-container"]:style(grid-template-columns: auto auto !important)
