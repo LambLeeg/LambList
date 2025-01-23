@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: 🌚 L'n'LL
-! Version: 20241024
+! Version: 20250123
 ! License: https://github.com/LambLeeg/LambList/blob/master/LICENSE
 ! Homepage: https://github.com/LambLeeg/LambList
 ! ----------------------------------------------------
@@ -128,9 +128,8 @@ introvertdear.com##[class*=has-text-align-center]
 introvertdear.com##[class*="social-wrap"]
 introvertdear.com##[class^="wp-block-group"]
 
-introvertdear.com##slick-search-panel
-introvertdear.com##slick-heartbeat
-introvertdear.com##.slick-inline-search-panel
+introvertdear.com##[class*="slick"]
+introvertdear.com##[id*="slick"]
 
 introvertdear.com##aside[id="secondary"][role="complementary"]
 introvertdear.com##div[class="content-container site-container"]:style(grid-template-columns: auto auto !important)
